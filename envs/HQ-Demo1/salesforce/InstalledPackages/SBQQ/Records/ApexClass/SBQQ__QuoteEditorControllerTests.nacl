@@ -1,0 +1,6 @@
+salesforce.ApexClass SBQQ__QuoteEditorControllerTests {
+  apiVersion = 49
+  status = "Active"
+  fullName = "SBQQ__QuoteEditorControllerTests"
+  content = "(hidden)"
+}

@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__ProductRule__c_fr@uuuub {
+  fullName = "SBQQ__ProductRule__c-fr"
+  _parent = [
+    salesforce.SBQQ__ProductRule__c,
+  ]
+}

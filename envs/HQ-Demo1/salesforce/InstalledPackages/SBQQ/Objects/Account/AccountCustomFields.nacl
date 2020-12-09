@@ -1,0 +1,215 @@
+type salesforce.Account {
+  salesforce.Checkbox SBQQ__AssetQuantitiesCombined__c {
+    apiName = "Account.SBQQ__AssetQuantitiesCombined__c"
+    label = "Combine Asset Quantities"
+    defaultValue = false
+    inlineHelpText = "Option to combine quantities of multiple assets for the same product into one line when renewal quote is generated."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Option to combine quantities of multiple assets for the same product into one line when renewal quote is generated."
+  }
+  salesforce.Checkbox SBQQ__CoTermedContractsCombined__c {
+    apiName = "Account.SBQQ__CoTermedContractsCombined__c"
+    label = "Combine Co-Termed Contracts"
+    defaultValue = false
+    inlineHelpText = "Enable to combine assets and subscriptions from multiple co-termed contracts. By default, each co-termed contract generates a separate group on renewal quote."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Flag that controls whether assets and subscriptions from multiple co-teremed contracts are rolled up together. By default, each co-termed contract generates a separate group on renewal quote."
+  }
+  salesforce.Picklist SBQQ__CoTerminationEvent__c {
+    apiName = "Account.SBQQ__CoTerminationEvent__c"
+    label = "Co-Termination Event"
+    _required = false
+    valueSet = [
+      {
+        fullName = "Add-on"
+        default = false
+        label = "Add-on"
+      },
+      {
+        fullName = "Renewal"
+        default = false
+        label = "Renewal"
+      },
+    ]
+    restricted = false
+    fieldDependency = {
+      controllingField = "SBQQ__ContractCoTermination__c"
+      valueSettings = [
+        {
+          valueName = "Add-on"
+          controllingFieldValue = [
+            "Always",
+            "Prompt",
+          ]
+        },
+        {
+          valueName = "Renewal"
+          controllingFieldValue = [
+            "Always",
+          ]
+        },
+      ]
+    }
+    inlineHelpText = "Determines when contracts are co-terminated."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Determines when contracts are co-terminated."
+    sorted = false
+  }
+  salesforce.Picklist SBQQ__ContractCoTermination__c {
+    apiName = "Account.SBQQ__ContractCoTermination__c"
+    label = "Contract Co-Termination"
+    _required = false
+    valueSet = [
+      {
+        fullName = "Never"
+        default = true
+        label = "Never"
+      },
+      {
+        fullName = "Always"
+        default = false
+        label = "Always"
+      },
+      {
+        fullName = "Prompt"
+        default = false
+        label = "Prompt"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Determines how service and subscription contracts for this customer are co-terminated."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Determines how service and subscription contracts for this customer are co-terminated."
+    sorted = false
+  }
+  salesforce.Lookup SBQQ__DefaultOpportunity__c {
+    apiName = "Account.SBQQ__DefaultOpportunity__c"
+    label = "Default Opportunity"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.Opportunity,
+    ]
+    inlineHelpText = "Default opportunity for this account used by an e-Commerce module to obtain the customer's price book and associate with \"shopping cart\" quotes."
+    createable = true
+    updateable = true
+    relationshipName = "WebAccounts"
+    queryable = true
+    description = "Default opportunity for this account used by an e-Commerce module to obtain the customer's price book and associate with \"shopping cart\" quotes."
+  }
+  salesforce.Checkbox SBQQ__IgnoreParentContractedPrices__c {
+    apiName = "Account.SBQQ__IgnoreParentContractedPrices__c"
+    label = "Ignore Parent Contracted Prices"
+    defaultValue = false
+    inlineHelpText = "Select if contracted prices should not be inherited from the parent account."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Select if contracted prices should not be inherited from the parent account."
+  }
+  salesforce.Checkbox SBQQ__PreserveBundle__c {
+    apiName = "Account.SBQQ__PreserveBundle__c"
+    label = "Preserve Bundle Structure"
+    defaultValue = false
+    inlineHelpText = "Select checkbox to maintain bundle hierarchy on renewal quotes and amendments."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Select to maintain bundle hierarchy on renewal quotes and amendments"
+  }
+  salesforce.Date SBQQ__PriceHoldEnd__c {
+    apiName = "Account.SBQQ__PriceHoldEnd__c"
+    label = "Price Hold End"
+    _required = false
+    inlineHelpText = "Enter date until which the prices must be held."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "End date for any price hold that may be in effect."
+  }
+  salesforce.Picklist SBQQ__RenewalModel__c {
+    apiName = "Account.SBQQ__RenewalModel__c"
+    label = "Renewal Model"
+    _required = false
+    valueSet = [
+      {
+        fullName = "Asset Based"
+        default = false
+        label = "Asset Based"
+      },
+      {
+        fullName = "Contract Based"
+        default = false
+        label = "Contract Based"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Choose Asset Based to make renewals based off of an account's Assets or choose Subscription based to makes renewals based off of subscriptions created from a quote."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "The option to distinguish between Subscription or Asset based renewal."
+    sorted = false
+  }
+  salesforce.Picklist SBQQ__RenewalPricingMethod__c {
+    apiName = "Account.SBQQ__RenewalPricingMethod__c"
+    label = "Renewal Pricing Method"
+    _required = false
+    valueSet = [
+      {
+        fullName = "Same"
+        default = true
+        label = "Same"
+      },
+      {
+        fullName = "List"
+        default = false
+        label = "List"
+      },
+      {
+        fullName = "Uplift"
+        default = false
+        label = "Uplift"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Use \"Same\" to keep the same price paid last time. Use \"List\" to use current list price. Use \"Uplift\" to use the price paid last time plus some uplift."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Method for pricing products on renewal."
+    sorted = false
+  }
+  salesforce.Picklist SBQQ__TaxExempt__c {
+    apiName = "Account.SBQQ__TaxExempt__c"
+    label = "Tax-Exempt"
+    _required = false
+    valueSet = [
+      {
+        fullName = "No"
+        default = true
+        label = "No"
+      },
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Selected if this account has active certificates"
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Selected if this account has active certificates"
+    sorted = false
+  }
+}

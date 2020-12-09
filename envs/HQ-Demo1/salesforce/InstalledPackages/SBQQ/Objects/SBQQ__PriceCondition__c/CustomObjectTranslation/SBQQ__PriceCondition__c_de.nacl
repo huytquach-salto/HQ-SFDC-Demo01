@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__PriceCondition__c_de@uuuub {
+  fullName = "SBQQ__PriceCondition__c-de"
+  _parent = [
+    salesforce.SBQQ__PriceCondition__c,
+  ]
+}

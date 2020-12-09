@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__PricingGuidanceTier__c_pt_BR@uuuubu {
+  fullName = "SBQQ__PricingGuidanceTier__c-pt_BR"
+  _parent = [
+    salesforce.SBQQ__PricingGuidanceTier__c,
+  ]
+}

@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__QuoteLinePricingGuidance__c_de@uuuub {
+  fullName = "SBQQ__QuoteLinePricingGuidance__c-de"
+  _parent = [
+    salesforce.SBQQ__QuoteLinePricingGuidance__c,
+  ]
+}

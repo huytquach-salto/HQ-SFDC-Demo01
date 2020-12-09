@@ -1,0 +1,35 @@
+salesforce.CustomObjectTranslation ConsumptionSchedule_pt_BR@bu {
+  fullName = "ConsumptionSchedule-pt_BR"
+  fieldSets = [
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.ConsumptionSchedule_SBQQ__CompactLayout
+    },
+  ]
+  fields = [
+    {
+      label = ""
+      name = salesforce.ConsumptionSchedule.field.SBQQ__Category__c
+      picklistValues = [
+        {
+          masterLabel = "Rates"
+          translation = "Taxas"
+        },
+      ]
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Consumption Schedule Layout"
+      sections = [
+        {
+          label = "Links personalizados"
+          section = "Custom Links"
+        },
+      ]
+    },
+  ]
+  _parent = [
+    salesforce.ConsumptionSchedule,
+  ]
+}

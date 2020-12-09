@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__Localization__c_ja@uuuub {
+  fullName = "SBQQ__Localization__c-ja"
+  _parent = [
+    salesforce.SBQQ__Localization__c,
+  ]
+}

@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__DiscountTier__c_de@uuuub {
+  fullName = "SBQQ__DiscountTier__c-de"
+  _parent = [
+    salesforce.SBQQ__DiscountTier__c,
+  ]
+}

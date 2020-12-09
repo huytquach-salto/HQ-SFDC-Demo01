@@ -1,0 +1,35 @@
+salesforce.CustomObjectTranslation ConsumptionSchedule_ja@b {
+  fullName = "ConsumptionSchedule-ja"
+  fieldSets = [
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.ConsumptionSchedule_SBQQ__CompactLayout
+    },
+  ]
+  fields = [
+    {
+      label = ""
+      name = salesforce.ConsumptionSchedule.field.SBQQ__Category__c
+      picklistValues = [
+        {
+          masterLabel = "Rates"
+          translation = "レート"
+        },
+      ]
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Consumption Schedule Layout"
+      sections = [
+        {
+          label = "カスタムリンク"
+          section = "Custom Links"
+        },
+      ]
+    },
+  ]
+  _parent = [
+    salesforce.ConsumptionSchedule,
+  ]
+}

@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__PriceSchedule__c_de@uuuub {
+  fullName = "SBQQ__PriceSchedule__c-de"
+  _parent = [
+    salesforce.SBQQ__PriceSchedule__c,
+  ]
+}

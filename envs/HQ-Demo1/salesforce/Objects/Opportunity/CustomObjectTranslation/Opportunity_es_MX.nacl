@@ -1,0 +1,134 @@
+salesforce.CustomObjectTranslation Opportunity_es_MX@bu {
+  fullName = "Opportunity-es_MX"
+  fields = [
+    {
+      label = ""
+      name = salesforce.Opportunity.field.Budget_Confirmed__c
+    },
+    {
+      label = ""
+      name = salesforce.Opportunity.field.Discovery_Completed__c
+    },
+    {
+      label = ""
+      name = salesforce.Opportunity.field.Loss_Reason__c
+      picklistValues = [
+        {
+          masterLabel = "Lost to Competitor"
+          translation = ""
+        },
+        {
+          masterLabel = "No Budget / Lost Funding"
+          translation = ""
+        },
+        {
+          masterLabel = "No Decision / Non-Responsive"
+          translation = ""
+        },
+        {
+          masterLabel = "Other"
+          translation = ""
+        },
+        {
+          masterLabel = "Price"
+          translation = ""
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Opportunity.field.ROI_Analysis_Completed__c
+    },
+    {
+      help = "Búsqueda de consulta de su contrato corregido."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__AmendedContract__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Salesforce CPQ utiliza este campo para convertir automáticamente activos y suscripciones."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__Contracted__c
+    },
+    {
+      help = "Seleccione esta casilla de verificación para crear precios contratados sin crear un contrato."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__CreateContractedPrices__c
+    },
+    {
+      help = "El identificador exclusivo para la transacción Corrección: Presupuesto repetido, que es el Id. del presupuesto principal original."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__OrderGroupID__c
+    },
+    {
+      help = "Seleccione esta casilla de verificación para crear automáticamente un pedido a partir del presupuesto principal."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__Ordered__c
+    },
+    {
+      help = "Salesforce CPQ esta opción para apuntar al presupuesto principal de esta oportunidad."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__PrimaryQuote__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__QuotePricebookId__c
+    },
+    {
+      help = "Indica que esta oportunidad es una oportunidad de renovación."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__Renewal__c
+    },
+    {
+      help = "El contrato que esta oportunidad de renovación está renovando. Si se resumen varios contratos en esta oportunidad, esta opción apunta al contrato principal."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__RenewedContract__c
+      relationshipLabel = ""
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Opportunity Layout"
+      sections = [
+        {
+          label = ""
+          section = "Custom Links"
+        },
+        {
+          label = ""
+          section = "Recalculating"
+        },
+        {
+          label = ""
+          section = "Salesforce CPQ Information"
+        },
+      ]
+    },
+  ]
+  quickActions = {
+    label = ""
+    name = "SBQQ__CreateOrderLightning"
+  }
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Opportunity_SBQQ__Amend_Assets
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Opportunity_SBQQ__Amend_Contract
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Opportunity_SBQQ__CreateOrder
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Opportunity_SBQQ__Include_Document
+    },
+  ]
+  _parent = [
+    salesforce.Opportunity,
+  ]
+}

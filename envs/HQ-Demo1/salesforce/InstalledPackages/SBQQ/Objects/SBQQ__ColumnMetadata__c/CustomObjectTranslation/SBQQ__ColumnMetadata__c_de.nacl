@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__ColumnMetadata__c_de@uuuub {
+  fullName = "SBQQ__ColumnMetadata__c-de"
+  _parent = [
+    salesforce.SBQQ__ColumnMetadata__c,
+  ]
+}

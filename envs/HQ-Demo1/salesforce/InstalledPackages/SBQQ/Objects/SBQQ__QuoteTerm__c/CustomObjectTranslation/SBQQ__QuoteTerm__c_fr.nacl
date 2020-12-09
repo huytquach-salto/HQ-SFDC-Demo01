@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__QuoteTerm__c_fr@uuuub {
+  fullName = "SBQQ__QuoteTerm__c-fr"
+  _parent = [
+    salesforce.SBQQ__QuoteTerm__c,
+  ]
+}

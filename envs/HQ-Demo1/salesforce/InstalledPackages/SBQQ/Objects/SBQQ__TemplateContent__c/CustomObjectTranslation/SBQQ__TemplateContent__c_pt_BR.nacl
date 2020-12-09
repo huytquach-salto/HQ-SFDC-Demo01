@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__TemplateContent__c_pt_BR@uuuubu {
+  fullName = "SBQQ__TemplateContent__c-pt_BR"
+  _parent = [
+    salesforce.SBQQ__TemplateContent__c,
+  ]
+}

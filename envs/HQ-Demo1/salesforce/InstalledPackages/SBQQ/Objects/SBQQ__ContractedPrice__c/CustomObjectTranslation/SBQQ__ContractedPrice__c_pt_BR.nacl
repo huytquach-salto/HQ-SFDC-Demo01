@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__ContractedPrice__c_pt_BR@uuuubu {
+  fullName = "SBQQ__ContractedPrice__c-pt_BR"
+  _parent = [
+    salesforce.SBQQ__ContractedPrice__c,
+  ]
+}

@@ -1,0 +1,98 @@
+salesforce.CustomObjectTranslation Order_es_MX@bu {
+  fullName = "Order-es_MX"
+  fields = [
+    {
+      help = "Indica si el pedido está contratado."
+      label = ""
+      name = salesforce.Order.field.SBQQ__Contracted__c
+    },
+    {
+      help = "\"Por Fecha de finalización de suscripción\" crea un contrato separado para cada Fecha de finalización de suscripción única, que contiene únicamente esas suscripciones. \"Contrato único\" crea un contrato que contiene todas las suscripciones, sin que las fechas de finalización sean relevantes."
+      label = ""
+      name = salesforce.Order.field.SBQQ__ContractingMethod__c
+    },
+    {
+      help = "Importe total de todos las reservas de productos de pedido."
+      label = ""
+      name = salesforce.Order.field.SBQQ__OrderBookings__c
+    },
+    {
+      help = "El plazo de pago para este pedido."
+      label = ""
+      name = salesforce.Order.field.SBQQ__PaymentTerm__c
+    },
+    {
+      help = "El mensaje de estado del cálculo de los precios."
+      label = ""
+      name = salesforce.Order.field.SBQQ__PriceCalcStatusMessage__c
+    },
+    {
+      help = "Indica el estado del trabajo de cálculo de los precios del pedido. Está establecido por el sistema."
+      label = ""
+      name = salesforce.Order.field.SBQQ__PriceCalcStatus__c
+    },
+    {
+      help = "El presupuesto desde el que se crea este pedido."
+      label = ""
+      name = salesforce.Order.field.SBQQ__Quote__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Especifique el plazo de la renovación. Coincide de forma predeterminada con el plazo original del contrato."
+      label = ""
+      name = salesforce.Order.field.SBQQ__RenewalTerm__c
+    },
+    {
+      help = "Índice de los aumentos del precio de renovación."
+      label = ""
+      name = salesforce.Order.field.SBQQ__RenewalUpliftRate__c
+    },
+    {
+      help = "Importe estimado de los impuestos"
+      label = ""
+      name = salesforce.Order.field.SBQQ__TaxAmount__c
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Order Layout"
+      sections = [
+        {
+          label = ""
+          section = "Contract Information"
+        },
+        {
+          label = ""
+          section = "Custom Links"
+        },
+        {
+          label = ""
+          section = "OrderContracting"
+        },
+        {
+          label = ""
+          section = "Quote and Opportunity"
+        },
+        {
+          label = ""
+          section = "Shipping and Billing Information"
+        },
+      ]
+    },
+  ]
+  validationRules = [
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.Order_SBQQ__Cannot_Contract_New_Order
+    },
+  ]
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Order_SBQQ__EditOrderProducts
+    },
+  ]
+  _parent = [
+    salesforce.Order,
+  ]
+}

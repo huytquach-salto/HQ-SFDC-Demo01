@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__RecordJob__c_de@uuuub {
+  fullName = "SBQQ__RecordJob__c-de"
+  _parent = [
+    salesforce.SBQQ__RecordJob__c,
+  ]
+}

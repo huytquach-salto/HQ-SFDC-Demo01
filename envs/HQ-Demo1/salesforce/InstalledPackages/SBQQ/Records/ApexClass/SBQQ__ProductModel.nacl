@@ -1,0 +1,6 @@
+salesforce.ApexClass SBQQ__ProductModel {
+  apiVersion = 49
+  status = "Active"
+  fullName = "SBQQ__ProductModel"
+  content = "(hidden)"
+}

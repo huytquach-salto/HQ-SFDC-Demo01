@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__ImportFormat__c_fr@uuuub {
+  fullName = "SBQQ__ImportFormat__c-fr"
+  _parent = [
+    salesforce.SBQQ__ImportFormat__c,
+  ]
+}

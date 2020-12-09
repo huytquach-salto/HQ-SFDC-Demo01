@@ -1,0 +1,134 @@
+salesforce.CustomObjectTranslation Opportunity_ja@b {
+  fullName = "Opportunity-ja"
+  fields = [
+    {
+      label = ""
+      name = salesforce.Opportunity.field.Budget_Confirmed__c
+    },
+    {
+      label = ""
+      name = salesforce.Opportunity.field.Discovery_Completed__c
+    },
+    {
+      label = ""
+      name = salesforce.Opportunity.field.Loss_Reason__c
+      picklistValues = [
+        {
+          masterLabel = "Lost to Competitor"
+          translation = ""
+        },
+        {
+          masterLabel = "No Budget / Lost Funding"
+          translation = ""
+        },
+        {
+          masterLabel = "No Decision / Non-Responsive"
+          translation = ""
+        },
+        {
+          masterLabel = "Other"
+          translation = ""
+        },
+        {
+          masterLabel = "Price"
+          translation = ""
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Opportunity.field.ROI_Analysis_Completed__c
+    },
+    {
+      help = "修正対象契約へのルックアップ。"
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__AmendedContract__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Salesforce CPQ では、この項目を使用して納入商品とサブスクリプションを自動的に変換します。"
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__Contracted__c
+    },
+    {
+      help = "契約を作成せずに契約価格を作成する場合は、このチェックボックスをオンにします。"
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__CreateContractedPrices__c
+    },
+    {
+      help = "修正: 再見積トランザクションの一意の ID であり、元の主見積の ID です。"
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__OrderGroupID__c
+    },
+    {
+      help = "主見積から注文を自動的に作成するには、このチェックボックスをオンにします。"
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__Ordered__c
+    },
+    {
+      help = "Salesforce CPQ では、これを使用してこの商談の主見積を指し示します。"
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__PrimaryQuote__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__QuotePricebookId__c
+    },
+    {
+      help = "この商談が更新商談であることを示します。"
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__Renewal__c
+    },
+    {
+      help = "この更新商談によって更新される契約。複数の契約がこの商談に積み上げ集計されている場合、これは主契約を指し示します。"
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__RenewedContract__c
+      relationshipLabel = ""
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Opportunity Layout"
+      sections = [
+        {
+          label = ""
+          section = "Custom Links"
+        },
+        {
+          label = ""
+          section = "Recalculating"
+        },
+        {
+          label = ""
+          section = "Salesforce CPQ Information"
+        },
+      ]
+    },
+  ]
+  quickActions = {
+    label = ""
+    name = "SBQQ__CreateOrderLightning"
+  }
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Opportunity_SBQQ__Amend_Assets
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Opportunity_SBQQ__Amend_Contract
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Opportunity_SBQQ__CreateOrder
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Opportunity_SBQQ__Include_Document
+    },
+  ]
+  _parent = [
+    salesforce.Opportunity,
+  ]
+}

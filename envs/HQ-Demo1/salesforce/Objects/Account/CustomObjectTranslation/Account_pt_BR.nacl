@@ -1,0 +1,194 @@
+salesforce.CustomObjectTranslation Account_pt_BR@bu {
+  fullName = "Account-pt_BR"
+  fields = [
+    {
+      label = ""
+      name = salesforce.Account.field.Domain__c
+    },
+    {
+      help = "Opção para combinar as quantidades de vários ativos para o mesmo produto em uma linha quando a cotação de renovação é gerada."
+      label = ""
+      name = salesforce.Account.field.SBQQ__AssetQuantitiesCombined__c
+    },
+    {
+      help = "Permita combinar ativos e assinaturas a partir de vários contratos com termo combinado. Por padrão, cada contrato com termo combinado gera um grupo separado na cotação de renovação."
+      label = ""
+      name = salesforce.Account.field.SBQQ__CoTermedContractsCombined__c
+    },
+    {
+      help = "Determina quando os contratos são encerrados de modo combinado."
+      label = ""
+      name = salesforce.Account.field.SBQQ__CoTerminationEvent__c
+      picklistValues = [
+        {
+          masterLabel = "Add-on"
+          translation = "Complemento"
+        },
+        {
+          masterLabel = "Renewal"
+          translation = "Renovação"
+        },
+      ]
+    },
+    {
+      help = "Determina como os contratos de serviço e as assinaturas para esse cliente são encerrados de modo combinado."
+      label = ""
+      name = salesforce.Account.field.SBQQ__ContractCoTermination__c
+      picklistValues = [
+        {
+          masterLabel = "Always"
+          translation = "Sempre"
+        },
+        {
+          masterLabel = "Never"
+          translation = "Nunca"
+        },
+        {
+          masterLabel = "Prompt"
+          translation = "Avisar"
+        },
+      ]
+    },
+    {
+      help = "Oportunidade padrão para essa conta usada por um módulo de comércio eletrônico para obter o catálogo de preços do cliente e associar a cotações do \"carrinho de compras\"."
+      label = ""
+      name = salesforce.Account.field.SBQQ__DefaultOpportunity__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Selecione se os preços contratados não devam ser herdados da conta pai."
+      label = ""
+      name = salesforce.Account.field.SBQQ__IgnoreParentContractedPrices__c
+    },
+    {
+      help = "Selecione a caixa de seleção para manter a hierarquia de pacotes em cotações de renovação e alterações."
+      label = ""
+      name = salesforce.Account.field.SBQQ__PreserveBundle__c
+    },
+    {
+      help = "Insira a data até a qual os preços devem ser retidos."
+      label = ""
+      name = salesforce.Account.field.SBQQ__PriceHoldEnd__c
+    },
+    {
+      help = "Escolha Baseado em ativo para tornar as renovações baseadas nos Ativos da conta ou escolha Baseado em assinatura para tornar as renovações baseadas em assinaturas criadas a partir de uma cotação."
+      label = ""
+      name = salesforce.Account.field.SBQQ__RenewalModel__c
+      picklistValues = [
+        {
+          masterLabel = "Asset Based"
+          translation = "Baseado em ativo"
+        },
+        {
+          masterLabel = "Contract Based"
+          translation = "Baseado em contrato"
+        },
+      ]
+    },
+    {
+      help = "Use \"Mesmo\" para manter o mesmo preço pago na última vez. Use \"Lista\" para usar o preço de lista atual. Use \"Aumento\" para usar o preço pago na última vez mais algum aumento."
+      label = ""
+      name = salesforce.Account.field.SBQQ__RenewalPricingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "List"
+          translation = "Lista"
+        },
+        {
+          masterLabel = "Same"
+          translation = "Mesmo"
+        },
+        {
+          masterLabel = "Uplift"
+          translation = "Aumento"
+        },
+      ]
+    },
+    {
+      help = "Selecione se essa conta tiver certificados ativos"
+      label = ""
+      name = salesforce.Account.field.SBQQ__TaxExempt__c
+      picklistValues = [
+        {
+          masterLabel = "No"
+          translation = "Não"
+        },
+        {
+          masterLabel = "Yes"
+          translation = "Sim"
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Account.field.SalesScore__c
+    },
+    {
+      label = ""
+      name = salesforce.Account.field.Score__c
+    },
+    {
+      help = ""
+      label = ""
+      name = salesforce.Account.field.Yariv_ref__c
+      relationshipLabel = ""
+    },
+  ]
+  layouts = [
+    {
+      layout = "Account Layout"
+      sections = [
+        {
+          label = ""
+          section = "Account Summary"
+        },
+      ]
+    },
+    {
+      layout = "CPQ Account Layout"
+      sections = [
+        {
+          label = "Informações adicionais"
+          section = "Additional Information"
+        },
+        {
+          label = "Links personalizados"
+          section = "Custom Links"
+        },
+        {
+          label = "Informações de renovação/encerramento combinado"
+          section = "Renewal/Co-Term Information"
+        },
+      ]
+    },
+  ]
+  quickActions = {
+    label = ""
+    name = salesforce.QuickAction.instance.Account_Child_Account@vu
+  }
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Account_GoogleMaps
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Account_GoogleNews
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Account_GoogleSearch
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Account_SBQQ__Amend_Assets
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Account_SBQQ__Renew_Assets
+    },
+  ]
+  _parent = [
+    salesforce.Account,
+  ]
+}

@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__OptionConstraint__c_fr@uuuub {
+  fullName = "SBQQ__OptionConstraint__c-fr"
+  _parent = [
+    salesforce.SBQQ__OptionConstraint__c,
+  ]
+}

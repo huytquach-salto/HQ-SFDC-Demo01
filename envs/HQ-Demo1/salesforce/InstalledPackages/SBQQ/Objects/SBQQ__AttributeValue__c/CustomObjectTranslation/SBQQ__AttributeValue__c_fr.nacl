@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__AttributeValue__c_fr@uuuub {
+  fullName = "SBQQ__AttributeValue__c-fr"
+  _parent = [
+    salesforce.SBQQ__AttributeValue__c,
+  ]
+}

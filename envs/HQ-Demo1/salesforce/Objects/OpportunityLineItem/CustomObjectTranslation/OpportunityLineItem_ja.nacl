@@ -1,0 +1,23 @@
+salesforce.CustomObjectTranslation OpportunityLineItem_ja@b {
+  fullName = "OpportunityLineItem-ja"
+  fields = [
+    {
+      help = "この商品のバンドルからの商談商品の ID。"
+      label = ""
+      name = salesforce.OpportunityLineItem.field.SBQQ__ParentID__c
+    },
+    {
+      label = ""
+      name = salesforce.OpportunityLineItem.field.SBQQ__QuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      help = "契約の価格設定を決定するサブスクリプション種別を示します。"
+      label = ""
+      name = salesforce.OpportunityLineItem.field.SBQQ__SubscriptionType__c
+    },
+  ]
+  _parent = [
+    salesforce.OpportunityLineItem,
+  ]
+}

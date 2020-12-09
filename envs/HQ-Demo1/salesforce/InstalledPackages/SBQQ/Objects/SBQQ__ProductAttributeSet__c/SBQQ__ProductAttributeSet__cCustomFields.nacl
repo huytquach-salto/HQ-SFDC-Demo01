@@ -1,0 +1,82 @@
+type salesforce.SBQQ__ProductAttributeSet__c {
+  salesforce.Lookup SBQQ__AttributeSet__c {
+    apiName = "SBQQ__ProductAttributeSet__c.SBQQ__AttributeSet__c"
+    label = "Attribute Sets"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.SBQQ__AttributeSet__c,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Attribute_Sets"
+    queryable = true
+  }
+  salesforce.FormulaText SBQQ__ConfiguredSKU__c {
+    apiName = "SBQQ__ProductAttributeSet__c.SBQQ__ConfiguredSKU__c"
+    label = "Configured SKU"
+    _required = false
+    formula = "CASESAFEID(SBQQ__ProductOption__r.SBQQ__ConfiguredSKU__r.Id)"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1300
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+  }
+  salesforce.FormulaText SBQQ__ProductName__c {
+    apiName = "SBQQ__ProductAttributeSet__c.SBQQ__ProductName__c"
+    label = "Parent Product Name"
+    _required = false
+    formula = "SBQQ__ProductOption__r.SBQQ__ConfiguredSKU__r.Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1300
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+  }
+  salesforce.FormulaText SBQQ__ProductOptionName__c {
+    apiName = "SBQQ__ProductAttributeSet__c.SBQQ__ProductOptionName__c"
+    label = "Product Option Name"
+    _required = false
+    formula = "SBQQ__ProductOption__r.SBQQ__OptionalSKU__r.Name"
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1300
+    queryable = true
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+  }
+  salesforce.Lookup SBQQ__ProductOption__c {
+    apiName = "SBQQ__ProductAttributeSet__c.SBQQ__ProductOption__c"
+    label = "Product Option"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.SBQQ__ProductOption__c,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "Product_Option"
+    queryable = true
+  }
+  salesforce.Number SBQQ__Sequence__c {
+    apiName = "SBQQ__ProductAttributeSet__c.SBQQ__Sequence__c"
+    label = "Sequence"
+    _required = true
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+  }
+}

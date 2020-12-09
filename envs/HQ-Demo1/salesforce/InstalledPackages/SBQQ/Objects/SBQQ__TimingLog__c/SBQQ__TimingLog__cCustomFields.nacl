@@ -1,0 +1,80 @@
+type salesforce.SBQQ__TimingLog__c {
+  salesforce.Text SBQQ__Element__c {
+    apiName = "SBQQ__TimingLog__c.SBQQ__Element__c"
+    label = "Element"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 80
+    queryable = true
+    description = "Element name"
+    externalId = false
+  }
+  salesforce.Number SBQQ__Finish__c {
+    apiName = "SBQQ__TimingLog__c.SBQQ__Finish__c"
+    label = "Finish"
+    _required = false
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    description = "Finishing CPU time"
+    externalId = false
+  }
+  salesforce.LongTextArea SBQQ__Log__c {
+    apiName = "SBQQ__TimingLog__c.SBQQ__Log__c"
+    label = "Log"
+    _required = false
+    inlineHelpText = "Log entry"
+    createable = true
+    updateable = true
+    length = 32768
+    queryable = true
+    description = "Log entry"
+    visibleLines = 3
+  }
+  salesforce.Number SBQQ__Start__c {
+    apiName = "SBQQ__TimingLog__c.SBQQ__Start__c"
+    label = "Start"
+    _required = false
+    precision = 18
+    scale = 0
+    inlineHelpText = "Starting CPU time"
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    description = "Starting CPU time"
+    externalId = false
+  }
+  salesforce.Number SBQQ__Total__c {
+    apiName = "SBQQ__TimingLog__c.SBQQ__Total__c"
+    label = "Total CPU Time"
+    _required = false
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    description = "Total CPU time consumed."
+    externalId = false
+  }
+  salesforce.Text SBQQ__URL__c {
+    apiName = "SBQQ__TimingLog__c.SBQQ__URL__c"
+    label = "URL"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    description = "Target of the request"
+    externalId = false
+  }
+}

@@ -1,0 +1,134 @@
+salesforce.CustomObjectTranslation Opportunity_fr@b {
+  fullName = "Opportunity-fr"
+  fields = [
+    {
+      label = ""
+      name = salesforce.Opportunity.field.Budget_Confirmed__c
+    },
+    {
+      label = ""
+      name = salesforce.Opportunity.field.Discovery_Completed__c
+    },
+    {
+      label = ""
+      name = salesforce.Opportunity.field.Loss_Reason__c
+      picklistValues = [
+        {
+          masterLabel = "Lost to Competitor"
+          translation = ""
+        },
+        {
+          masterLabel = "No Budget / Lost Funding"
+          translation = ""
+        },
+        {
+          masterLabel = "No Decision / Non-Responsive"
+          translation = ""
+        },
+        {
+          masterLabel = "Other"
+          translation = ""
+        },
+        {
+          masterLabel = "Price"
+          translation = ""
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Opportunity.field.ROI_Analysis_Completed__c
+    },
+    {
+      help = "Référence à votre contrat amendé."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__AmendedContract__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Salesforce CPQ utilise ce champ pour convertir automatiquement les ressources et les abonnements."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__Contracted__c
+    },
+    {
+      help = "Sélectionnez cette case pour créer des prix contractés sans créer de contrat."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__CreateContractedPrices__c
+    },
+    {
+      help = "Identificateur unique de la transaction du nouveau devis d’amendement, qui correspond à l'ID du devis principal d'origine."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__OrderGroupID__c
+    },
+    {
+      help = "Sélectionnez cette case pour créer automatiquement une commande à partir du devis principal."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__Ordered__c
+    },
+    {
+      help = "Salesforce CPQ l'utilise pour pointer vers le devis principal de cette opportunité."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__PrimaryQuote__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__QuotePricebookId__c
+    },
+    {
+      help = "Indique que cette opportunité est un renouvellement."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__Renewal__c
+    },
+    {
+      help = "Contrat renouvelé par cette opportunité de renouvellement. Si les contrats sont cumulés dans cette opportunité, il pointe vers le contrat principal."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__RenewedContract__c
+      relationshipLabel = ""
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Opportunity Layout"
+      sections = [
+        {
+          label = ""
+          section = "Custom Links"
+        },
+        {
+          label = ""
+          section = "Recalculating"
+        },
+        {
+          label = ""
+          section = "Salesforce CPQ Information"
+        },
+      ]
+    },
+  ]
+  quickActions = {
+    label = ""
+    name = "SBQQ__CreateOrderLightning"
+  }
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Opportunity_SBQQ__Amend_Assets
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Opportunity_SBQQ__Amend_Contract
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Opportunity_SBQQ__CreateOrder
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Opportunity_SBQQ__Include_Document
+    },
+  ]
+  _parent = [
+    salesforce.Opportunity,
+  ]
+}

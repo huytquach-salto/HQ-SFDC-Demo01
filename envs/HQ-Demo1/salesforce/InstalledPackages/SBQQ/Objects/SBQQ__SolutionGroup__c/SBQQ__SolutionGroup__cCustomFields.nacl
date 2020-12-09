@@ -1,0 +1,14 @@
+type salesforce.SBQQ__SolutionGroup__c {
+  salesforce.LongTextArea SBQQ__Description__c {
+    apiName = "SBQQ__SolutionGroup__c.SBQQ__Description__c"
+    label = "Description"
+    _required = false
+    inlineHelpText = "Enter a description for this SolutionGroup."
+    createable = true
+    updateable = true
+    length = 5000
+    queryable = true
+    description = "Description for this SolutionGroup."
+    visibleLines = 4
+  }
+}

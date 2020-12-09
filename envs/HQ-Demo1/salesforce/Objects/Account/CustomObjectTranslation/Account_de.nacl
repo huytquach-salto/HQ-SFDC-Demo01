@@ -1,0 +1,194 @@
+salesforce.CustomObjectTranslation Account_de@b {
+  fullName = "Account-de"
+  fields = [
+    {
+      label = ""
+      name = salesforce.Account.field.Domain__c
+    },
+    {
+      help = "Option, mit der beim Erstellen des Verlängerungsangebots die Mengen für mehrere Vermögenswerte für dasselbe Produkt in einem Belegposten zusammengefasst werden können."
+      label = ""
+      name = salesforce.Account.field.SBQQ__AssetQuantitiesCombined__c
+    },
+    {
+      help = "Möglichkeit, Vermögenswerte und Abonnements aus mehreren gleichlautenden Verträgen zusammenzufassen. Standardmäßig wird für jeden gleichlautenden Vertrag eine separate Gruppe im Verlängerungsangebot erstellt."
+      label = ""
+      name = salesforce.Account.field.SBQQ__CoTermedContractsCombined__c
+    },
+    {
+      help = "Bestimmt, wann Verträge gemeinsam beendet werden."
+      label = ""
+      name = salesforce.Account.field.SBQQ__CoTerminationEvent__c
+      picklistValues = [
+        {
+          masterLabel = "Add-on"
+          translation = "Add-On"
+        },
+        {
+          masterLabel = "Renewal"
+          translation = "Vertragsverlängerung"
+        },
+      ]
+    },
+    {
+      help = "Bestimmt, wie Service- und Abonnementverträge für diesen Kunden gemeinsam beendet werden."
+      label = ""
+      name = salesforce.Account.field.SBQQ__ContractCoTermination__c
+      picklistValues = [
+        {
+          masterLabel = "Always"
+          translation = "Immer"
+        },
+        {
+          masterLabel = "Never"
+          translation = "Nie"
+        },
+        {
+          masterLabel = "Prompt"
+          translation = "Eingabeaufforderung"
+        },
+      ]
+    },
+    {
+      help = "Standard-Opportunity für diesen Account. Wird von einem e-Commerce-Modul verwendet, um das Preisbuch des Kunden abzurufen und mit Angeboten im \"Einkaufswagen\" zu verknüpfen."
+      label = ""
+      name = salesforce.Account.field.SBQQ__DefaultOpportunity__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Wählen Sie diese Option, wenn Vertragspreise nicht vom übergeordneten Account übernommen werden sollen."
+      label = ""
+      name = salesforce.Account.field.SBQQ__IgnoreParentContractedPrices__c
+    },
+    {
+      help = "Aktivieren Sie dieses Kontrollkästchen, um die Pakethierarchie bei Verlängerungsangeboten und Vertragsänderungen beizubehalten."
+      label = ""
+      name = salesforce.Account.field.SBQQ__PreserveBundle__c
+    },
+    {
+      help = "Geben Sie das Datum ein, bis zu dem die Preise gehalten werden müssen."
+      label = ""
+      name = salesforce.Account.field.SBQQ__PriceHoldEnd__c
+    },
+    {
+      help = "Wählen Sie \"Vermögenswertbasiert\", um Verlängerungen auf der Basis der Vermögenswerte eines Accounts vorzunehmen, oder \"Abonnementbasiert\", wenn Verlängerungen auf Abonnements basieren sollen, die aus einem Angebot erstellt werden."
+      label = ""
+      name = salesforce.Account.field.SBQQ__RenewalModel__c
+      picklistValues = [
+        {
+          masterLabel = "Asset Based"
+          translation = "Vermögenswertbasiert"
+        },
+        {
+          masterLabel = "Contract Based"
+          translation = "Vertragsbasiert"
+        },
+      ]
+    },
+    {
+      help = "Bei Auswahl von \"Gleich\" behalten Sie den Preis bei, der beim letzten Mal bezahlt wurde. Wählen Sie \"Liste\", um den aktuellen Listenpreis zu verwenden. Bei \"Aufschlag\" gilt der beim letzten Mal bezahlte Preis zuzüglich eines bestimmten Aufschlags."
+      label = ""
+      name = salesforce.Account.field.SBQQ__RenewalPricingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "List"
+          translation = "Liste"
+        },
+        {
+          masterLabel = "Same"
+          translation = "Gleich"
+        },
+        {
+          masterLabel = "Uplift"
+          translation = "Aufschlag"
+        },
+      ]
+    },
+    {
+      help = "Ausgewählt, wenn dieser Account über aktive Zertifikate verfügt"
+      label = ""
+      name = salesforce.Account.field.SBQQ__TaxExempt__c
+      picklistValues = [
+        {
+          masterLabel = "No"
+          translation = "Nein"
+        },
+        {
+          masterLabel = "Yes"
+          translation = "Ja"
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Account.field.SalesScore__c
+    },
+    {
+      label = ""
+      name = salesforce.Account.field.Score__c
+    },
+    {
+      help = ""
+      label = ""
+      name = salesforce.Account.field.Yariv_ref__c
+      relationshipLabel = ""
+    },
+  ]
+  layouts = [
+    {
+      layout = "Account Layout"
+      sections = [
+        {
+          label = ""
+          section = "Account Summary"
+        },
+      ]
+    },
+    {
+      layout = "CPQ Account Layout"
+      sections = [
+        {
+          label = "Zusätzliche Informationen"
+          section = "Additional Information"
+        },
+        {
+          label = "Benutzerdefinierte Links"
+          section = "Custom Links"
+        },
+        {
+          label = "Informationen zu Verlängerung/gleichem Wortlaut"
+          section = "Renewal/Co-Term Information"
+        },
+      ]
+    },
+  ]
+  quickActions = {
+    label = ""
+    name = salesforce.QuickAction.instance.Account_Child_Account@vu
+  }
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Account_GoogleMaps
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Account_GoogleNews
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Account_GoogleSearch
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Account_SBQQ__Amend_Assets
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Account_SBQQ__Renew_Assets
+    },
+  ]
+  _parent = [
+    salesforce.Account,
+  ]
+}

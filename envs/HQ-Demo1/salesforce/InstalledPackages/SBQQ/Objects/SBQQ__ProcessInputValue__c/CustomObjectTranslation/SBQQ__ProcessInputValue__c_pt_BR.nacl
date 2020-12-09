@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__ProcessInputValue__c_pt_BR@uuuubu {
+  fullName = "SBQQ__ProcessInputValue__c-pt_BR"
+  _parent = [
+    salesforce.SBQQ__ProcessInputValue__c,
+  ]
+}

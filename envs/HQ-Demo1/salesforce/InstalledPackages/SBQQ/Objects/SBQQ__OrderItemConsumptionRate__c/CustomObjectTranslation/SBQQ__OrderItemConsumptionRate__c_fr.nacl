@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__OrderItemConsumptionRate__c_fr@uuuub {
+  fullName = "SBQQ__OrderItemConsumptionRate__c-fr"
+  _parent = [
+    salesforce.SBQQ__OrderItemConsumptionRate__c,
+  ]
+}

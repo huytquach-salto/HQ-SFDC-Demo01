@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__ConfigurationAttribute__c_en_US@uuuubu {
+  fullName = "SBQQ__ConfigurationAttribute__c-en_US"
+  _parent = [
+    salesforce.SBQQ__ConfigurationAttribute__c,
+  ]
+}

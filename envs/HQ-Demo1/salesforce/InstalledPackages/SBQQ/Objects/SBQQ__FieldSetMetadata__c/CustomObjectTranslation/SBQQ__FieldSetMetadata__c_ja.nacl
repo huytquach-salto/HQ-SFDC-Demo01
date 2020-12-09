@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__FieldSetMetadata__c_ja@uuuub {
+  fullName = "SBQQ__FieldSetMetadata__c-ja"
+  _parent = [
+    salesforce.SBQQ__FieldSetMetadata__c,
+  ]
+}

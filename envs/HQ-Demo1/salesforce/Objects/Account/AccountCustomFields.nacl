@@ -1,0 +1,51 @@
+type salesforce.Account {
+  salesforce.Lookup Yariv_ref__c {
+    apiName = "Account.Yariv_ref__c"
+    label = "Yariv ref"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.Yariv__c,
+    ]
+    inlineHelpText = "help bla bla"
+    createable = true
+    updateable = true
+    relationshipName = "Accounts"
+    queryable = true
+    description = "desc bla bla"
+  }
+  salesforce.Number Score__c {
+    apiName = "Account.Score__c"
+    label = "Score"
+    _required = false
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    description = "Denotes the max marketing score of any contact in this account"
+    externalId = false
+  }
+  salesforce.Url Domain__c {
+    apiName = "Account.Domain__c"
+    label = "Domain"
+    _required = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Number SalesScore__c {
+    apiName = "Account.SalesScore__c"
+    label = "Score"
+    _required = false
+    precision = 18
+    scale = 0
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    description = "Denotes the max sales score of any contact in this account"
+    externalId = false
+  }
+}

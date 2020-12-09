@@ -1,0 +1,79 @@
+salesforce.CustomObjectTranslation User_pt_BR@bu {
+  fullName = "User-pt_BR"
+  fields = [
+    {
+      help = "Personalize a guia padrão na página Pesquisa de produto."
+      label = ""
+      name = salesforce.User.field.SBQQ__DefaultProductLookupTab__c
+      picklistValues = [
+        {
+          masterLabel = "Guided Selling"
+          translation = "Venda guiada"
+        },
+        {
+          masterLabel = "Search Filters"
+          translation = "Filtros de pesquisa"
+        },
+      ]
+    },
+    {
+      help = "Utilize para habilitar a Ferramenta de diagnóstico CPQ, somente disponível se as configurações de organização estiverem habilitadas. Entre em contato com o suporte para habilitar essa capacidade."
+      label = ""
+      name = salesforce.User.field.SBQQ__DiagnosticToolEnabled__c
+    },
+    {
+      help = "Marque para permitir que esse usuário altere o formato de saída dos documentos de cotação."
+      label = ""
+      name = salesforce.User.field.SBQQ__OutputFormatChangeAllowed__c
+    },
+    {
+      help = "Selecione \"Seguido\" para exibir produtos que você segue no Chatter antes de outros ao adicionar à cotação."
+      label = ""
+      name = salesforce.User.field.SBQQ__ProductSortPreference__c
+      picklistValues = [
+        {
+          masterLabel = "Followed"
+          translation = "Seguido"
+        },
+      ]
+    },
+    {
+      help = "Marque para limpar os filtros e os resultados da pesquisa sempre que adicionar produtos às suas cotações. Caso contrário, suas seleções anteriores serão mantidas."
+      label = ""
+      name = salesforce.User.field.SBQQ__ResetProductLookup__c
+    },
+    {
+      label = ""
+      name = salesforce.User.field.SBQQ__Theme__c
+    },
+  ]
+  layouts = [
+    {
+      layout = "User Profile Layout"
+      layoutType = "UserAlt"
+      sections = [
+        {
+          label = ""
+          section = "About"
+        },
+        {
+          label = ""
+          section = "Background"
+        },
+        {
+          label = ""
+          section = "Contact"
+        },
+      ]
+    },
+  ]
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.User_SBQQ__Select_Theme
+    },
+  ]
+  _parent = [
+    salesforce.User,
+  ]
+}

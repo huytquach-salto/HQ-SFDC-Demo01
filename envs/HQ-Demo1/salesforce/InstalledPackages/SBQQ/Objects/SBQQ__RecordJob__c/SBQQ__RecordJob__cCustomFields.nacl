@@ -1,0 +1,88 @@
+type salesforce.SBQQ__RecordJob__c {
+  salesforce.Checkbox SBQQ__IsRead__c {
+    apiName = "SBQQ__RecordJob__c.SBQQ__IsRead__c"
+    label = "Is Read"
+    defaultValue = false
+    inlineHelpText = "If checked the user has been alerted of the record job's finished status."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "If true the user has been alerted of the record job's finished status"
+  }
+  salesforce.LongTextArea SBQQ__JobDetails__c {
+    apiName = "SBQQ__RecordJob__c.SBQQ__JobDetails__c"
+    label = "Job Details"
+    _required = false
+    inlineHelpText = "The details of the background job performed if no job id was specified."
+    createable = true
+    updateable = true
+    length = 4000
+    queryable = true
+    description = "The details of the background job performed if no job id was specified."
+    visibleLines = 3
+  }
+  salesforce.Text SBQQ__JobId__c {
+    apiName = "SBQQ__RecordJob__c.SBQQ__JobId__c"
+    label = "Job Id"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 90
+    queryable = true
+    description = "The Apex Job Id"
+    externalId = false
+  }
+  salesforce.Text SBQQ__JobStatus__c {
+    apiName = "SBQQ__RecordJob__c.SBQQ__JobStatus__c"
+    label = "Job Status"
+    _required = false
+    inlineHelpText = "The status of the background job performed if no job id was specified."
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 40
+    queryable = true
+    description = "The status of the background job performed if no job id was specified."
+    externalId = false
+  }
+  salesforce.Text SBQQ__RecordId__c {
+    apiName = "SBQQ__RecordJob__c.SBQQ__RecordId__c"
+    label = "Record Id"
+    _required = false
+    createable = true
+    updateable = true
+    unique = true
+    caseSensitive = false
+    length = 80
+    queryable = true
+    description = "The unique key for this record, comprised of the parent record Id and the type of job"
+    externalId = false
+  }
+  salesforce.LongTextArea SBQQ__RedirectUrl__c {
+    apiName = "SBQQ__RecordJob__c.SBQQ__RedirectUrl__c"
+    label = "Redirect URL"
+    _required = false
+    inlineHelpText = "Url to redirect to once the job finishes."
+    createable = true
+    updateable = true
+    length = 2000
+    queryable = true
+    description = "Url to redirect to once the job finishes."
+    visibleLines = 3
+  }
+  salesforce.LongTextArea SBQQ__Stacktrace__c {
+    apiName = "SBQQ__RecordJob__c.SBQQ__Stacktrace__c"
+    label = "Stacktrace"
+    _required = false
+    inlineHelpText = "The stacktrace of the background job performed if no job id was specified."
+    createable = true
+    updateable = true
+    length = 4000
+    queryable = true
+    description = "The stacktrace for the error that caused the record job to fail."
+    visibleLines = 3
+  }
+}

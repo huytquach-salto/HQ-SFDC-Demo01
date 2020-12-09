@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__TermCondition__c_en_US@uuuubu {
+  fullName = "SBQQ__TermCondition__c-en_US"
+  _parent = [
+    salesforce.SBQQ__TermCondition__c,
+  ]
+}

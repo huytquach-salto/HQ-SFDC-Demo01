@@ -1,0 +1,29 @@
+type salesforce.ProcessException {
+  salesforce.Lookup AttachedToId {
+    apiName = "ProcessException.AttachedToId"
+  }
+  salesforce.Lookup CaseId {
+    apiName = "ProcessException.CaseId"
+  }
+  salesforce.Picklist Category {
+    apiName = "ProcessException.Category"
+  }
+  string Description {
+  }
+  string ExternalReference {
+  }
+  string Message {
+  }
+  salesforce.Lookup OwnerId {
+    apiName = "ProcessException.OwnerId"
+  }
+  salesforce.Picklist Priority {
+    apiName = "ProcessException.Priority"
+  }
+  salesforce.Picklist Severity {
+    apiName = "ProcessException.Severity"
+  }
+  salesforce.Picklist Status {
+    apiName = "ProcessException.Status"
+  }
+}

@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__QuoteProcess__c_ja@uuuub {
+  fullName = "SBQQ__QuoteProcess__c-ja"
+  _parent = [
+    salesforce.SBQQ__QuoteProcess__c,
+  ]
+}

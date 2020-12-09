@@ -1,0 +1,341 @@
+salesforce.CustomObjectTranslation Asset_de@b {
+  fullName = "Asset-de"
+  fieldSets = [
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Asset_SBQQ__SearchFilters
+    },
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Asset_SBQQ__SearchResults
+    },
+  ]
+  fields = [
+    {
+      help = "Zusätzlicher Rabatt für diesen Vermögenswert, angegeben als Betrag."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__AdditionalDiscountAmount__c
+    },
+    {
+      help = "Legt die Abrechnungshäufigkeit fest."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__BillingFrequency__c
+    },
+    {
+      help = "Die Abrechnungsart definiert, wann die Abrechnung erfolgt. Bei der Abrechnung im Voraus stellen Sie Kunden Produkte oder Services in Rechnung, bevor diese geliefert bzw. geleistet wurden. Bei der rückwirkenden Abrechnung stellen Sie Kunden eine Rechnung, nachdem die Produkte oder Services geliefert bzw. erbracht wurden."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__BillingType__c
+    },
+    {
+      help = "Gibt an, ob dieser Belegposten ein Paket darstellt, das heißt, ob er andere Belegposten in diesem Angebot beinhaltet."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Bundle__c
+    },
+    {
+      help = "Bei Posten mit berechneten Mengen enthält dieses Feld die ursprüngliche Menge, die der Benutzer eingegeben hat."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__BundledQuantity__c
+    },
+    {
+      help = "Gibt an, dass das Produkt in diesem Belegposten mit einem anderen Produkt in diesem Angebot in einem Paket gebündelt ist. Bei in Paketen gebündelten Belegposten lautet der Preis Null und die Änderung von Preis oder Menge ist nicht möglich."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Bundled__c
+    },
+    {
+      help = "Die Art der Produktkosten. Dies ist ein Systemfeld, das vom zugeordneten Produkt abgeleitet wird."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__ChargeType__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__CombineKey__c
+    },
+    {
+      help = "Legt einen zusätzlichen Rabatt für diese Komponente fest, der zum Rabatt für das übergeordnete Paket hinzukommt."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__ComponentDiscountedByPackage__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__CreditProductId__c
+    },
+    {
+      help = "Abonnement, das diesen Vermögenswert derzeit abdeckt. Wird automatisch eingetragen, wenn nur ein einziges Abonnement diesen Vermögenswert abdeckt. Verlängerungen werden mit neuem Abonnement überschrieben."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__CurrentSubscription__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Name der Preisdimension, aus der dieser Vermögenswert stammt"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Dimension__c
+    },
+    {
+      help = "Art der Rabattregelung. Wird aus dem Feld \"Typ\" in der verknüpften Rabattregelung kopiert."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__DiscountScheduleType__c
+      picklistValues = [
+        {
+          masterLabel = "Range"
+          translation = "Bereich"
+        },
+        {
+          masterLabel = "Slab"
+          translation = "Durchschnitt"
+        },
+      ]
+    },
+    {
+      help = "Geben Sie Rabatte als Prozentwert oder Betrag an, der auf der Grundlage von gekaufter Menge oder Laufzeit vom Produktpreis abgezogen wird. Legen Sie Mengen-/Laufzeitbereiche in Klassen unterschiedlicher Rabattsätze fest. Der Rabatt wird auf den Listenpreis gewährt und der sich daraus ergebende Gesamtwert wird als \"Regulärer Preis\" gespeichert."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__DiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Zusätzlicher Rabatt für diesen Vermögenswert, angegeben als Prozentsatz."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Discount__c
+    },
+    {
+      help = "Rabatt, der zusätzlich zum Partnerrabatt abgezogen werden soll."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__DistributorDiscount__c
+    },
+    {
+      help = "Bezeichnet Funktions- und dynamische Optionen für diesen Belegposten."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__DynamicOptionId__c
+    },
+    {
+      help = "Gibt an, ob Service Cloud beim Erstellen dieses Vermögenswerts aktiviert war."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__FromServiceCloud__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__LatestQuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Listenpreis für dieses Vermögenswertprodukt."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__ListPrice__c
+    },
+    {
+      help = "Aufschlag für diesen Vermögenswert, angegeben als Betrag."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__MarkupAmount__c
+    },
+    {
+      help = "Aufschlag für diesen Vermögenswert, angegeben als Prozentsatz."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__MarkupRate__c
+    },
+    {
+      help = "Nummer, die die Position dieses Belegpostens innerhalb seiner Gruppe oder seines Angebots angibt."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Number__c
+    },
+    {
+      help = "Rabatt, der für dieses Produkt gewährt wird, da es Teil eines Pakets ist."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OptionDiscountAmount__c
+    },
+    {
+      help = "Wenn dieser Belegposten für eine optionale SKU gilt, spiegelt dieses Feld den Rabatt wider, der möglicherweise für das Paket gewährt und auf die Option ausgeweitet wurde."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OptionDiscount__c
+    },
+    {
+      help = "Gibt die Verschachtelungsebene dieser Option an (gilt nur für Belegposten, die aus Optionen erstellt werden)."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OptionLevel__c
+    },
+    {
+      help = "Gibt den Optionstyp an, der aus der zugehörigen Produktoption kopiert wurde. Bestimmt, wie die Menge berechnet wird."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OptionType__c
+      picklistValues = [
+        {
+          masterLabel = "Accessory"
+          translation = "Zubehör"
+        },
+        {
+          masterLabel = "Component"
+          translation = "Komponente"
+        },
+        {
+          masterLabel = "Related Product"
+          translation = "Zugehöriges Produkt"
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OrderProduct__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Ursprüngliche Stückkosten des Vermögenswerts zum Zeitpunkt des Kaufs, bevor Kostenregelungen angewandt wurden."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OriginalUnitCost__c
+    },
+    {
+      help = "Ein Code, der jede Komponente dieses Pakets basierend auf ihren Komponentencodes auflistet."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PackageProductCode__c
+    },
+    {
+      help = "Eine Beschreibung jeder Komponente in diesem Paket."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PackageProductDescription__c
+    },
+    {
+      help = "Partnerrabatte werden angewandt, nachdem alle automatischen und nach Ermessen gewährten Rabatte angewandt wurden. Der Partnerrabatt ist beim Partnerpreis bereits berücksichtigt."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PartnerDiscount__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PriceDimension__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Gibt an, wie der Preis für diesen Belegposten berechnet wird: Bei \"Liste\" wird der Rabatt vom Listenpreis abgezogen, bei \"Kosten\" wird ein Aufschlag zu den Kosten addiert."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PricingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "Block"
+          translation = "Zone"
+        },
+        {
+          masterLabel = "Cost"
+          translation = "Kosten"
+        },
+        {
+          masterLabel = "Custom"
+          translation = "Benutzerdefiniert"
+        },
+        {
+          masterLabel = "List"
+          translation = "Liste"
+        },
+        {
+          masterLabel = "Percent Of Total"
+          translation = "Prozent vom Gesamtwert"
+        },
+      ]
+    },
+    {
+      help = "Die Produktoption, die diesen Belegposten erzeugt hat (sofern vorhanden)."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__ProductOption__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__QuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Regulärer Preis für diesen Vermögenswert."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RegularPrice__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RenewalUpliftRate__c
+    },
+    {
+      help = "Der übergeordnete Vermögenswert. Wenn hier ein Eintrag vorhanden ist, handelt es sich bei diesem Vermögenswert um ein untergeordnetes Element in einem Bündel."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RequiredByAsset__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Die ID des übergeordneten Datensatzes, der diesen Datensatz erfordert."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RequiredById__c
+    },
+    {
+      help = "Übergeordnetes Produkt dieses Vermögenswerts."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RequiredByProduct__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Das übergeordnete Abonnement. Wenn hier ein Eintrag vorhanden ist, handelt es sich bei diesem Vermögenswert um ein untergeordnetes Element in einem Bündel."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RequiredBySubscription__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RevisedAsset__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Oberstes, diesem Vermögenswert übergeordnetes Bündel."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RootAsset__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Die ID des Abonnements oder Vermögenswerts, das oder der dem Paket mit diesem Vermögenswert zugrunde liegt."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RootId__c
+    },
+    {
+      help = "Bei Produkten mit mehreren Segmenten ist dies der Index, der die Position dieses Angebotsbelegpostens in der Segmenttabelle angibt."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SegmentIndex__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SegmentKey__c
+    },
+    {
+      help = "Bei Produkten mit mehreren Segmenten ist dies die Bezeichnung der Spaltenüberschrift (z. B. \"Jahr 1\"), die mit diesem Posten verknüpft ist."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SegmentLabel__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SubscriptionEndDate__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SubscriptionQuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SubscriptionStartDate__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Subscription__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Regelung für Rabatte, die auf der Abonnementlaufzeit basieren. Bei der Einstellung \"Gruppe\" gilt der Rabattsatz für die Gruppenlaufzeit, während bei \"Angebot\" der Rabattsatz für die gesamte Angebotslaufzeit gilt, unabhängig von den unterschiedlichen Laufzeiten Ihrer Gruppen."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__TermDiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Stückkosten für diesen Vermögenswert."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__UnitCost__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__VirtualAsset__c
+      relationshipLabel = ""
+    },
+  ]
+  _parent = [
+    salesforce.Asset,
+  ]
+}

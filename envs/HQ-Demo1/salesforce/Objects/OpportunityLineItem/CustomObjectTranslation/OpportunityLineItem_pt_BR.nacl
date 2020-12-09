@@ -1,0 +1,23 @@
+salesforce.CustomObjectTranslation OpportunityLineItem_pt_BR@bu {
+  fullName = "OpportunityLineItem-pt_BR"
+  fields = [
+    {
+      help = "ID do produto da oportunidade que veio desse pacote de produtos."
+      label = ""
+      name = salesforce.OpportunityLineItem.field.SBQQ__ParentID__c
+    },
+    {
+      label = ""
+      name = salesforce.OpportunityLineItem.field.SBQQ__QuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Indica o tipo de assinatura para determinar a precificação do contrato."
+      label = ""
+      name = salesforce.OpportunityLineItem.field.SBQQ__SubscriptionType__c
+    },
+  ]
+  _parent = [
+    salesforce.OpportunityLineItem,
+  ]
+}

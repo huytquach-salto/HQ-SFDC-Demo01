@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__SubscriptionConsumptionRate__c_en_US@uuuubu {
+  fullName = "SBQQ__SubscriptionConsumptionRate__c-en_US"
+  _parent = [
+    salesforce.SBQQ__SubscriptionConsumptionRate__c,
+  ]
+}

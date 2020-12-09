@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__QuoteLineConsumptionRate__c_ja@uuuub {
+  fullName = "SBQQ__QuoteLineConsumptionRate__c-ja"
+  _parent = [
+    salesforce.SBQQ__QuoteLineConsumptionRate__c,
+  ]
+}

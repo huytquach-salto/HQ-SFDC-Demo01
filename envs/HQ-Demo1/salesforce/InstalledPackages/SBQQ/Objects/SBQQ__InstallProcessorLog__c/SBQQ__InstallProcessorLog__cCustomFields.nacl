@@ -1,0 +1,40 @@
+type salesforce.SBQQ__InstallProcessorLog__c {
+  salesforce.Text SBQQ__MethodName__c {
+    apiName = "SBQQ__InstallProcessorLog__c.SBQQ__MethodName__c"
+    label = "Method Name"
+    _required = true
+    inlineHelpText = "Name of the method run within the Install Script"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 100
+    queryable = true
+    description = "Name of the method run within the Install Script"
+    externalId = false
+  }
+  salesforce.DateTime SBQQ__Time__c {
+    apiName = "SBQQ__InstallProcessorLog__c.SBQQ__Time__c"
+    label = "Time"
+    _required = true
+    inlineHelpText = "Timestamp for running the method"
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Timestamp for running the method"
+  }
+  salesforce.Text SBQQ__Version__c {
+    apiName = "SBQQ__InstallProcessorLog__c.SBQQ__Version__c"
+    label = "Version"
+    _required = true
+    inlineHelpText = "Package version at the time of running the method"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 10
+    queryable = true
+    description = "Package version at the time of running the method"
+    externalId = false
+  }
+}

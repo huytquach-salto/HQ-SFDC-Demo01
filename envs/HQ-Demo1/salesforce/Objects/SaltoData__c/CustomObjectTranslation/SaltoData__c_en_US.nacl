@@ -1,0 +1,110 @@
+salesforce.CustomObjectTranslation SaltoData__c_en_US@uubu {
+  fullName = "SaltoData__c-en_US"
+  caseValues = [
+    {
+      plural = false
+      value = "SaltoData"
+    },
+    {
+      plural = true
+      value = "SaltoDatas"
+    },
+  ]
+  fields = [
+    {
+      label = ""
+      name = salesforce.SaltoData__c.field.Account__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.SaltoData__c.field.Adapters_In_Use__c
+      picklistValues = [
+        {
+          masterLabel = "Hubspot"
+          translation = ""
+        },
+        {
+          masterLabel = "Netsuite"
+          translation = ""
+        },
+        {
+          masterLabel = "Salesforce"
+          translation = ""
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.SaltoData__c.field.Expiration_date__c
+    },
+    {
+      label = ""
+      name = salesforce.SaltoData__c.field.GB_in_use__c
+    },
+    {
+      label = ""
+      name = salesforce.SaltoData__c.field.Is_Open_Source__c
+    },
+    {
+      label = ""
+      name = salesforce.SaltoData__c.field.Last_login__c
+    },
+    {
+      label = ""
+      name = salesforce.SaltoData__c.field.Logins_last_30d__c
+    },
+    {
+      label = ""
+      name = salesforce.SaltoData__c.field.Subscription_Tier__c
+      picklistValues = [
+        {
+          masterLabel = "0-100GB"
+          translation = ""
+        },
+        {
+          masterLabel = "100-500GB"
+          translation = ""
+        },
+        {
+          masterLabel = ">500GB"
+          translation = ""
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.SaltoData__c.field.Subscription_level__c
+      picklistValues = [
+        {
+          masterLabel = "Disabled"
+          translation = ""
+        },
+        {
+          masterLabel = "Free trial"
+          translation = ""
+        },
+        {
+          masterLabel = "Paying"
+          translation = ""
+        },
+        {
+          masterLabel = "Prospect"
+          translation = ""
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.SaltoData__c.field.Total_usd_Last_12m__c
+    },
+    {
+      label = ""
+      name = salesforce.SaltoData__c.field.Total_usd_Paid_Ever__c
+    },
+  ]
+  startsWith = "Consonant"
+  _parent = [
+    salesforce.SaltoData__c,
+  ]
+}

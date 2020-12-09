@@ -1,0 +1,301 @@
+salesforce.CustomObjectTranslation OrderItem_es_MX@bu {
+  fullName = "OrderItem-es_MX"
+  fields = [
+    {
+      help = "Indica si el producto de pedido está activado."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Activated__c
+    },
+    {
+      help = "Activo creado a partir de este producto de pedido"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Asset__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Define la frecuencia de la facturación."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BillingFrequency__c
+    },
+    {
+      help = "El tipo de facturación que define el momento en el que se produce la facturación."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BillingType__c
+    },
+    {
+      help = "El precio de bloque que se aplica a este producto de pedido en el momento de la creación del pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BlockPrice__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Indica si se incluyen las reservas."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BookingsIndicator__c
+    },
+    {
+      help = "Un campo que se utiliza internamente que dirige a la raíz de su principal de paquete."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BundleRoot__c
+      relationshipLabel = ""
+    },
+    {
+      help = "El tipo del cargo de productos."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ChargeType__c
+    },
+    {
+      help = "La acción de contratos desde la que se obtiene el resultado de este producto de pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ContractAction__c
+    },
+    {
+      help = "El contrato de la suscripción que se crea a partir de este producto de pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Contract__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Indica si el producto de pedido está contratado."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Contracted__c
+    },
+    {
+      help = "Controla el comportamiento de contratación de un producto de pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ContractingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "Contract Separately"
+          translation = "Contratar por separado"
+        },
+        {
+          masterLabel = "Do Not Contract"
+          translation = "No contratar"
+        },
+        {
+          masterLabel = "Inherit"
+          translation = "Heredar"
+        },
+      ]
+    },
+    {
+      help = "Longitud del plazo de suscripción, que solo se aplica si el producto es una suscripción. Se copia desde el Plazo de suscripción del producto relacionado cuando la partida se genera por primera vez."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__DefaultSubscriptionTerm__c
+    },
+    {
+      help = "Para productos con segmentos múltiples, es el tipo de la dimensión de precios (por ej. \"AÑO\", \"MES\", \"TRIMESTRE\") del artículo del pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__DimensionType__c
+    },
+    {
+      help = "La programación de descuentos aplicada a este producto de pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__DiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Importe del precio total del producto de pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__OrderProductBookings__c
+    },
+    {
+      help = "La cantidad real del producto agregado al pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__OrderedQuantity__c
+    },
+    {
+      help = "Hace referencia a la dimensión de precios aplicada a este producto de pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__PriceDimension__c
+      relationshipLabel = ""
+    },
+    {
+      help = "La programación de precios aplicada a este producto de pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__PriceSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Indica el modo con el que se calcula esta partida. \"Lista\" = sustracción del descuento del precio de lista. \"Costo\" = agregando sobreprecio al costo."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__PricingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "Block"
+          translation = "Bloque"
+        },
+        {
+          masterLabel = "Cost"
+          translation = "Costo"
+        },
+        {
+          masterLabel = "Custom"
+          translation = "Personalizado"
+        },
+        {
+          masterLabel = "List"
+          translation = "Lista"
+        },
+        {
+          masterLabel = "Percent Of Total"
+          translation = "Porcentaje del total"
+        },
+      ]
+    },
+    {
+      help = "Establece el tipo de suscripción de producto del artículo de pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ProductSubscriptionType__c
+    },
+    {
+      help = "Índice calculado empleado para computar el precio prorrateado."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ProrateMultiplier__c
+    },
+    {
+      help = "La partida de presupuesto desde la que se crea este producto de pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__QuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Precio unitario de lista para el producto presupuestado por esta partida. El precio de lista se origina desde la lista de precios."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__QuotedListPrice__c
+    },
+    {
+      help = "La cantidad presupuestada."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__QuotedQuantity__c
+    },
+    {
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__RequiredBy__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Hace referencia al producto de pedido que este producto de pedido revisa."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__RevisedOrderProduct__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Para productos con múltiples segmentos, el índice que representa la posición del producto de pedido en la tabla de segmentos."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SegmentIndex__c
+    },
+    {
+      help = "Para productos con segmentos múltiples, esta es una clave compartida empleada para agrupar entre sí partidas de presupuesto con dimensiones múltiples."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SegmentKey__c
+    },
+    {
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ShippingAccount__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Indica el estado actual del producto de pedido. Toma como valor predeterminado Borrador cuando se crea un pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Status__c
+    },
+    {
+      help = "Indica el método para calcular el precio de la suscripción. Si está en blanco, la partida no es un producto de suscripción."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SubscriptionPricing__c
+    },
+    {
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SubscriptionTerm__c
+    },
+    {
+      help = "Indica el tipo de suscripción para determinar el precio del contrato."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SubscriptionType__c
+    },
+    {
+      help = "Suscripción creada a partir de este producto de pedido"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Subscription__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Importe estimado de los impuestos"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TaxAmount__c
+    },
+    {
+      help = "Especifica el código impositivo para las reglas de impuestos."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TaxCode__c
+    },
+    {
+      help = "La programación de descuentos por plazo aplicada a este producto de pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TermDiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Fecha en la que la suscripción relacionada de este producto de pedido se terminó"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TerminatedDate__c
+    },
+    {
+      help = "El precio neto del plazo completo para la partida individual."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__UnproratedNetPrice__c
+    },
+    {
+      help = "La suscripción que está mejorando esta partida de presupuesto. Cuando el presupuesto se contrata, esta suscripción tendrá relleno su campo Fecha de terminación."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__UpgradedSubscription__c
+      relationshipLabel = ""
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Order Product Layout"
+      sections = [
+        {
+          label = "Información de facturación"
+          section = "Billing Information"
+        },
+        {
+          label = "Información de contratación"
+          section = "Contracting Information"
+        },
+        {
+          label = "Información de los precios"
+          section = "Price Information"
+        },
+        {
+          label = "Información de presupuesto y suscripción"
+          section = "Quote and Subscription Information"
+        },
+      ]
+    },
+  ]
+  validationRules = [
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__CannotChangeBookingIndicatorOnActivation
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__RecurringChargeTypeMustHaveBillingType
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__Validate_billing_frequency
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__Validate_billing_type
+    },
+  ]
+  _parent = [
+    salesforce.OrderItem,
+  ]
+}

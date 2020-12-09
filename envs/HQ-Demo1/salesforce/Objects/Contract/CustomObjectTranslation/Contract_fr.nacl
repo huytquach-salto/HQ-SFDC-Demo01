@@ -1,0 +1,217 @@
+salesforce.CustomObjectTranslation Contract_fr@b {
+  fullName = "Contract-fr"
+  fieldSets = [
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Contract_SBQQ__ActiveContractLookup
+    },
+  ]
+  fields = [
+    {
+      help = "Détermine si ce contrat est en vigueur."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__ActiveContract__c
+    },
+    {
+      help = "Type d'enregistrement de l'opportunité d'amendement, sauf indication contraire."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentOpportunityRecordTypeId__c
+    },
+    {
+      help = "L'étape actuelle de l'opportunité d'amendement."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentOpportunityStage__c
+    },
+    {
+      help = "Propriétaire de l'opportunité d'origine."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentOwner__c
+      relationshipLabel = ""
+    },
+    {
+      help = "ID du catalogue de prix de votre amendement."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentPricebookId__c
+    },
+    {
+      help = "La base de calcul de la date de début du renouvellement et de la date de fin de l'amendement."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentRenewalBehavior__c
+      picklistValues = [
+        {
+          masterLabel = "Earliest End Date"
+          translation = "Date de fin la plus proche"
+        },
+        {
+          masterLabel = "Latest End Date"
+          translation = "Dernière date de fin"
+        },
+      ]
+    },
+    {
+      help = "Date de début de votre amendement. Si la date est vide, l'amendement commence à la date du jour."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentStartDate__c
+    },
+    {
+      help = "Sélectionnez cette case pour inclure les rôles du contact de l'opportunité d'origine dans l'opportunité de renouvellement."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__DefaultRenewalContactRoles__c
+    },
+    {
+      help = "Sélectionnez cette case pour inclure les partenaires de l'opportunité d'origine dans l'opportunité de renouvellement."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__DefaultRenewalPartners__c
+    },
+    {
+      help = "Si cette case n'est pas sélectionnée, la date de fin du devis d'amendement doit être définie conformément au paramètre Comportement d'amendement et de renouvellement. Si elle est sélectionnée, aucune date de fin n'est définie."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__DisableAmendmentCoTerm__c
+    },
+    {
+      help = "Indique si le contrat est permanent."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__Evergreen__c
+    },
+    {
+      help = "Date de fin du contrat à utiliser dans les workflows temporels."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__ExpirationDate__c
+    },
+    {
+      help = "Définit l'affichage des produits d'abonnement segmentés dans les devis de renouvellement. Les produits désegmentés sont renouvelés en tant que ligne de devis standard avec les données du dernier segment."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__MDQRenewalBehavior__c
+      picklistValues = [
+        {
+          masterLabel = "De-segmented"
+          translation = "Désegmenté"
+        },
+      ]
+    },
+    {
+      help = "Sélectionnez cette case pour désigner ce contrat en tant que contrat principal de ce compte. Lors du renouvellement, tous les contrats sont cumulés dans celui-ci."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__MasterContract__c
+    },
+    {
+      help = "ID du catalogue de prix utilisé à partir de l'opportunité d'origine."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__OpportunityPricebookId__c
+    },
+    {
+      help = "L'opportunité à partir de laquelle ce contrat a été créé."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__Opportunity__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Contract.field.SBQQ__Order__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Sélectionnez la case pour préserver la hiérarchie des offres groupées dans les devis de renouvellement."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__PreserveBundleStructureUponRenewals__c
+    },
+    {
+      help = "Devis à partir duquel ce contrat a été créé."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__Quote__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Sélectionnez cette case pour déclencher la génération d'une opportunité de renouvellement à des fins de prévision. Ne génère pas automatiquement un devis de renouvellement."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalForecast__c
+    },
+    {
+      help = "Le type d'enregistrement de l'opportunité de renouvellement est différent du type par défaut."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalOpportunityRecordTypeId__c
+    },
+    {
+      help = "Remplace l'étape de l'opportunité par défaut pour ce renouvellement. Doit être effectué avant de sélectionner la prévision de renouvellement pour entrer en vigueur dans l'opportunité de renouvellement."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalOpportunityStage__c
+    },
+    {
+      help = "Opportunité de renouvellement générée pour suivre le renouvellement de ce contrat."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalOpportunity__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Propriétaire de l'opportunité d'origine."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalOwner__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Spécifiez un ID de catalogue de prix à utiliser dans les opportunités de renouvellement si vous ne souhaitez pas utiliser l'ID du catalogue de prix de l'opportunité d'origine."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalPricebookId__c
+    },
+    {
+      help = "Sélectionnez cette option pour générer automatiquement un devis de renouvellement dans les opportunités de renouvellement."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalQuoted__c
+    },
+    {
+      help = "Spécifiez la durée du renouvellement. Elle correspond par défaut à la durée du contrat d'origine."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalTerm__c
+    },
+    {
+      help = "Le taux du prix de renouvellement augmente."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalUpliftRate__c
+    },
+    {
+      help = "Sélectionnez cette option pour combiner les quantités des abonnements à un même produit sur une seule ligne dans les devis de renouvellement et les amendements."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__SubscriptionQuantitiesCombined__c
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Contract Layout"
+      sections = [
+        {
+          label = "Amendements"
+          section = "Amendments"
+        },
+        {
+          label = "Liens personnalisés"
+          section = "Custom Links"
+        },
+        {
+          label = "Recalcul"
+          section = "Recalculating"
+        },
+        {
+          label = "Information sur Salesforce CPQ"
+          section = "Salesforce CPQ Information"
+        },
+        {
+          label = "Informations système"
+          section = "System Info"
+        },
+      ]
+    },
+  ]
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Contract_SBQQ__Amend
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Contract_SBQQ__RenewContracts
+    },
+  ]
+  _parent = [
+    salesforce.Contract,
+  ]
+}

@@ -1,0 +1,175 @@
+type salesforce.SBQQ__TaxExemptionCertificate__c {
+  salesforce.MasterDetail SBQQ__Account__c {
+    apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__Account__c"
+    label = "Account"
+    _required = false
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.Account,
+    ]
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Tax_Exemption_Certificates"
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__Active__c {
+    apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__Active__c"
+    label = "Active"
+    defaultValue = true
+    inlineHelpText = "An Active Certificate will make set the ‘Tax Exempt?’ field on the Active to true"
+    createable = true
+    updateable = true
+    queryable = true
+    description = "An Active Certificate will make set the ‘Tax Exempt?’ field on the Active to true"
+  }
+  salesforce.Text SBQQ__CertificateNumber__c {
+    apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__CertificateNumber__c"
+    label = "Certificate Number"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 50
+    queryable = true
+    externalId = false
+  }
+  salesforce.Text SBQQ__Country__c {
+    apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__Country__c"
+    label = "Country"
+    _required = false
+    inlineHelpText = "ptional - to track the company address associated to the certificate"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 25
+    queryable = true
+    description = "Optional - to track the company address associated to the certificate"
+    externalId = false
+  }
+  salesforce.Text SBQQ__County__c {
+    apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__County__c"
+    label = "County"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 25
+    queryable = true
+    externalId = false
+  }
+  salesforce.Date SBQQ__DateIssued__c {
+    apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__DateIssued__c"
+    label = "Date Issued"
+    _required = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Checkbox SBQQ__Default__c {
+    apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__Default__c"
+    label = "Default"
+    defaultValue = false
+    inlineHelpText = "A certificate can be marked as default only if it is active"
+    createable = true
+    updateable = true
+    queryable = true
+    description = "A certificate can be marked as default only if it is active"
+  }
+  salesforce.Text SBQQ__ExemptCompanyName__c {
+    apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__ExemptCompanyName__c"
+    label = "Exempt Company Name"
+    _required = false
+    inlineHelpText = "The company name or DBA name associated to the certificate"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 100
+    queryable = true
+    description = "The company name or DBA name associated to the certificate"
+    externalId = false
+  }
+  salesforce.Date SBQQ__ExpirationDate__c {
+    apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__ExpirationDate__c"
+    label = "Expiration Date"
+    _required = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__IssuingAuthority__c {
+    apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__IssuingAuthority__c"
+    label = "Issuing Authority"
+    _required = false
+    inlineHelpText = "The authority, such as a government agency or country (for European organizations), that issued the certificate"
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 50
+    queryable = true
+    description = "The authority, such as a government agency or country (for European organizations), that issued the certificate"
+    externalId = false
+  }
+  salesforce.TextArea SBQQ__Notes__c {
+    apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__Notes__c"
+    label = "Notes"
+    _required = false
+    createable = true
+    updateable = true
+    queryable = true
+  }
+  salesforce.Text SBQQ__PostalCode__c {
+    apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__PostalCode__c"
+    label = "Postal Code"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 25
+    queryable = true
+    externalId = false
+  }
+  salesforce.Text SBQQ__State__c {
+    apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__State__c"
+    label = "State"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 25
+    queryable = true
+    externalId = false
+  }
+  salesforce.Text SBQQ__StreetAddress_2__c {
+    apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__StreetAddress_2__c"
+    label = "Street Address_2"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 100
+    queryable = true
+    externalId = false
+  }
+  salesforce.Text SBQQ__StreetAddress__c {
+    apiName = "SBQQ__TaxExemptionCertificate__c.SBQQ__StreetAddress__c"
+    label = "Street Address"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 100
+    queryable = true
+    externalId = false
+  }
+}

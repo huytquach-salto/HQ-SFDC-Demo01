@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__PricingGuidance__c_fr@uuuub {
+  fullName = "SBQQ__PricingGuidance__c-fr"
+  _parent = [
+    salesforce.SBQQ__PricingGuidance__c,
+  ]
+}

@@ -1,0 +1,79 @@
+salesforce.CustomObjectTranslation User_es_MX@bu {
+  fullName = "User-es_MX"
+  fields = [
+    {
+      help = "Personaliza la ficha predeterminada en la página Búsqueda de productos."
+      label = ""
+      name = salesforce.User.field.SBQQ__DefaultProductLookupTab__c
+      picklistValues = [
+        {
+          masterLabel = "Guided Selling"
+          translation = "Venta guiada"
+        },
+        {
+          masterLabel = "Search Filters"
+          translation = "Filtros de búsqueda"
+        },
+      ]
+    },
+    {
+      help = "Utilice esta opción para activar la herramienta de diagnóstico de CPQ, que solo está disponible se está activado el parámetro de la organización. Haga contacto con el servicio de asistencia para activar esta función."
+      label = ""
+      name = salesforce.User.field.SBQQ__DiagnosticToolEnabled__c
+    },
+    {
+      help = "Marque esta opción para permitir que este usuario cambie el formato de salida de los documentos de presupuesto."
+      label = ""
+      name = salesforce.User.field.SBQQ__OutputFormatChangeAllowed__c
+    },
+    {
+      help = "Seleccione \"Seguidos\" para mostrar productos que sigue en Chatter antes de otros al agregarlos al presupuesto."
+      label = ""
+      name = salesforce.User.field.SBQQ__ProductSortPreference__c
+      picklistValues = [
+        {
+          masterLabel = "Followed"
+          translation = "Seguidos"
+        },
+      ]
+    },
+    {
+      help = "Marque esta opción para borrar los filtros de búsqueda y los resultados cada vez que agrega productos a sus presupuestos. En caso contrario, se mantienen sus selecciones anteriores."
+      label = ""
+      name = salesforce.User.field.SBQQ__ResetProductLookup__c
+    },
+    {
+      label = ""
+      name = salesforce.User.field.SBQQ__Theme__c
+    },
+  ]
+  layouts = [
+    {
+      layout = "User Profile Layout"
+      layoutType = "UserAlt"
+      sections = [
+        {
+          label = ""
+          section = "About"
+        },
+        {
+          label = ""
+          section = "Background"
+        },
+        {
+          label = ""
+          section = "Contact"
+        },
+      ]
+    },
+  ]
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.User_SBQQ__Select_Theme
+    },
+  ]
+  _parent = [
+    salesforce.User,
+  ]
+}

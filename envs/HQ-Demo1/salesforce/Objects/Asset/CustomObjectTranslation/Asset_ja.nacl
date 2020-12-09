@@ -1,0 +1,341 @@
+salesforce.CustomObjectTranslation Asset_ja@b {
+  fullName = "Asset-ja"
+  fieldSets = [
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Asset_SBQQ__SearchFilters
+    },
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Asset_SBQQ__SearchResults
+    },
+  ]
+  fields = [
+    {
+      help = "この納入商品の追加割引 (金額)"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__AdditionalDiscountAmount__c
+    },
+    {
+      help = "請求サイクルを定義します。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__BillingFrequency__c
+    },
+    {
+      help = "請求の発生タイミングを定義する請求種別。[前払い請求] の場合は、商品またはサービスを提供する前に顧客に請求でき、[後払い請求] の場合は、商品またはサービスの提供後に顧客に請求することができます。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__BillingType__c
+    },
+    {
+      help = "この品目がパッケージを表しているかどうか、つまりこの見積内の他の品目を含んでいるかどうかを示します。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Bundle__c
+    },
+    {
+      help = "計算された数量がある品目の場合、この項目にはユーザによって入力された元の数量が保持されます。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__BundledQuantity__c
+    },
+    {
+      help = "この品目の商品がこの見積内の別の商品にバンドルされている (含まれている) ことを示します。バンドルされている品目は、価格が 0 で、価格や数量は編集できません。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Bundled__c
+    },
+    {
+      help = "商品課金の種別。これは関連付けられている商品から派生するシステム項目です。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__ChargeType__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__CombineKey__c
+    },
+    {
+      help = "このコンポーネントの追加割引を親パッケージの割引に固定します。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__ComponentDiscountedByPackage__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__CreditProductId__c
+    },
+    {
+      help = "現在この納入商品を対象とするサブスクリプション。この納入商品を対象とするサブスクリプションが 1 つのみの場合は自動的に入力されます。更新によって新しいサブスクリプションで上書きされます。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__CurrentSubscription__c
+      relationshipLabel = ""
+    },
+    {
+      help = "この納入商品の発生源である価格ディメンションの名前"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Dimension__c
+    },
+    {
+      help = "割引率表の種別。関連付けられている割引率表の [種別] 項目からコピーされます。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__DiscountScheduleType__c
+      picklistValues = [
+        {
+          masterLabel = "Range"
+          translation = "範囲"
+        },
+        {
+          masterLabel = "Slab"
+          translation = "スラブ"
+        },
+      ]
+    },
+    {
+      help = "購入した数量または期間を使用して商品の価格から割引される割引率または割引金額を指定します。異なる割引率の段階の数量/期間の範囲を設定します。割引は [リスト価格] に適用され、結果の合計は [定価] に保存されます"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__DiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "この納入商品の追加割引 (パーセント)"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Discount__c
+    },
+    {
+      help = "パートナー割引よりも優先される割引。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__DistributorDiscount__c
+    },
+    {
+      help = "この品目の機能と動的オプションを識別します。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__DynamicOptionId__c
+    },
+    {
+      help = "この納入商品が作成されたとき Service Cloud が有効化されていたかどうかを指定します。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__FromServiceCloud__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__LatestQuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      help = "この納入商品のリスト価格"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__ListPrice__c
+    },
+    {
+      help = "この納入商品のマークアップ (金額)"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__MarkupAmount__c
+    },
+    {
+      help = "この納入商品のマークアップ (パーセント)"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__MarkupRate__c
+    },
+    {
+      help = "グループまたは見積内でのこの品目の位置を示す番号。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Number__c
+    },
+    {
+      help = "この商品がパッケージの一部であるために適用される割引。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OptionDiscountAmount__c
+    },
+    {
+      help = "この品目がオプション SKU である場合、この項目には、オプションに適用されるパッケージへの割引が取得されます。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OptionDiscount__c
+    },
+    {
+      help = "このオプションのネストレベルを示します (オプションから生成された品目にのみ適用)。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OptionLevel__c
+    },
+    {
+      help = "オプション種別を示します。これは、関連する商品オプションからコピーされます。数量の計算方法を決定します。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OptionType__c
+      picklistValues = [
+        {
+          masterLabel = "Accessory"
+          translation = "アクセサリ"
+        },
+        {
+          masterLabel = "Component"
+          translation = "コンポーネント"
+        },
+        {
+          masterLabel = "Related Product"
+          translation = "関連商品"
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OrderProduct__c
+      relationshipLabel = ""
+    },
+    {
+      help = "コスト表が適用される前の購入時における納入商品の元の単位コスト。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OriginalUnitCost__c
+    },
+    {
+      help = "このパッケージの各コンポーネントをそのコンポーネントコードに基づいてリストするコード。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PackageProductCode__c
+    },
+    {
+      help = "このパッケージの各コンポーネントの説明。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PackageProductDescription__c
+    },
+    {
+      help = "パートナー割引は、すべての自動割引と自由裁量の割引を適用した後に適用されます。パートナー割引はパートナー価格に適用されます。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PartnerDiscount__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PriceDimension__c
+      relationshipLabel = ""
+    },
+    {
+      help = "この品目の価格の計算方法を示します。リスト: リスト価格から割引を引きます。コスト: コストにマークアップを加えます。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PricingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "Block"
+          translation = "ブロック"
+        },
+        {
+          masterLabel = "Cost"
+          translation = "コスト"
+        },
+        {
+          masterLabel = "Custom"
+          translation = "カスタム"
+        },
+        {
+          masterLabel = "List"
+          translation = "リスト"
+        },
+        {
+          masterLabel = "Percent Of Total"
+          translation = "全体に対する割合"
+        },
+      ]
+    },
+    {
+      help = "この品目を生成した商品オプション (存在する場合)。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__ProductOption__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__QuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      help = "この納入商品の定価。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RegularPrice__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RenewalUpliftRate__c
+    },
+    {
+      help = "親納入商品。入力された場合、この納入商品はバンドル内の子です。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RequiredByAsset__c
+      relationshipLabel = ""
+    },
+    {
+      help = "このレコードを要求した親レコードの ID。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RequiredById__c
+    },
+    {
+      help = "この納入商品の親商品"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RequiredByProduct__c
+      relationshipLabel = ""
+    },
+    {
+      help = "親サブスクリプション。入力された場合、この納入商品はバンドル内の子です。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RequiredBySubscription__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RevisedAsset__c
+      relationshipLabel = ""
+    },
+    {
+      help = "この納入商品の最終的な親バンドル"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RootAsset__c
+      relationshipLabel = ""
+    },
+    {
+      help = "この納入商品が含まれるバンドルのルートのサブスクリプションまたは納入商品の ID"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RootId__c
+    },
+    {
+      help = "複数セグメント商品で、インデックスはセグメント表内でのこの見積品目の位置を表します。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SegmentIndex__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SegmentKey__c
+    },
+    {
+      help = "複数セグメント商品で、この品目に関連付けられている列ヘッダーの表示ラベル (「1 年目」など) です。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SegmentLabel__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SubscriptionEndDate__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SubscriptionQuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SubscriptionStartDate__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Subscription__c
+      relationshipLabel = ""
+    },
+    {
+      help = "サブスクリプション期間に基づく割引率表。[グループ] に設定すると、グループ期間の割引率が適用されます。[見積] に設定すると、グループ内に異なる期間があっても見積全体の期間の割引率が適用されます。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__TermDiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "この納入商品の単位コスト。"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__UnitCost__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__VirtualAsset__c
+      relationshipLabel = ""
+    },
+  ]
+  _parent = [
+    salesforce.Asset,
+  ]
+}

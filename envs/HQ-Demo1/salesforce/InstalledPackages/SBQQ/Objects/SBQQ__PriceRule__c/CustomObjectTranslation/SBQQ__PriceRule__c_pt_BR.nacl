@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__PriceRule__c_pt_BR@uuuubu {
+  fullName = "SBQQ__PriceRule__c-pt_BR"
+  _parent = [
+    salesforce.SBQQ__PriceRule__c,
+  ]
+}

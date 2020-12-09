@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__CustomScript__c_de@uuuub {
+  fullName = "SBQQ__CustomScript__c-de"
+  _parent = [
+    salesforce.SBQQ__CustomScript__c,
+  ]
+}

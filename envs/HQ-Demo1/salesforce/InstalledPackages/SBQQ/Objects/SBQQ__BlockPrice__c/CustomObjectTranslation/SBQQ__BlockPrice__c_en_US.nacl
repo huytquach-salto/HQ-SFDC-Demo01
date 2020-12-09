@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__BlockPrice__c_en_US@uuuubu {
+  fullName = "SBQQ__BlockPrice__c-en_US"
+  _parent = [
+    salesforce.SBQQ__BlockPrice__c,
+  ]
+}

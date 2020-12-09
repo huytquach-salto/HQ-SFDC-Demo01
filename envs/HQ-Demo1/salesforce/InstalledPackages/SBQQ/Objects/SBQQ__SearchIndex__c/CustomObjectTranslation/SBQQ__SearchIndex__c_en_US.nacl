@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__SearchIndex__c_en_US@uuuubu {
+  fullName = "SBQQ__SearchIndex__c-en_US"
+  _parent = [
+    salesforce.SBQQ__SearchIndex__c,
+  ]
+}

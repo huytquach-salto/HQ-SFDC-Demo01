@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__CustomAction__c_fr@uuuub {
+  fullName = "SBQQ__CustomAction__c-fr"
+  _parent = [
+    salesforce.SBQQ__CustomAction__c,
+  ]
+}

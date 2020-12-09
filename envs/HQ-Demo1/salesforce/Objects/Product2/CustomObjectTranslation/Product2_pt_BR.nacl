@@ -1,0 +1,704 @@
+salesforce.CustomObjectTranslation Product2_pt_BR@bu {
+  fullName = "Product2-pt_BR"
+  fieldSets = [
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Product2_SBQQ__ConfiguratorFilter
+    },
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Product2_SBQQ__ConfiguratorLookup
+    },
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Product2_SBQQ__SearchFilters
+    },
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Product2_SBQQ__SearchResults
+    },
+  ]
+  fields = [
+    {
+      label = ""
+      name = salesforce.Product2.field.License_Type__c
+      picklistValues = [
+        {
+          masterLabel = "Perpetual"
+          translation = ""
+        },
+        {
+          masterLabel = "Subscription"
+          translation = ""
+        },
+      ]
+    },
+    {
+      help = "Selecione um comportamento ao alterar ativos que representam esse produto. Por padrão, as quantidades do ativo não podem diminuir, a menos que uma atualização seja adicionada e nenhum reembolso seja aplicado."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__AssetAmendmentBehavior__c
+      picklistValues = [
+        {
+          masterLabel = "Allow Refund"
+          translation = "Permitir reembolso"
+        },
+        {
+          masterLabel = "Default"
+          translation = "Padrão"
+        },
+      ]
+    },
+    {
+      help = "Indica como esse produto é convertido para ativo."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__AssetConversion__c
+      picklistValues = [
+        {
+          masterLabel = "One per quote line"
+          translation = "Um por linha de cotação"
+        },
+        {
+          masterLabel = "One per unit"
+          translation = "Um por unidade"
+        },
+      ]
+    },
+    {
+      help = "Valor que não esteja em branco designa que esse produto é vendido em lotes. Insira a quantidade em cada lote. A quantidade inserida na cotação será dividida por esse valor e arredondada para o número inteiro mais próximo."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__BatchQuantity__c
+    },
+    {
+      help = "Determina com que frequência esse produto será faturado."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__BillingFrequency__c
+    },
+    {
+      help = "O tipo de faturamento que define quando o faturamento ocorre. O faturamento antecipado permite que você fature seus clientes por produtos ou serviços antes de fornecê-los, já o faturamento atrasado permite faturar os clientes depois do fornecimento de produtos ou serviços."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__BillingType__c
+    },
+    {
+      help = "Campo usado para calcular a precificação de bloco."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__BlockPricingField__c
+      picklistValues = [
+        {
+          masterLabel = "Quantity"
+          translation = "Quantidade"
+        },
+      ]
+    },
+    {
+      help = "O tipo de encargo do produto."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ChargeType__c
+    },
+    {
+      help = "Marca esse produto como um componente, excluindo-o da seleção na pesquisa de produto."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__Component__c
+    },
+    {
+      help = "Taxa de desconto composta por quantidade."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__CompoundDiscountRate__c
+    },
+    {
+      help = "Use esse controle quando a tela Configurar produtos for exibida para esse produto. Escolha \"Adicionar\" para limitar a configuração inicial. Escolha \"Editar\" para configuração subsequente."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ConfigurationEvent__c
+      picklistValues = [
+        {
+          masterLabel = "Add"
+          translation = "Adicionar"
+        },
+        {
+          masterLabel = "Always"
+          translation = "Sempre"
+        },
+        {
+          masterLabel = "Edit"
+          translation = "Editar"
+        },
+      ]
+    },
+    {
+      help = "O nome da API do campo definido que será usado para esse produto durante a configuração."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ConfigurationFieldSet__c
+      picklistValues = [
+        {
+          masterLabel = "OptionConfiguration"
+          translation = "OptionConfiguration"
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ConfigurationFields__c
+    },
+    {
+      help = "Título do formulário de configuração renderizado dos campos de configuração especificados."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ConfigurationFormTitle__c
+    },
+    {
+      help = "Tipo de configuração desse produto: escolha a opção Permitido se o usuário tiver permissão para configurar o produto/pacote, mas não precisar fazer isso; Desabilitado quando o pacote selecionar as opções automaticamente; ou Necessário se o produto/pacote precisar ser configurado."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ConfigurationType__c
+      picklistValues = [
+        {
+          masterLabel = "Allowed"
+          translation = "Permitido"
+        },
+        {
+          masterLabel = "Disabled"
+          translation = "Desabilitado"
+        },
+        {
+          masterLabel = "Required"
+          translation = "Necessário"
+        },
+      ]
+    },
+    {
+      help = "Função JavaScript usada para validar a configuração desse produto."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ConfigurationValidator__c
+    },
+    {
+      help = "Padrão usado para gerar o código do produto (SKU) para produtos configurados."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ConfiguredCodePattern__c
+    },
+    {
+      help = "Padrão usado para gerar a descrição do produto dinâmica para produtos configurados."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ConfiguredDescriptionPattern__c
+    },
+    {
+      help = "Controla se o custo para esse produto pode ser modificado em cotações individuais."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__CostEditable__c
+    },
+    {
+      help = "Cronograma de descontos usado como Cronograma de custos com esse produto."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__CostSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Product2.field.SBQQ__CustomConfigurationPage__c
+    },
+    {
+      label = ""
+      name = salesforce.Product2.field.SBQQ__CustomConfigurationRequired__c
+    },
+    {
+      help = "Selecione como esse produto deve estar disponível em Comunidades de clientes."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__CustomerCommunityAvailability__c
+      picklistValues = [
+        {
+          masterLabel = "Always"
+          translation = "Sempre"
+        },
+        {
+          masterLabel = "Never"
+          translation = "Nunca"
+        },
+        {
+          masterLabel = "Only when already owned"
+          translation = "Apenas quando já for próprio"
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Product2.field.SBQQ__DefaultPricingTable__c
+      picklistValues = [
+        {
+          masterLabel = "Segmented"
+          translation = "Segmentado"
+        },
+        {
+          masterLabel = "Standard"
+          translation = "Padrão"
+        },
+      ]
+    },
+    {
+      help = "Especifique a quantidade inicial do produto quando ela for adicionada."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__DefaultQuantity__c
+    },
+    {
+      help = "Sinalizador que indica que a descrição desse produto está bloqueada (não editável na cotação)."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__DescriptionLocked__c
+    },
+    {
+      help = "Especifique a categoria de desconto para esse produto."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__DiscountCategory__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Cronograma de descontos a ser usado com esse produto"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__DiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Use para colocar restrições aos preços calculados dinamicamente."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__DynamicPricingConstraint__c
+      picklistValues = [
+        {
+          masterLabel = "List price is maximum"
+          translation = "Preço de lista é o máximo"
+        },
+        {
+          masterLabel = "List price is minimum"
+          translation = "Preço de lista é o mínimo"
+        },
+      ]
+    },
+    {
+      help = "Deve ser ativada caso você tenha problemas de desempenho durante a configuração do pacote. O pacote será processado de forma assíncrona."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__EnableLargeConfiguration__c
+    },
+    {
+      help = "Marque para sempre excluir esse produto dos cálculos de percentual do total (normalmente, produtos não de assinatura são incluídos nos cálculos de percentual do total)."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ExcludeFromMaintenance__c
+    },
+    {
+      help = "Indica que esse produto não deve ser transferido para a oportunidade."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ExcludeFromOpportunity__c
+    },
+    {
+      help = "Quando marcada, indica que configurar esse produto ativa automaticamente o URL de Configuração externa definido nas configurações do Salesforce CPQ."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ExternallyConfigurable__c
+    },
+    {
+      help = "Gerará um preço contratado com base na linha de cotação ajustada, se sinalizado."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__GenerateContractedPrice__c
+      picklistValues = [
+        {
+          masterLabel = "Discount Schedule"
+          translation = "Cronograma de descontos"
+        },
+        {
+          masterLabel = "Do Not Generate"
+          translation = "Não gerar"
+        },
+        {
+          masterLabel = "Price"
+          translation = "Preço"
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Product2.field.SBQQ__HasConfigurationAttributes__c
+    },
+    {
+      help = "Indica se esse produto tem ao menos um cronograma de consumo"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__HasConsumptionSchedule__c
+    },
+    {
+      help = "Exclui esse produto da exibição no PDF de cotação."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__Hidden__c
+    },
+    {
+      help = "Selecione a caixa de seleção para ocultar o preço do produto nos Resultados de pesquisa do produto."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__HidePriceInSearchResults__c
+    },
+    {
+      help = "Marque para sempre incluir esse produto nos cálculos de percentual do total (normalmente, produtos com assinatura são excluídos dos cálculos de percentual do total)."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__IncludeInMaintenance__c
+    },
+    {
+      help = "Marque para criar um novo grupo de cotação quando esse produto for adicionado (a menos que o grupo atual esteja vazio)."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__NewQuoteGroup__c
+    },
+    {
+      help = "Marca esse produto como não descontável."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__NonDiscountable__c
+    },
+    {
+      help = "Marque para tornar esse produto não descontável para parceiros."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__NonPartnerDiscountable__c
+    },
+    {
+      help = "Determina como as opções são apresentadas aos usuários."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__OptionLayout__c
+      picklistValues = [
+        {
+          masterLabel = "Sections"
+          translation = "Seções"
+        },
+        {
+          masterLabel = "Tabs"
+          translation = "Guias"
+        },
+        {
+          masterLabel = "Wizard"
+          translation = "Assistente"
+        },
+      ]
+    },
+    {
+      help = "Determina como o usuário seleciona opções anexadas a esse produto. O método de \"Clique\" representa opções com caixas de seleção ao lado dele. \"Adicionar\" renderiza um botão que abre uma caixa de diálogo com as opções disponíveis."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__OptionSelectionMethod__c
+      picklistValues = [
+        {
+          masterLabel = "Add"
+          translation = "Adicionar"
+        },
+        {
+          masterLabel = "Click"
+          translation = "Clicar"
+        },
+      ]
+    },
+    {
+      help = "Selecione se esse produto for opcional por padrão. Produtos opcionais não contribuem para o total da cotação nem são transferidos para a oportunidade."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__Optional__c
+    },
+    {
+      help = "Indica que esse produto permite que o preço seja livremente editável ao criar uma cotação."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__PriceEditable__c
+    },
+    {
+      help = "Guia de preços a ser usado com esse produto."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__PricingGuidance__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Selecione se o Método de precificação puder ser alterado quando esse produto for adicionado à cotação."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__PricingMethodEditable__c
+    },
+    {
+      help = "Método de precificação que deve ser aplicado a esse produto."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__PricingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "Block"
+          translation = "Bloco"
+        },
+        {
+          masterLabel = "Cost"
+          translation = "Custo"
+        },
+        {
+          masterLabel = "List"
+          translation = "Lista"
+        },
+        {
+          masterLabel = "Percent Of Total"
+          translation = "Percentual do total"
+        },
+      ]
+    },
+    {
+      help = "ID do registro de documento ou conteúdo que contém a imagem para esse produto."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ProductPictureID__c
+    },
+    {
+      help = "Permitir ou impedir a alteração da quantidade para esse produto."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__QuantityEditable__c
+    },
+    {
+      help = "Especifica o número de casas decimais usadas no campo Quantidade."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__QuantityScale__c
+    },
+    {
+      help = "Quando essa opção é marcada, esse produto somente pode ser configurado quando adicionado primeiro a uma cotação. Se selecionada, os usuários não terão acesso a um link de Configuração, na página Editar linhas, após o produto ter sido adicionado."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ReconfigurationDisabled__c
+    },
+    {
+      help = "Produto que substitui esse produto na renovação. Use para cotar uma SKU diferente ao renovar."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__RenewalProduct__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Determina uma ordem de classificação padrão de produtos na página Pesquisa do produto e, portanto, a ordem em que são adicionados à cotação."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__SortOrder__c
+    },
+    {
+      help = "Especificações formatadas para esse produto para uso em modelos de cotação para produzir folhas de especificações."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__Specifications__c
+    },
+    {
+      help = "Determina se o percentual do total é calculado com desconto sobre os preços do produto Líquidos ou de Lista."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__SubscriptionBase__c
+      picklistValues = [
+        {
+          masterLabel = "Customer"
+          translation = "Cliente"
+        },
+        {
+          masterLabel = "List"
+          translation = "Lista"
+        },
+        {
+          masterLabel = "Net"
+          translation = "Líquido"
+        },
+        {
+          masterLabel = "Regular"
+          translation = "Regular"
+        },
+      ]
+    },
+    {
+      help = "Use essa opção para limitar os cálculos de totais para determinadas categorias de produto. Por exemplo, a manutenção do software deve calcular apenas o percentual sobre os produtos com uma categoria de percentual do total de manutenção de software."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__SubscriptionCategory__c
+      picklistValues = [
+        {
+          masterLabel = "Hardware"
+          translation = "Hardware"
+        },
+        {
+          masterLabel = "Software"
+          translation = "Software"
+        },
+      ]
+    },
+    {
+      help = "Percentual do total não de assinatura a ser usado como o preço dessa assinatura."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__SubscriptionPercent__c
+    },
+    {
+      help = "Tipo de precificação usada para essa assinatura. \"Nenhum\" significa que esse produto não é uma assinatura."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__SubscriptionPricing__c
+      picklistValues = [
+        {
+          masterLabel = "Fixed Price"
+          translation = "Preço fixo"
+        },
+        {
+          masterLabel = "Percent Of Total"
+          translation = "Percentual do total"
+        },
+      ]
+    },
+    {
+      help = "Use esse campo para substituir um produto incluído em um cálculo de percentual do total. Aponte essa pesquisa para um produto com um preço de lista que você gostaria de usar para os cálculos de Percentual do total do produto atual."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__SubscriptionTarget__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Duração do termo dessa assinatura. Aplica-se apenas se o produto for uma assinatura."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__SubscriptionTerm__c
+    },
+    {
+      help = "Assinaturas renováveis serão transferidas para Cotações de renovação. Assinaturas únicas não serão."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__SubscriptionType__c
+      picklistValues = [
+        {
+          masterLabel = "Evergreen"
+          translation = "Perene"
+        },
+        {
+          masterLabel = "One-time"
+          translation = "Uma vez"
+        },
+        {
+          masterLabel = "Renewable"
+          translation = "Renovável"
+        },
+        {
+          masterLabel = "Renewable/Evergreen"
+          translation = "Renovável/perene"
+        },
+      ]
+    },
+    {
+      help = "Especifica o código tributário para as regras de tributação."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__TaxCode__c
+    },
+    {
+      help = "Indica se esse produto é tributável."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__Taxable__c
+    },
+    {
+      help = "Especifique o nível do termo de assinatura que deve ser usado ao calcular o desconto do termo. Deixe em branco para indicar o padrão."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__TermDiscountLevel__c
+      picklistValues = [
+        {
+          masterLabel = "Group"
+          translation = "Grupo"
+        },
+        {
+          masterLabel = "Line"
+          translation = "Linha"
+        },
+        {
+          masterLabel = "Quote"
+          translation = "Cotação"
+        },
+      ]
+    },
+    {
+      help = "Cronograma de descontos com base no termo da assinatura."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__TermDiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Use para especificar crédito ao cotar atualizações para esse produto."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__UpgradeCredit__c
+      relationshipLabel = ""
+    },
+    {
+      help = "A taxa de conversão entre a quantidade desse produto e a do produto de origem."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__UpgradeRatio__c
+    },
+    {
+      help = "Produto que está recebendo atualização. Preencher esse campo torna esse produto uma atualização."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__UpgradeSource__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Especifique o produto da atualização. Aplica-se somente se esse produto for uma atualização, conforme indicado pelo preenchimento do campo Origem de atualização ou pela presença de registro de Origem de atualização relacionados."
+      label = ""
+      name = salesforce.Product2.field.SBQQ__UpgradeTarget__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Product2.field.Subscription_License_Type__c
+      picklistValues = [
+        {
+          masterLabel = "Pay as you go"
+          translation = ""
+        },
+        {
+          masterLabel = "Pre Paid"
+          translation = ""
+        },
+        {
+          masterLabel = "Pre-Paid Overage Use"
+          translation = ""
+        },
+      ]
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Product Layout"
+      sections = [
+        {
+          label = "Links personalizados"
+          section = "Custom Links"
+        },
+        {
+          label = "Campos"
+          section = "Fields"
+        },
+        {
+          label = "Precificação"
+          section = "Pricing"
+        },
+        {
+          label = "Renovações"
+          section = "Renewals"
+        },
+        {
+          label = "Configuração do Salesforce CPQ"
+          section = "Salesforce CPQ Configuration"
+        },
+        {
+          label = "Assinaturas"
+          section = "Subscriptions"
+        },
+        {
+          label = "Upgrades"
+          section = "Upgrades"
+        },
+      ]
+    },
+  ]
+  validationRules = [
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.Product2_SBQQ__Include_or_Exclude_Maintenance
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.Product2_SBQQ__RecurringChargeTypeMustHaveBillingType
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.Product2_SBQQ__Term_schedule_requires_subscription
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.Product2_SBQQ__Validate_billing_frequency
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.Product2_SBQQ__Validate_billing_type
+    },
+  ]
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Product2_SBQQ__CloneWithRelated
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Product2_SBQQ__CloneWithRelatedClassic
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Product2_SBQQ__Translate
+    },
+  ]
+  _parent = [
+    salesforce.Product2,
+  ]
+}

@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__SearchFilter__c_pt_BR@uuuubu {
+  fullName = "SBQQ__SearchFilter__c-pt_BR"
+  _parent = [
+    salesforce.SBQQ__SearchFilter__c,
+  ]
+}

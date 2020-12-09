@@ -1,0 +1,79 @@
+salesforce.CustomObjectTranslation User_fr@b {
+  fullName = "User-fr"
+  fields = [
+    {
+      help = "Personnaliser l'onglet par défaut de la page de référence produit."
+      label = ""
+      name = salesforce.User.field.SBQQ__DefaultProductLookupTab__c
+      picklistValues = [
+        {
+          masterLabel = "Guided Selling"
+          translation = "Vente guidée"
+        },
+        {
+          masterLabel = "Search Filters"
+          translation = "Filtres de recherche"
+        },
+      ]
+    },
+    {
+      help = "Permet d'activer l'outil de diagnostic de CPQ, disponible uniquement si le paramètre de l'organisation est activé. Pour activer cette capacité, contactez le support."
+      label = ""
+      name = salesforce.User.field.SBQQ__DiagnosticToolEnabled__c
+    },
+    {
+      help = "Sélectionnez cette case pour autoriser cet utilisateur à changer le format de sortie des documents de devis."
+      label = ""
+      name = salesforce.User.field.SBQQ__OutputFormatChangeAllowed__c
+    },
+    {
+      help = "Sélectionnez « Suivi » pour afficher les produits que vous suivez dans Chatter avant d'autres lors de l'ajout à un devis."
+      label = ""
+      name = salesforce.User.field.SBQQ__ProductSortPreference__c
+      picklistValues = [
+        {
+          masterLabel = "Followed"
+          translation = "Suivi"
+        },
+      ]
+    },
+    {
+      help = "Sélectionnez cette case pour effacer les filtres et les résultats de recherche chaque fois que vous ajoutez des produits à vos devis, sinon vos sélections antérieures sont conservées."
+      label = ""
+      name = salesforce.User.field.SBQQ__ResetProductLookup__c
+    },
+    {
+      label = ""
+      name = salesforce.User.field.SBQQ__Theme__c
+    },
+  ]
+  layouts = [
+    {
+      layout = "User Profile Layout"
+      layoutType = "UserAlt"
+      sections = [
+        {
+          label = ""
+          section = "About"
+        },
+        {
+          label = ""
+          section = "Background"
+        },
+        {
+          label = ""
+          section = "Contact"
+        },
+      ]
+    },
+  ]
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.User_SBQQ__Select_Theme
+    },
+  ]
+  _parent = [
+    salesforce.User,
+  ]
+}

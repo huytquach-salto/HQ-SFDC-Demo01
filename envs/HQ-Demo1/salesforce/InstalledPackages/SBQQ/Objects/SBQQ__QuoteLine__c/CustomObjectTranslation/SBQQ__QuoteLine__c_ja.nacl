@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__QuoteLine__c_ja@uuuub {
+  fullName = "SBQQ__QuoteLine__c-ja"
+  _parent = [
+    salesforce.SBQQ__QuoteLine__c,
+  ]
+}

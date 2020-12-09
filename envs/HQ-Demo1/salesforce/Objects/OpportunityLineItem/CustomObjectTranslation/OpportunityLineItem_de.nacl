@@ -1,0 +1,23 @@
+salesforce.CustomObjectTranslation OpportunityLineItem_de@b {
+  fullName = "OpportunityLineItem-de"
+  fields = [
+    {
+      help = "ID des Opportunity-Produkts, das aus dem Paket dieses Produkts stammt."
+      label = ""
+      name = salesforce.OpportunityLineItem.field.SBQQ__ParentID__c
+    },
+    {
+      label = ""
+      name = salesforce.OpportunityLineItem.field.SBQQ__QuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Gibt den Abonnementtyp zum Bestimmen der Vertragspreise an."
+      label = ""
+      name = salesforce.OpportunityLineItem.field.SBQQ__SubscriptionType__c
+    },
+  ]
+  _parent = [
+    salesforce.OpportunityLineItem,
+  ]
+}

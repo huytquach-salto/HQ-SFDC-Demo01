@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__ConfigurationRule__c_de@uuuub {
+  fullName = "SBQQ__ConfigurationRule__c-de"
+  _parent = [
+    salesforce.SBQQ__ConfigurationRule__c,
+  ]
+}

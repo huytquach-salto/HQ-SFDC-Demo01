@@ -1,0 +1,301 @@
+salesforce.CustomObjectTranslation OrderItem_ja@b {
+  fullName = "OrderItem-ja"
+  fields = [
+    {
+      help = "注文商品が有効かどうかを示します。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Activated__c
+    },
+    {
+      help = "この注文商品から作成された納入商品"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Asset__c
+      relationshipLabel = ""
+    },
+    {
+      help = "請求サイクルを定義します。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BillingFrequency__c
+    },
+    {
+      help = "請求のタイミングを定義する請求種別。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BillingType__c
+    },
+    {
+      help = "この注文商品に注文作成時に適用するブロック価格。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BlockPrice__c
+      relationshipLabel = ""
+    },
+    {
+      help = "予約が含まれるかどうかを示します。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BookingsIndicator__c
+    },
+    {
+      help = "バンドルの親のルートを参照する内部使用項目。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BundleRoot__c
+      relationshipLabel = ""
+    },
+    {
+      help = "商品の課金の種別。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ChargeType__c
+    },
+    {
+      help = "この注文商品の発生元である契約アクション。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ContractAction__c
+    },
+    {
+      help = "この注文商品から作成されるサブスクリプションの契約。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Contract__c
+      relationshipLabel = ""
+    },
+    {
+      help = "注文商品が契約済みかどうかを示します。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Contracted__c
+    },
+    {
+      help = "注文商品の契約処理を制御します。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ContractingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "Contract Separately"
+          translation = "個別に契約"
+        },
+        {
+          masterLabel = "Do Not Contract"
+          translation = "契約しない"
+        },
+        {
+          masterLabel = "Inherit"
+          translation = "継承"
+        },
+      ]
+    },
+    {
+      help = "サブスクリプションの期間。商品がサブスクリプションの場合にのみ適用されます。これは、品目が最初に生成されるときに関連商品のサブスクリプション期間からコピーされます。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__DefaultSubscriptionTerm__c
+    },
+    {
+      help = "複数セグメント商品の場合は、注文品目の価格ディメンション (「年」、「月」、「四半期」など) の種別です。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__DimensionType__c
+    },
+    {
+      help = "この注文商品に適用される割引率表"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__DiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "注文商品の合計金額。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__OrderProductBookings__c
+    },
+    {
+      help = "注文された商品の実際の数量。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__OrderedQuantity__c
+    },
+    {
+      help = "この注文商品に適用される価格ディメンションを参照します。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__PriceDimension__c
+      relationshipLabel = ""
+    },
+    {
+      help = "この注文商品に適用される価格表。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__PriceSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "この品目の価格の計算方法を示します。リスト: リスト価格から割引を引きます。コスト: コストにマークアップを加えます。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__PricingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "Block"
+          translation = "ブロック"
+        },
+        {
+          masterLabel = "Cost"
+          translation = "コスト"
+        },
+        {
+          masterLabel = "Custom"
+          translation = "カスタム"
+        },
+        {
+          masterLabel = "List"
+          translation = "リスト"
+        },
+        {
+          masterLabel = "Percent Of Total"
+          translation = "全体に対する割合"
+        },
+      ]
+    },
+    {
+      help = "注文品目の商品サブスクリプション種別を設定します。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ProductSubscriptionType__c
+    },
+    {
+      help = "按分価格の計算に使用する計算された比率。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ProrateMultiplier__c
+    },
+    {
+      help = "この注文商品の作成元である見積品目。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__QuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      help = "この品目によって見積を作成する商品のリスト単価。リスト単価は価格表から取得されます。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__QuotedListPrice__c
+    },
+    {
+      help = "見積もった数量。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__QuotedQuantity__c
+    },
+    {
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__RequiredBy__c
+      relationshipLabel = ""
+    },
+    {
+      help = "この注文商品で改訂された注文商品を参照します。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__RevisedOrderProduct__c
+      relationshipLabel = ""
+    },
+    {
+      help = "複数セグメント商品で、インデックスはセグメント表内でのこの注文商品の位置を表します。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SegmentIndex__c
+    },
+    {
+      help = "複数セグメント商品で、複数ディメンションの見積品目をグループ化するために使用する共有キーです。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SegmentKey__c
+    },
+    {
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ShippingAccount__c
+      relationshipLabel = ""
+    },
+    {
+      help = "注文商品の現在の状態を示します。注文作成時のデフォルトはドラフトです。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Status__c
+    },
+    {
+      help = "サブスクリプション価格の計算方法を示します。これが空白の場合、品目はサブスクリプション商品ではありません。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SubscriptionPricing__c
+    },
+    {
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SubscriptionTerm__c
+    },
+    {
+      help = "契約の価格設定を決定するサブスクリプション種別を示します。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SubscriptionType__c
+    },
+    {
+      help = "この注文商品から作成されたサブスクリプション"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Subscription__c
+      relationshipLabel = ""
+    },
+    {
+      help = "予想される税額"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TaxAmount__c
+    },
+    {
+      help = "課税規則の税コードを指定します。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TaxCode__c
+    },
+    {
+      help = "この注文商品に適用される期間割引率表"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TermDiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "この注文商品の関連サブスクリプションが終了した日付"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TerminatedDate__c
+    },
+    {
+      help = "個別品目の全期間正価。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__UnproratedNetPrice__c
+    },
+    {
+      help = "この見積品目によってアップグレードされるサブスクリプション。見積が契約されると、このサブスクリプションの [解除日] 項目が入力されます。"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__UpgradedSubscription__c
+      relationshipLabel = ""
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Order Product Layout"
+      sections = [
+        {
+          label = "請求先情報"
+          section = "Billing Information"
+        },
+        {
+          label = "契約情報"
+          section = "Contracting Information"
+        },
+        {
+          label = "価格情報"
+          section = "Price Information"
+        },
+        {
+          label = "見積およびサブスクリプション情報"
+          section = "Quote and Subscription Information"
+        },
+      ]
+    },
+  ]
+  validationRules = [
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__CannotChangeBookingIndicatorOnActivation
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__RecurringChargeTypeMustHaveBillingType
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__Validate_billing_frequency
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__Validate_billing_type
+    },
+  ]
+  _parent = [
+    salesforce.OrderItem,
+  ]
+}

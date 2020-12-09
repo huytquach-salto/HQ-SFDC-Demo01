@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__DiscountCategory__c_ja@uuuub {
+  fullName = "SBQQ__DiscountCategory__c-ja"
+  _parent = [
+    salesforce.SBQQ__DiscountCategory__c,
+  ]
+}

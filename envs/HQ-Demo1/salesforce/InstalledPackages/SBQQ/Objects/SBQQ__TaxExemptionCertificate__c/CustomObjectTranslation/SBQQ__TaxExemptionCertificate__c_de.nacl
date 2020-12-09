@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__TaxExemptionCertificate__c_de@uuuub {
+  fullName = "SBQQ__TaxExemptionCertificate__c-de"
+  _parent = [
+    salesforce.SBQQ__TaxExemptionCertificate__c,
+  ]
+}

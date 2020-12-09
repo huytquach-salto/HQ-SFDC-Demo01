@@ -1,0 +1,341 @@
+salesforce.CustomObjectTranslation Asset_fr@b {
+  fullName = "Asset-fr"
+  fieldSets = [
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Asset_SBQQ__SearchFilters
+    },
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Asset_SBQQ__SearchResults
+    },
+  ]
+  fields = [
+    {
+      help = "Remise supplémentaire pour cette ressource, si elle est exprimée avec un montant"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__AdditionalDiscountAmount__c
+    },
+    {
+      help = "Définit la fréquence de facturation."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__BillingFrequency__c
+    },
+    {
+      help = "Type de facturation qui définit à quel moment la facturation doit avoir lieu. La facturation anticipée vous permet de facturer vos clients avant de livrer les produits ou services commandés ; la facturation différée vous permet de facturer vos clients après avoir livré les produits ou services."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__BillingType__c
+    },
+    {
+      help = "Indique si cet élément de ligne représente un package, ce qui signifie qu'il inclut d'autres éléments de ligne dans ce devis."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Bundle__c
+    },
+    {
+      help = "Pour les éléments qui ont des quantités calculées, ce champ contient la quantité d'origine saisie par l'utilisateur."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__BundledQuantity__c
+    },
+    {
+      help = "Indique que le produit de cet élément de ligne est groupé (inclus) à un autre produit de ce devis. Les éléments de ligne d'offres groupées ont un prix nul et n'autorisent pas la modification du prix ou de la quantité."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Bundled__c
+    },
+    {
+      help = "Type de frais sur les produits. Il s'agit d'un champs du système provenant du produit associé."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__ChargeType__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__CombineKey__c
+    },
+    {
+      help = "Corrige la remise supplémentaire pour ce composant dans la remise du package parent."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__ComponentDiscountedByPackage__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__CreditProductId__c
+    },
+    {
+      help = "Abonnement qui couvre actuellement cette ressource. Automatiquement renseigné si un seul abonnement couvre cette ressource. Les renouvellements remplacent avec le nouvel abonnement."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__CurrentSubscription__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Nom de la dimension de prix source de cette ressource"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Dimension__c
+    },
+    {
+      help = "Type de barème de remise. Copié depuis le champ Type du barème de remise associé."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__DiscountScheduleType__c
+      picklistValues = [
+        {
+          masterLabel = "Range"
+          translation = "Plage"
+        },
+        {
+          masterLabel = "Slab"
+          translation = "Par palier"
+        },
+      ]
+    },
+    {
+      help = "Spécifiez les remises en pourcentage ou en montant à déduire du prix du produit en utilisant la quantité ou la durée achetée. Définissez des plages de quantité/de durée sur des niveaux avec différents pourcentages de remise. La remise s'applique au prix catalogue et le total qui en résulte est stocké dans le prix normal."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__DiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Remise supplémentaire pour cette ressource, si elle est exprimée en pourcentage"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Discount__c
+    },
+    {
+      help = "Remise à appliquer en plus de la remise partenaire."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__DistributorDiscount__c
+    },
+    {
+      help = "Identifier la fonctionnalité et l'option dynamique de cette ligne."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__DynamicOptionId__c
+    },
+    {
+      help = "Détermine si Service Cloud était activé lorsque cette ressource a été créée."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__FromServiceCloud__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__LatestQuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Prix catalogue de ce produit Ressource."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__ListPrice__c
+    },
+    {
+      help = "Marge pour cette ressource, si elle est exprimée avec un montant"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__MarkupAmount__c
+    },
+    {
+      help = "Marge sur cette ressource, si elle est exprimée en pourcentage"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__MarkupRate__c
+    },
+    {
+      help = "Numéro qui indique la position de la ligne dans son groupe ou son devis."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Number__c
+    },
+    {
+      help = "Remise étendue à ce produit, car il fait partie d'un package."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OptionDiscountAmount__c
+    },
+    {
+      help = "Si cette ligne correspond à une unité de gestion de stock facultative, ce champ capture toute remise accordée au package et étendue à l'option."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OptionDiscount__c
+    },
+    {
+      help = "Indique le niveau d'imbrication de cette option (s'applique uniquement aux lignes générées à partir d'options)."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OptionLevel__c
+    },
+    {
+      help = "Indique le type d'option, copié depuis l'Option produit associée. Détermine le calcul de la quantité."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OptionType__c
+      picklistValues = [
+        {
+          masterLabel = "Accessory"
+          translation = "Accessoire"
+        },
+        {
+          masterLabel = "Component"
+          translation = "Composant"
+        },
+        {
+          masterLabel = "Related Product"
+          translation = "Produit associé"
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OrderProduct__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Coût unitaire d'origine de la ressource au moment de l'achat, avant l'application des barèmes de coût unitaire."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OriginalUnitCost__c
+    },
+    {
+      help = "Un code qui énumère chacun des composants de ce package en fonction de leurs codes composant."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PackageProductCode__c
+    },
+    {
+      help = "Une description de chaque composant dans ce package."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PackageProductDescription__c
+    },
+    {
+      help = "Les remises partenaires sont appliquées après toutes les remises automatiques et discrétionnaires. La remise partenaire est prise en compte dans le prix partenaire."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PartnerDiscount__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PriceDimension__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Indique comment le prix de cet élément de ligne est calculé : « Catalogue » = prix catalogue moins la remise. « Coût » = ajout de la marge au coût."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PricingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "Block"
+          translation = "Bloc"
+        },
+        {
+          masterLabel = "Cost"
+          translation = "Coût"
+        },
+        {
+          masterLabel = "Custom"
+          translation = "Personnalisé"
+        },
+        {
+          masterLabel = "List"
+          translation = "Catalogue"
+        },
+        {
+          masterLabel = "Percent Of Total"
+          translation = "Pourcentage du total"
+        },
+      ]
+    },
+    {
+      help = "Option produit qui a généré cette ligne (le cas échéant)."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__ProductOption__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__QuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Prix normal de cette ressource."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RegularPrice__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RenewalUpliftRate__c
+    },
+    {
+      help = "La ressource parente. Si elle est renseignée, cette ressource est un enfant dans une offre groupée."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RequiredByAsset__c
+      relationshipLabel = ""
+    },
+    {
+      help = "L'ID de l'enregistrement parent qui nécessite cet enregistrement."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RequiredById__c
+    },
+    {
+      help = "Produit parent de cette ressource."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RequiredByProduct__c
+      relationshipLabel = ""
+    },
+    {
+      help = "L'abonnement parent. S'il est renseigné, cette ressource est un enfant dans une offre groupée."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RequiredBySubscription__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RevisedAsset__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Parent ultime de l'offre groupée de cette ressource"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RootAsset__c
+      relationshipLabel = ""
+    },
+    {
+      help = "L'ID de la souscription ou de la ressource à la racine du paquet qui contient cette ressource"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RootId__c
+    },
+    {
+      help = "Pour les produits à segments multiples, l'index qui représente la position de cette ligne de devis dans le tableau des segments."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SegmentIndex__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SegmentKey__c
+    },
+    {
+      help = "Pour les produits à segments multiples, étiquette de l'en-tête de colonne (par exemple « Année 1 ») associée à cette ligne."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SegmentLabel__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SubscriptionEndDate__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SubscriptionQuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SubscriptionStartDate__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Subscription__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Barème des remises basées sur la durée de l'abonnement. La valeur « Groupe » applique le taux de remise à la durée du groupe, alors que la valeur « Devis » applique le taux de remise à toute la durée du devis, quelles que soient les différences de durée dans vos groupes."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__TermDiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Coût unitaire de cette ressource."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__UnitCost__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__VirtualAsset__c
+      relationshipLabel = ""
+    },
+  ]
+  _parent = [
+    salesforce.Asset,
+  ]
+}

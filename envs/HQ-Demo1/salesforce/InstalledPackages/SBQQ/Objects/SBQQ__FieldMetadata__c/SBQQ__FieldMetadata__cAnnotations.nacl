@@ -1,0 +1,55 @@
+type salesforce.SBQQ__FieldMetadata__c {
+  annotations {
+    serviceid apiName {
+    }
+    serviceid metadataType {
+    }
+    salesforce.ActionOverride actionOverrides {
+    }
+    string compactLayoutAssignment {
+    }
+    string description {
+    }
+    boolean enableDataTranslation {
+    }
+    boolean enableDivisions {
+    }
+    boolean enableEnhancedLookup {
+    }
+    boolean enableFeeds {
+    }
+    boolean enableHistory {
+    }
+    boolean enableLicensing {
+    }
+    string externalDataSource {
+    }
+    string externalName {
+    }
+    string externalRepository {
+    }
+    salesforce.HistoryRetentionPolicy historyRetentionPolicy {
+    }
+    boolean recordTypeTrackFeedHistory {
+    }
+    boolean recordTypeTrackHistory {
+    }
+    salesforce.SearchLayouts searchLayouts {
+    }
+    salesforce.SharingRecalculation sharingRecalculations {
+    }
+    string externalSharingModel {
+    }
+    string customSettingsType {
+    }
+    string visibility {
+    }
+  }
+  apiName = "SBQQ__FieldMetadata__c"
+  metadataType = "CustomObject"
+  label = "Field Metadata"
+  customSettingsType = "List"
+  description = "Extra metadata about the field that's not accessible via the API."
+  enableFeeds = false
+  visibility = "Public"
+}

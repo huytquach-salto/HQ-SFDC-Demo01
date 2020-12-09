@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__ProcessInputCondition__c_pt_BR@uuuubu {
+  fullName = "SBQQ__ProcessInputCondition__c-pt_BR"
+  _parent = [
+    salesforce.SBQQ__ProcessInputCondition__c,
+  ]
+}

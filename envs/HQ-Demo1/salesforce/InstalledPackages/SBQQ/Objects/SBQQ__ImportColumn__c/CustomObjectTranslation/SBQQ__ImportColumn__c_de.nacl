@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__ImportColumn__c_de@uuuub {
+  fullName = "SBQQ__ImportColumn__c-de"
+  _parent = [
+    salesforce.SBQQ__ImportColumn__c,
+  ]
+}

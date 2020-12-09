@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__TemplateSection__c_de@uuuub {
+  fullName = "SBQQ__TemplateSection__c-de"
+  _parent = [
+    salesforce.SBQQ__TemplateSection__c,
+  ]
+}

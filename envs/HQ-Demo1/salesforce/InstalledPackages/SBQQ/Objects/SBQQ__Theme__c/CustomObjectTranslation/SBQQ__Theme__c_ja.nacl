@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__Theme__c_ja@uuuub {
+  fullName = "SBQQ__Theme__c-ja"
+  _parent = [
+    salesforce.SBQQ__Theme__c,
+  ]
+}

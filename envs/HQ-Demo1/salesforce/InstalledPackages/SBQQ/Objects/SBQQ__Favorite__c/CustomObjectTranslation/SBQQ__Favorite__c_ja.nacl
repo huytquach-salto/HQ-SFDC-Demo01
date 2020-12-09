@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__Favorite__c_ja@uuuub {
+  fullName = "SBQQ__Favorite__c-ja"
+  _parent = [
+    salesforce.SBQQ__Favorite__c,
+  ]
+}

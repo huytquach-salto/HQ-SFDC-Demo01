@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__SubscriptionConsumptionSchedule__c_de@uuuub {
+  fullName = "SBQQ__SubscriptionConsumptionSchedule__c-de"
+  _parent = [
+    salesforce.SBQQ__SubscriptionConsumptionSchedule__c,
+  ]
+}

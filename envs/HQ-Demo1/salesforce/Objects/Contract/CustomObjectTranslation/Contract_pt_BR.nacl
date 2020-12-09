@@ -1,0 +1,217 @@
+salesforce.CustomObjectTranslation Contract_pt_BR@bu {
+  fullName = "Contract-pt_BR"
+  fieldSets = [
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Contract_SBQQ__ActiveContractLookup
+    },
+  ]
+  fields = [
+    {
+      help = "Determina se esse contrato está em vigor."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__ActiveContract__c
+    },
+    {
+      help = "Tipo de registro da oportunidade de alteração, a menos que especificado de outra forma."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentOpportunityRecordTypeId__c
+    },
+    {
+      help = "O estágio atual da oportunidade de alteração."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentOpportunityStage__c
+    },
+    {
+      help = "Proprietário da oportunidade original."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentOwner__c
+      relationshipLabel = ""
+    },
+    {
+      help = "ID do catálogo de preços da sua alteração."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentPricebookId__c
+    },
+    {
+      help = "A base para a qual uma Data inicial de renovação e uma Data final de alteração são calculadas."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentRenewalBehavior__c
+      picklistValues = [
+        {
+          masterLabel = "Earliest End Date"
+          translation = "Primeira data final"
+        },
+        {
+          masterLabel = "Latest End Date"
+          translation = "Última data final"
+        },
+      ]
+    },
+    {
+      help = "Data inicial da sua alteração. Se em branco, a alteração começará na data de hoje."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentStartDate__c
+    },
+    {
+      help = "Selecione para incluir funções de contato da oportunidade original na oportunidade de renovação."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__DefaultRenewalContactRoles__c
+    },
+    {
+      help = "Selecione para incluir os parceiros da oportunidade original na oportunidade de renovação."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__DefaultRenewalPartners__c
+    },
+    {
+      help = "Se desmarcada, a Data final da cotação de alteração será definida conforme a configuração de Comportamento de alteração e renovação. Se marcada, nenhuma Data final será definida."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__DisableAmendmentCoTerm__c
+    },
+    {
+      help = "Indica se um contato é perene."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__Evergreen__c
+    },
+    {
+      help = "Data final do contrato para usar em fluxos de trabalho baseados em tempo."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__ExpirationDate__c
+    },
+    {
+      help = "Define como produtos de assinatura segmentados aparecerão em cotações de renovação. Cancelar segmentação renovará como uma linha de cotação padrão com os últimos dados dos segmentos."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__MDQRenewalBehavior__c
+      picklistValues = [
+        {
+          masterLabel = "De-segmented"
+          translation = "Cancelar segmentação"
+        },
+      ]
+    },
+    {
+      help = "Selecione para designar esse contrato com o contrato mestre para essa conta. Mediante a renovação, todos os contratos serão implantados nesse."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__MasterContract__c
+    },
+    {
+      help = "ID do catálogo de preços usado da oportunidade original."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__OpportunityPricebookId__c
+    },
+    {
+      help = "A oportunidade a partir da qual esse contrato foi criado."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__Opportunity__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Contract.field.SBQQ__Order__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Selecione a caixa de seleção para manter a hierarquia de pacotes em cotações de renovação."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__PreserveBundleStructureUponRenewals__c
+    },
+    {
+      help = "A cotação a partir da qual esse contrato foi criado."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__Quote__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Selecione para acionar a geração de uma oportunidade de renovação para fins de previsões. Não é possível gerar automaticamente uma cotação de renovação."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalForecast__c
+    },
+    {
+      help = "Tipo de registro da oportunidade de renovação, se diferente do padrão."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalOpportunityRecordTypeId__c
+    },
+    {
+      help = "Substitua o estágio da oportunidade padrão para essa renovação. Isso deve ser feito antes de selecionar a Previsão de renovação a entrar em vigor na oportunidade de renovação."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalOpportunityStage__c
+    },
+    {
+      help = "Oportunidade de renovação gerada para rastrear a renovação desse contrato."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalOpportunity__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Proprietário da oportunidade original."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalOwner__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Especifique um ID do catálogo de preços a ser usado em Oportunidades de renovação se você não quiser usar o ID do catálogo de preços da oportunidade original."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalPricebookId__c
+    },
+    {
+      help = "Selecione essa opção para gerar automaticamente uma cotação de renovação em oportunidades de renovação."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalQuoted__c
+    },
+    {
+      help = "Especifique o termo da renovação. Por padrão, ele corresponde ao termo do contrato original."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalTerm__c
+    },
+    {
+      help = "Taxa de aumentos de preço de renovação."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalUpliftRate__c
+    },
+    {
+      help = "Selecione para combinar as quantidades de assinaturas para o mesmo produto em uma linha nas Cotações e alterações de renovação."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__SubscriptionQuantitiesCombined__c
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Contract Layout"
+      sections = [
+        {
+          label = "Alterações"
+          section = "Amendments"
+        },
+        {
+          label = "Links personalizados"
+          section = "Custom Links"
+        },
+        {
+          label = "Recalculando"
+          section = "Recalculating"
+        },
+        {
+          label = "Informações do Salesforce CPQ"
+          section = "Salesforce CPQ Information"
+        },
+        {
+          label = "Informações do sistema"
+          section = "System Info"
+        },
+      ]
+    },
+  ]
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Contract_SBQQ__Amend
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Contract_SBQQ__RenewContracts
+    },
+  ]
+  _parent = [
+    salesforce.Contract,
+  ]
+}

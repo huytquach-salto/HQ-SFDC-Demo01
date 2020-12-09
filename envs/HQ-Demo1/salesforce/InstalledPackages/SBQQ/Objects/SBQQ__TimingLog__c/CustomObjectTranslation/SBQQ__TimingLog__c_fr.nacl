@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__TimingLog__c_fr@uuuub {
+  fullName = "SBQQ__TimingLog__c-fr"
+  _parent = [
+    salesforce.SBQQ__TimingLog__c,
+  ]
+}

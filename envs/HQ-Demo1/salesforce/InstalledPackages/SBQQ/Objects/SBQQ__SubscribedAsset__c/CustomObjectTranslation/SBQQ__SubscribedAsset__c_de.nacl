@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__SubscribedAsset__c_de@uuuub {
+  fullName = "SBQQ__SubscribedAsset__c-de"
+  _parent = [
+    salesforce.SBQQ__SubscribedAsset__c,
+  ]
+}

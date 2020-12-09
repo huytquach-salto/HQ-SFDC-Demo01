@@ -1,0 +1,304 @@
+salesforce.CustomObjectTranslation OrderItem_fr@b {
+  fullName = "OrderItem-fr"
+  fields = [
+    {
+      help = "Indique si le produit commandé est activé."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Activated__c
+    },
+    {
+      help = "Ressource créée à partir de ce produit commandé"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Asset__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Définit la fréquence de facturation."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BillingFrequency__c
+    },
+    {
+      help = "Le type de facturation qui définit la période de facturation."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BillingType__c
+    },
+    {
+      help = "Le prix par bloc est appliqué à ce produit lors de la création de la commande."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BlockPrice__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Indique si les réservations sont incluses."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BookingsIndicator__c
+    },
+    {
+      help = "Un champ utilisé en interne qui pointe vers la racine de son paquet parent."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BundleRoot__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Type de frais appliqué au produit."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ChargeType__c
+    },
+    {
+      help = "L'action de contrat à partir de laquelle ce produit commandé est généré."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ContractAction__c
+    },
+    {
+      help = "Le contrat d'abonnement créé à partir de ce produit commandé."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Contract__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Indique si le produit commandé est contracté."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Contracted__c
+    },
+    {
+      help = "Contrôle le comportement d'établissement du contrat d'un produit commandé."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ContractingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "Contract Separately"
+          translation = "Contracter séparément"
+        },
+        {
+          masterLabel = "Do Not Contract"
+          translation = "Ne pas contracter"
+        },
+        {
+          masterLabel = "Inherit"
+          translation = "Hériter"
+        },
+      ]
+    },
+    {
+      help = '''
+La longueur de la durée d'abonnement, qui s'applique uniquement si le produit est un abonnement. Elle est copiée à partir de la Durée d'abonnement du produit associé
+            lors de la génération initiale de l'élément de ligne.
+'''
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__DefaultSubscriptionTerm__c
+    },
+    {
+      help = "Pour les produits à segments multiples, il correspond au type de dimension de prix (par exemple « ANNÉE », « MOIS », « TRIMESTRE ») de l'élément commandé."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__DimensionType__c
+    },
+    {
+      help = "Barème de remise appliqué à ce produit commandé."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__DiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Montant du prix total du produit de la commande."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__OrderProductBookings__c
+    },
+    {
+      help = "La quantité actuelle du produit placé dans la commande."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__OrderedQuantity__c
+    },
+    {
+      help = "Référence la dimension de prix appliquée à ce produit commandé."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__PriceDimension__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Barème de prix appliqué à ce produit commandé."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__PriceSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Indique comment le prix de cet élément de ligne est calculé : « Catalogue » = prix catalogue moins la remise. « Coût » = ajout de la marge au coût."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__PricingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "Block"
+          translation = "Bloc"
+        },
+        {
+          masterLabel = "Cost"
+          translation = "Coût"
+        },
+        {
+          masterLabel = "Custom"
+          translation = "Personnalisé"
+        },
+        {
+          masterLabel = "List"
+          translation = "Catalogue"
+        },
+        {
+          masterLabel = "Percent Of Total"
+          translation = "Pourcentage du total"
+        },
+      ]
+    },
+    {
+      help = "Définissez le type d'abonnement du produit de l'élément de commande."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ProductSubscriptionType__c
+    },
+    {
+      help = "Ratio utilisé pour calculer le prix au prorata."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ProrateMultiplier__c
+    },
+    {
+      help = "La ligne du devis à partir de laquelle ce produit commandé est créé."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__QuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Prix unitaire catalogue du produit généré dans le devis par cet élément de ligne. Le prix catalogue provient du catalogue de prix."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__QuotedListPrice__c
+    },
+    {
+      help = "La quantité du devis."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__QuotedQuantity__c
+    },
+    {
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__RequiredBy__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Référence le produit commandé qui est révisé par ce produit commandé."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__RevisedOrderProduct__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Pour les produits à segments multiples, l'index qui représente la position de ce produit commandé dans le tableau des segments."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SegmentIndex__c
+    },
+    {
+      help = "Pour les produits à segments multiples, clé partagée utilisée pour regrouper les lignes de devis à dimensions multiples."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SegmentKey__c
+    },
+    {
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ShippingAccount__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Indique l'état actuel du produit commandé. Le statut par défaut Brouillon est appliqué à la création de la commande."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Status__c
+    },
+    {
+      help = "Indique comment le prix de l'abonnement est calculé. Si ce champ est vide, les éléments de ligne ne correspondent pas à un produit d'abonnement."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SubscriptionPricing__c
+    },
+    {
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SubscriptionTerm__c
+    },
+    {
+      help = "Indique le type d'abonnement qui permet de déterminer la tarification du contrat."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SubscriptionType__c
+    },
+    {
+      help = "Abonnement créé à partir de ce produit commandé"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Subscription__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Montant de la taxe estimé"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TaxAmount__c
+    },
+    {
+      help = "Spécifie un code de taxe pour les règles fiscales."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TaxCode__c
+    },
+    {
+      help = "Barème de remise sur la durée appliqué à ce produit commandé."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TermDiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Date de fin de l'abonnement associé à ce produit commandé"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TerminatedDate__c
+    },
+    {
+      help = "Le prix net sur toute la durée de cette ligne individuelle."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__UnproratedNetPrice__c
+    },
+    {
+      help = "Abonnement mis à niveau par cette ligne de devis. Lorsque le devis est contracté, la Date de résiliation de cet abonnement est renseignée."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__UpgradedSubscription__c
+      relationshipLabel = ""
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Order Product Layout"
+      sections = [
+        {
+          label = "Informations sur la tarification"
+          section = "Billing Information"
+        },
+        {
+          label = "Informations sur le contrat"
+          section = "Contracting Information"
+        },
+        {
+          label = "Informations sur les prix"
+          section = "Price Information"
+        },
+        {
+          label = "Informations sur le devis et l'abonnement"
+          section = "Quote and Subscription Information"
+        },
+      ]
+    },
+  ]
+  validationRules = [
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__CannotChangeBookingIndicatorOnActivation
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__RecurringChargeTypeMustHaveBillingType
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__Validate_billing_frequency
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__Validate_billing_type
+    },
+  ]
+  _parent = [
+    salesforce.OrderItem,
+  ]
+}

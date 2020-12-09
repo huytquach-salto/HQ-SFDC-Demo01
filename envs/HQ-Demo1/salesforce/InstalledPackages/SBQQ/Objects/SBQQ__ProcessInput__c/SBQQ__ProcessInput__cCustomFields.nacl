@@ -1,0 +1,354 @@
+type salesforce.SBQQ__ProcessInput__c {
+  salesforce.MasterDetail SBQQ__QuoteProcess__c {
+    apiName = "SBQQ__ProcessInput__c.SBQQ__QuoteProcess__c"
+    label = "Quote Process"
+    _required = false
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.SBQQ__QuoteProcess__c,
+    ]
+    inlineHelpText = "Quote process that owns the input."
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Inputs"
+    queryable = true
+    description = "Quote process that owns the input."
+  }
+  salesforce.Checkbox SBQQ__Active__c {
+    apiName = "SBQQ__ProcessInput__c.SBQQ__Active__c"
+    label = "Active"
+    defaultValue = false
+    inlineHelpText = "Select the checkbox to activate this process input."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Indicates if this process input is active."
+  }
+  salesforce.Picklist SBQQ__BinaryChoice__c {
+    apiName = "SBQQ__ProcessInput__c.SBQQ__BinaryChoice__c"
+    label = "Binary Choice"
+    _required = false
+    valueSet = [
+      {
+        fullName = "Yes"
+        default = false
+        label = "Yes"
+      },
+      {
+        fullName = "No"
+        default = false
+        label = "No"
+      },
+    ]
+    restricted = false
+    createable = true
+    updateable = true
+    queryable = true
+    sorted = false
+  }
+  salesforce.Picklist SBQQ__ConditionsMet__c {
+    apiName = "SBQQ__ProcessInput__c.SBQQ__ConditionsMet__c"
+    label = "Conditions Met"
+    _required = false
+    valueSet = [
+      {
+        fullName = "All"
+        default = false
+        label = "All"
+      },
+      {
+        fullName = "Any"
+        default = false
+        label = "Any"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Indicate which Process Input conditions must be met."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Indicates which Process Input conditions must be met."
+    sorted = false
+  }
+  salesforce.Picklist SBQQ__DefaultField__c {
+    apiName = "SBQQ__ProcessInput__c.SBQQ__DefaultField__c"
+    label = "Default Field"
+    _required = false
+    valueSet = [
+      {
+        fullName = "Bill To Country"
+        default = false
+        label = "Bill To Country"
+      },
+      {
+        fullName = "Ship To Country"
+        default = false
+        label = "Ship To Country"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Quote field that sources default value for this input."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Quote field that sources default value for this input."
+    sorted = false
+  }
+  salesforce.Number SBQQ__DisplayOrder__c {
+    apiName = "SBQQ__ProcessInput__c.SBQQ__DisplayOrder__c"
+    label = "Display Order"
+    _required = true
+    defaultValueFormula = "1"
+    precision = 8
+    scale = 0
+    inlineHelpText = "Enter the order that the process input should be displayed."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    description = "The order that the process input is displayed."
+    externalId = false
+  }
+  salesforce.Picklist SBQQ__InputField__c {
+    apiName = "SBQQ__ProcessInput__c.SBQQ__InputField__c"
+    label = "Input Field"
+    _required = false
+    valueSet = [
+      {
+        fullName = "BinaryChoice__c"
+        default = false
+        label = "BinaryChoice__c"
+      },
+      {
+        fullName = "IntegerInput__c"
+        default = false
+        label = "IntegerInput__c"
+      },
+      {
+        fullName = "Type_of_License__c"
+        default = false
+        label = "Type_of_License__c"
+      },
+      {
+        fullName = "Subscription_License_Type__c"
+        default = false
+        label = "Subscription_License_Type__c"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Select the API name for the field that accepts the user entry."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "The API name for the field that accepts the user entry."
+    sorted = false
+  }
+  salesforce.Number SBQQ__IntegerInput__c {
+    apiName = "SBQQ__ProcessInput__c.SBQQ__IntegerInput__c"
+    label = "Integer Input"
+    _required = false
+    precision = 18
+    scale = 0
+    inlineHelpText = "Enter a numerical value."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    externalId = false
+  }
+  salesforce.Text SBQQ__Label__c {
+    apiName = "SBQQ__ProcessInput__c.SBQQ__Label__c"
+    label = "Label"
+    _required = false
+    inlineHelpText = "The text that you want displayed to the user in the prompt."
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    description = "Label for this filter."
+    externalId = false
+  }
+  salesforce.Picklist SBQQ__Operator__c {
+    apiName = "SBQQ__ProcessInput__c.SBQQ__Operator__c"
+    label = "Operator"
+    _required = false
+    valueSet = [
+      {
+        fullName = "equals"
+        default = false
+        label = "equals"
+      },
+      {
+        fullName = "not equals"
+        default = false
+        label = "not equals"
+      },
+      {
+        fullName = "less than"
+        default = false
+        label = "less than"
+      },
+      {
+        fullName = "less or equals"
+        default = false
+        label = "less or equals"
+      },
+      {
+        fullName = "greater than"
+        default = false
+        label = "greater than"
+      },
+      {
+        fullName = "greater or equals"
+        default = false
+        label = "greater or equals"
+      },
+      {
+        fullName = "starts with"
+        default = false
+        label = "starts with"
+      },
+      {
+        fullName = "ends with"
+        default = false
+        label = "ends with"
+      },
+      {
+        fullName = "contains"
+        default = false
+        label = "contains"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Select the operator to use when comparing the Input Field entry with the Product Field."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "The operator used when comparing the Input Field entry with the Product Field."
+    sorted = false
+  }
+  salesforce.Lookup SBQQ__ProcessInputCondition__c {
+    apiName = "SBQQ__ProcessInput__c.SBQQ__ProcessInputCondition__c"
+    label = "Process Input Condition"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.SBQQ__ProcessInputCondition__c,
+    ]
+    createable = true
+    updateable = true
+    relationshipName = "ProcessInputCondition"
+    queryable = true
+  }
+  salesforce.Picklist SBQQ__ProductField__c {
+    apiName = "SBQQ__ProcessInput__c.SBQQ__ProductField__c"
+    label = "Product Field"
+    _required = false
+    valueSet = [
+      {
+        fullName = "Product Name"
+        default = false
+        label = "Product Name"
+      },
+      {
+        fullName = "Product Code"
+        default = false
+        label = "Product Code"
+      },
+      {
+        fullName = "Product Family"
+        default = false
+        label = "Product Family"
+      },
+      {
+        fullName = "Type_of_License__c"
+        default = false
+        label = "Type_of_License__c"
+      },
+      {
+        fullName = "Subscription_License_Type__c"
+        default = false
+        label = "Subscription_License_Type__c"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Field on Product object used in filtering products that match this input."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Field on Product object used in filtering products that match this input."
+    sorted = false
+  }
+  salesforce.Picklist Type_of_License__c {
+    apiName = "SBQQ__ProcessInput__c.Type_of_License__c"
+    label = "Type of License"
+    _required = false
+    valueSet = [
+      {
+        fullName = "Perpetual"
+        default = false
+        label = "Perpetual"
+      },
+      {
+        fullName = "Subscription"
+        default = false
+        label = "Subscription"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    sorted = false
+  }
+  salesforce.Picklist Subscription_License_Type__c {
+    apiName = "SBQQ__ProcessInput__c.Subscription_License_Type__c"
+    label = "Subscription License Type"
+    _required = false
+    valueSet = [
+      {
+        fullName = "Pre Paid"
+        default = false
+        label = "Pre Paid"
+      },
+      {
+        fullName = "Pay as you go"
+        default = false
+        label = "Pay as you go"
+      },
+      {
+        fullName = "Evergreen"
+        default = false
+        isActive = false
+        label = "Evergreen"
+      },
+      {
+        fullName = "One-time"
+        default = false
+        isActive = false
+        label = "One-time"
+      },
+      {
+        fullName = "Pre-Paid Overage Use"
+        default = false
+        isActive = false
+        label = "Pre-Paid Overage Use"
+      },
+      {
+        fullName = "Renewable"
+        default = false
+        isActive = false
+        label = "Renewable"
+      },
+    ]
+    restricted = true
+    createable = true
+    updateable = true
+    queryable = true
+    sorted = false
+  }
+}

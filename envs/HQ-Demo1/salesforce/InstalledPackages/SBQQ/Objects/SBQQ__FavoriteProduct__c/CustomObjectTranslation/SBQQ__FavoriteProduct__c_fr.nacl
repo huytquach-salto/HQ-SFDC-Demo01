@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__FavoriteProduct__c_fr@uuuub {
+  fullName = "SBQQ__FavoriteProduct__c-fr"
+  _parent = [
+    salesforce.SBQQ__FavoriteProduct__c,
+  ]
+}

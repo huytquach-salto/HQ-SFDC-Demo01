@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__PriceTier__c_ja@uuuub {
+  fullName = "SBQQ__PriceTier__c-ja"
+  _parent = [
+    salesforce.SBQQ__PriceTier__c,
+  ]
+}

@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__CustomActionCondition__c_en_US@uuuubu {
+  fullName = "SBQQ__CustomActionCondition__c-en_US"
+  _parent = [
+    salesforce.SBQQ__CustomActionCondition__c,
+  ]
+}

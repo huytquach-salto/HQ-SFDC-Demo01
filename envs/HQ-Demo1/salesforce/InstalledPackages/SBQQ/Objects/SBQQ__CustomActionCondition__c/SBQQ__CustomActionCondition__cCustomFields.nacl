@@ -1,0 +1,144 @@
+type salesforce.SBQQ__CustomActionCondition__c {
+  salesforce.MasterDetail SBQQ__CustomAction__c {
+    apiName = "SBQQ__CustomActionCondition__c.SBQQ__CustomAction__c"
+    label = "Custom Action"
+    _required = false
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.SBQQ__CustomAction__c,
+    ]
+    inlineHelpText = "Custom Action that is running this Condition."
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "Custom_Action_Conditions"
+    queryable = true
+    description = "Custom Action that is running this Condition."
+  }
+  salesforce.Picklist SBQQ__Field__c {
+    apiName = "SBQQ__CustomActionCondition__c.SBQQ__Field__c"
+    label = "Field"
+    _required = false
+    valueSet = [
+      {
+        fullName = "Product Code"
+        default = false
+        label = "Product Code"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Choose a field on the target object."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Field on Quote Line or Product Option object that is evaluated by this condition."
+    sorted = false
+  }
+  salesforce.Text SBQQ__FilterValue__c {
+    apiName = "SBQQ__CustomActionCondition__c.SBQQ__FilterValue__c"
+    label = "Filter Value"
+    _required = false
+    inlineHelpText = "Enter the value you want to match in the field you selected using the operator chosen."
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    description = "Value to evaluate against."
+    externalId = false
+  }
+  salesforce.Picklist SBQQ__Operator__c {
+    apiName = "SBQQ__CustomActionCondition__c.SBQQ__Operator__c"
+    label = "Operator"
+    _required = false
+    valueSet = [
+      {
+        fullName = "equals"
+        default = false
+        label = "equals"
+      },
+      {
+        fullName = "not equals"
+        default = false
+        label = "not equals"
+      },
+      {
+        fullName = "less than"
+        default = false
+        label = "less than"
+      },
+      {
+        fullName = "less or equals"
+        default = false
+        label = "less or equals"
+      },
+      {
+        fullName = "greater than"
+        default = false
+        label = "greater than"
+      },
+      {
+        fullName = "greater or equals"
+        default = false
+        label = "greater or equals"
+      },
+      {
+        fullName = "starts with"
+        default = false
+        label = "starts with"
+      },
+      {
+        fullName = "ends with"
+        default = false
+        label = "ends with"
+      },
+      {
+        fullName = "contains"
+        default = false
+        label = "contains"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Select the operator to apply when comparing the Field with the Value."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "The operator that is applied when comparing the Field with the Value."
+    sorted = false
+  }
+  salesforce.FormulaCheckbox SBQQ__ParentActionIsActive__c {
+    apiName = "SBQQ__CustomActionCondition__c.SBQQ__ParentActionIsActive__c"
+    label = "ParentConditionIsActive"
+    formula = "SBQQ__CustomAction__r.SBQQ__Active__c"
+    createable = false
+    updateable = false
+    queryable = true
+    formulaTreatBlanksAs = "BlankAsZero"
+  }
+  salesforce.Picklist SBQQ__TargetObject__c {
+    apiName = "SBQQ__CustomActionCondition__c.SBQQ__TargetObject__c"
+    label = "Target Object"
+    _required = false
+    valueSet = [
+      {
+        fullName = "Quote"
+        default = false
+        label = "Quote"
+      },
+      {
+        fullName = "Product"
+        default = false
+        label = "Product"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Object against which the condition is evaluated."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Object against which the condition is evaluated."
+    sorted = false
+  }
+}

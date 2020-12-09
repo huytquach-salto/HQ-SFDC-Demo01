@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__LineColumn__c_fr@uuuub {
+  fullName = "SBQQ__LineColumn__c-fr"
+  _parent = [
+    salesforce.SBQQ__LineColumn__c,
+  ]
+}

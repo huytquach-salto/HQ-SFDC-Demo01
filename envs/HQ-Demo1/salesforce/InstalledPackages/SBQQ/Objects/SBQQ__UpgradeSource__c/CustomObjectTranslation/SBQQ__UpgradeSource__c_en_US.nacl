@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__UpgradeSource__c_en_US@uuuubu {
+  fullName = "SBQQ__UpgradeSource__c-en_US"
+  _parent = [
+    salesforce.SBQQ__UpgradeSource__c,
+  ]
+}

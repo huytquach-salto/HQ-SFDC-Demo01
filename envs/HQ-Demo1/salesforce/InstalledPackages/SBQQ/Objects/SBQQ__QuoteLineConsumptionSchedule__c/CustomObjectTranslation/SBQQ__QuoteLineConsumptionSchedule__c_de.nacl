@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__QuoteLineConsumptionSchedule__c_de@uuuub {
+  fullName = "SBQQ__QuoteLineConsumptionSchedule__c-de"
+  _parent = [
+    salesforce.SBQQ__QuoteLineConsumptionSchedule__c,
+  ]
+}

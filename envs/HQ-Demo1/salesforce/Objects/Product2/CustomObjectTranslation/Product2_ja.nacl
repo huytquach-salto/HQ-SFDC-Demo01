@@ -1,0 +1,704 @@
+salesforce.CustomObjectTranslation Product2_ja@b {
+  fullName = "Product2-ja"
+  fieldSets = [
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Product2_SBQQ__ConfiguratorFilter
+    },
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Product2_SBQQ__ConfiguratorLookup
+    },
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Product2_SBQQ__SearchFilters
+    },
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Product2_SBQQ__SearchResults
+    },
+  ]
+  fields = [
+    {
+      label = ""
+      name = salesforce.Product2.field.License_Type__c
+      picklistValues = [
+        {
+          masterLabel = "Perpetual"
+          translation = ""
+        },
+        {
+          masterLabel = "Subscription"
+          translation = ""
+        },
+      ]
+    },
+    {
+      help = "この商品を表す納入商品を修正する場合の動作を選択してください。デフォルトでは、アップグレードが追加されない限り、納入商品の数量を減らすことはできず、返金は適用されません。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__AssetAmendmentBehavior__c
+      picklistValues = [
+        {
+          masterLabel = "Allow Refund"
+          translation = "返金を許可"
+        },
+        {
+          masterLabel = "Default"
+          translation = "デフォルト"
+        },
+      ]
+    },
+    {
+      help = "この商品を納入商品に変換する方法を示します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__AssetConversion__c
+      picklistValues = [
+        {
+          masterLabel = "One per quote line"
+          translation = "見積品目ごとに 1 つ"
+        },
+        {
+          masterLabel = "One per unit"
+          translation = "単位ごとに 1 つ"
+        },
+      ]
+    },
+    {
+      help = "空白以外の値を設定すると、この商品がバッチで販売されることを指定します。各バッチに含める数量を入力します。見積に入力された数量は、この値で割って最も近い整数に切り上げられます。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__BatchQuantity__c
+    },
+    {
+      help = "この商品の請求頻度を決定します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__BillingFrequency__c
+    },
+    {
+      help = "請求の発生タイミングを定義する請求種別。[前払い請求] の場合は、商品またはサービスを提供する前に顧客に請求でき、[後払い請求] の場合は、商品またはサービスの提供後に顧客に請求することができます。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__BillingType__c
+    },
+    {
+      help = "ブロック価格設定の計算に使用する項目。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__BlockPricingField__c
+      picklistValues = [
+        {
+          masterLabel = "Quantity"
+          translation = "数量"
+        },
+      ]
+    },
+    {
+      help = "商品の課金の種別。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ChargeType__c
+    },
+    {
+      help = "この商品をコンポーネントとしてマークし、商品ルックアップの選択から除外します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__Component__c
+    },
+    {
+      help = "数量に従って大きくなる割引率。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__CompoundDiscountRate__c
+    },
+    {
+      help = "これは、この商品の [商品の設定] 画面が表示された場合の制御に使用します。初期設定に限定する場合は [追加] を選択します。その後の設定を行う場合は [編集] を選択します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ConfigurationEvent__c
+      picklistValues = [
+        {
+          masterLabel = "Add"
+          translation = "加算"
+        },
+        {
+          masterLabel = "Always"
+          translation = "常に"
+        },
+        {
+          masterLabel = "Edit"
+          translation = "編集"
+        },
+      ]
+    },
+    {
+      help = "設定時にこの商品に使用される項目セットの API 参照名。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ConfigurationFieldSet__c
+      picklistValues = [
+        {
+          masterLabel = "OptionConfiguration"
+          translation = "OptionConfiguration"
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ConfigurationFields__c
+    },
+    {
+      help = "指定された設定項目を基に表示される設定フォームのタイトル。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ConfigurationFormTitle__c
+    },
+    {
+      help = "この商品の設定種別。ユーザが商品/バンドルの設定を許可されているが必須ではない場合は [許可] を、バンドルのオプションが自動的に選択される場合は [無効] を、商品/バンドルの設定が必須の場合は [必須] を選択します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ConfigurationType__c
+      picklistValues = [
+        {
+          masterLabel = "Allowed"
+          translation = "許可"
+        },
+        {
+          masterLabel = "Disabled"
+          translation = "無効"
+        },
+        {
+          masterLabel = "Required"
+          translation = "必須"
+        },
+      ]
+    },
+    {
+      help = "この商品の設定の検証に使用される JavaScript 関数。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ConfigurationValidator__c
+    },
+    {
+      help = "設定対象の商品の商品コード (SKU) を生成するために使用されるパターン。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ConfiguredCodePattern__c
+    },
+    {
+      help = "設定対象の商品の動的な商品説明を生成するために使用されるパターン。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ConfiguredDescriptionPattern__c
+    },
+    {
+      help = "この商品のコストを個々の見積で変更可能かどうかを制御します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__CostEditable__c
+    },
+    {
+      help = "この商品のコスト表として使用される割引率表。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__CostSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Product2.field.SBQQ__CustomConfigurationPage__c
+    },
+    {
+      label = ""
+      name = salesforce.Product2.field.SBQQ__CustomConfigurationRequired__c
+    },
+    {
+      help = "カスタマーコミュニティでこの商品を使用可能にする方法を選択します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__CustomerCommunityAvailability__c
+      picklistValues = [
+        {
+          masterLabel = "Always"
+          translation = "常に"
+        },
+        {
+          masterLabel = "Never"
+          translation = "表示しない"
+        },
+        {
+          masterLabel = "Only when already owned"
+          translation = "すでに所有されている場合のみ"
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Product2.field.SBQQ__DefaultPricingTable__c
+      picklistValues = [
+        {
+          masterLabel = "Segmented"
+          translation = "分割"
+        },
+        {
+          masterLabel = "Standard"
+          translation = "標準"
+        },
+      ]
+    },
+    {
+      help = "追加時の商品の開始数量を指定します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__DefaultQuantity__c
+    },
+    {
+      help = "この商品の説明がロックされている (見積上で編集できない) ことを示すフラグ。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__DescriptionLocked__c
+    },
+    {
+      help = "この商品の割引カテゴリを指定します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__DiscountCategory__c
+      relationshipLabel = ""
+    },
+    {
+      help = "この商品に使用する割引率表"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__DiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "動的に計算される価格に対して制約を適用するために使用します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__DynamicPricingConstraint__c
+      picklistValues = [
+        {
+          masterLabel = "List price is maximum"
+          translation = "リスト価格が最高"
+        },
+        {
+          masterLabel = "List price is minimum"
+          translation = "リスト価格が最低"
+        },
+      ]
+    },
+    {
+      help = "バンドル設定中にパフォーマンスエラーが発生した場合、有効にする必要があります。バンドルが非同期で処理されます。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__EnableLargeConfiguration__c
+    },
+    {
+      help = "この商品を全体に対する割合の計算から常に除外する場合は、オンにします (通常、非サブスクリプション商品は全体に対する割合の計算に含まれます)。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ExcludeFromMaintenance__c
+    },
+    {
+      help = "この商品を商談に移行できないことを示します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ExcludeFromOpportunity__c
+    },
+    {
+      help = "オンの場合、この商品を設定すると自動的に、Salesforce CPQ 設定に定義された外部設定 URL が起動することを示します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ExternallyConfigurable__c
+    },
+    {
+      help = "フラグが付いている場合、調整済み見積品目に基づいて契約価格を生成します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__GenerateContractedPrice__c
+      picklistValues = [
+        {
+          masterLabel = "Discount Schedule"
+          translation = "割引率表"
+        },
+        {
+          masterLabel = "Do Not Generate"
+          translation = "生成しない"
+        },
+        {
+          masterLabel = "Price"
+          translation = "価格"
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Product2.field.SBQQ__HasConfigurationAttributes__c
+    },
+    {
+      help = "この商品に少なくとも 1 つの消費スケジュールがあるかどうかを示します"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__HasConsumptionSchedule__c
+    },
+    {
+      help = "この商品を見積 PDF への表示から除外します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__Hidden__c
+    },
+    {
+      help = "商品検索結果でこの商品の価格を非表示にする場合は、チェックボックスをオンにします。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__HidePriceInSearchResults__c
+    },
+    {
+      help = "この商品を全体に対する割合の計算に常に含める場合は、オンにします (通常、サブスクリプション商品は全体に対する割合の計算から除外されます)。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__IncludeInMaintenance__c
+    },
+    {
+      help = "この商品が追加されたときに新しい見積グループを作成する (現在のグループが空の場合を除く) 場合は、オンにします。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__NewQuoteGroup__c
+    },
+    {
+      help = "この商品を割引不可能とマークします。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__NonDiscountable__c
+    },
+    {
+      help = "この商品をパートナーが割引できないようにする場合は、オンにします。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__NonPartnerDiscountable__c
+    },
+    {
+      help = "オプションをユーザに表示する方法を決定します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__OptionLayout__c
+      picklistValues = [
+        {
+          masterLabel = "Sections"
+          translation = "セクション"
+        },
+        {
+          masterLabel = "Tabs"
+          translation = "タブ"
+        },
+        {
+          masterLabel = "Wizard"
+          translation = "ウィザード"
+        },
+      ]
+    },
+    {
+      help = "ユーザがこの商品に付随するオプションを選択する方法を決定します。[クリック] の場合は、オプションの横にチェックボックスが表示されます。[追加] の場合は、使用可能なオプションを表示するダイアログボックスを開くボタンが表示されます。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__OptionSelectionMethod__c
+      picklistValues = [
+        {
+          masterLabel = "Add"
+          translation = "加算"
+        },
+        {
+          masterLabel = "Click"
+          translation = "クリック"
+        },
+      ]
+    },
+    {
+      help = "この商品がデフォルトでオプションの場合は選択します。オプション商品は、見積合計に加算されず、商談にも移行されません。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__Optional__c
+    },
+    {
+      help = "見積を作成するときに、この商品の価格を自由に編集できることを示します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__PriceEditable__c
+    },
+    {
+      help = "この商品で使用する価格設定ガイダンス。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__PricingGuidance__c
+      relationshipLabel = ""
+    },
+    {
+      help = "この商品を見積に追加するときに価格方式を変更できる場合は選択します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__PricingMethodEditable__c
+    },
+    {
+      help = "この商品に適用される価格方式。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__PricingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "Block"
+          translation = "ブロック"
+        },
+        {
+          masterLabel = "Cost"
+          translation = "コスト"
+        },
+        {
+          masterLabel = "List"
+          translation = "リスト"
+        },
+        {
+          masterLabel = "Percent Of Total"
+          translation = "全体に対する割合"
+        },
+      ]
+    },
+    {
+      help = "この商品の写真を保持するドキュメントまたはコンテンツレコードの ID。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ProductPictureID__c
+    },
+    {
+      help = "この商品の数量の変更を許可または禁止します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__QuantityEditable__c
+    },
+    {
+      help = "数量項目で使用される小数位の桁数を指定します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__QuantityScale__c
+    },
+    {
+      help = "オンの場合、この商品は見積に最初に追加するときのみ設定できます。選択されている場合、ユーザは商品が追加された後に [品目の編集] ページの [設定] リンクにアクセスできなくなります。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__ReconfigurationDisabled__c
+    },
+    {
+      help = "更新時にこの商品を置き換える商品。更新時に異なる SKU の見積を作成する場合はこれを使用します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__RenewalProduct__c
+      relationshipLabel = ""
+    },
+    {
+      help = "[商品ルックアップ] ページでの商品のデフォルトの並び替え順を決定します。この順序で商品が見積に追加されます。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__SortOrder__c
+    },
+    {
+      help = "この商品の書式設定済みの仕様。見積テンプレートで仕様シートを生成するために使用されます。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__Specifications__c
+    },
+    {
+      help = "全体に対する割合が商品のリスト価格と正価のどちらに基づいて計算されるかを決定します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__SubscriptionBase__c
+      picklistValues = [
+        {
+          masterLabel = "Customer"
+          translation = "顧客"
+        },
+        {
+          masterLabel = "List"
+          translation = "リスト"
+        },
+        {
+          masterLabel = "Net"
+          translation = "正価"
+        },
+        {
+          masterLabel = "Regular"
+          translation = "通常"
+        },
+      ]
+    },
+    {
+      help = "全体に対する割合の計算を特定の商品カテゴリに限定する場合にこれを使用します。たとえば、ソフトウェアメンテナンスでは、全体に対する割合のカテゴリがソフトウェアメンテナンスである商品の割合のみを計算します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__SubscriptionCategory__c
+      picklistValues = [
+        {
+          masterLabel = "Hardware"
+          translation = "ハードウェア"
+        },
+        {
+          masterLabel = "Software"
+          translation = "ソフトウェア"
+        },
+      ]
+    },
+    {
+      help = "このサブスクリプションの価格として使用する非サブスクリプション全体に対する割合。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__SubscriptionPercent__c
+    },
+    {
+      help = "このサブスクリプションに使用する価格設定の種類。[なし] は、この商品がサブスクリプションではないことを意味します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__SubscriptionPricing__c
+      picklistValues = [
+        {
+          masterLabel = "Fixed Price"
+          translation = "固定価格:"
+        },
+        {
+          masterLabel = "Percent Of Total"
+          translation = "全体に対する割合"
+        },
+      ]
+    },
+    {
+      help = "全体に対する割合の計算に含まれる商品を上書きする場合は、この項目を使用します。このルックアップが、現在の商品の全体に対する割合の計算で使用するリスト価格が設定されている商品を指し示すようにします。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__SubscriptionTarget__c
+      relationshipLabel = ""
+    },
+    {
+      help = "このサブスクリプションの期間。商品がサブスクリプションの場合のみ適用されます。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__SubscriptionTerm__c
+    },
+    {
+      help = "更新可能なサブスクリプションは更新見積に移行されます。1 回限りのサブスクリプションは移行されません。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__SubscriptionType__c
+      picklistValues = [
+        {
+          masterLabel = "Evergreen"
+          translation = "エバーグリーン"
+        },
+        {
+          masterLabel = "One-time"
+          translation = "1 回"
+        },
+        {
+          masterLabel = "Renewable"
+          translation = "更新可能"
+        },
+        {
+          masterLabel = "Renewable/Evergreen"
+          translation = "更新可能/エバーグリーン"
+        },
+      ]
+    },
+    {
+      help = "課税規則の税コードを指定します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__TaxCode__c
+    },
+    {
+      help = "この商品が課税対象かどうかを示します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__Taxable__c
+    },
+    {
+      help = "期間割引の計算に使用するサブスクリプション期間レベルを指定します。デフォルトを示す場合は空白のままにします。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__TermDiscountLevel__c
+      picklistValues = [
+        {
+          masterLabel = "Group"
+          translation = "グループ"
+        },
+        {
+          masterLabel = "Line"
+          translation = "品目"
+        },
+        {
+          masterLabel = "Quote"
+          translation = "見積"
+        },
+      ]
+    },
+    {
+      help = "サブスクリプション期間に基づく割引率表。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__TermDiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "この商品へのアップグレードの見積を作成するときにクレジットを指定する場合は使用します。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__UpgradeCredit__c
+      relationshipLabel = ""
+    },
+    {
+      help = "この商品の数量とそのソース商品との間の換算レート。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__UpgradeRatio__c
+    },
+    {
+      help = "アップグレード対象商品。この項目に入力すると、この商品がアップグレードになります。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__UpgradeSource__c
+      relationshipLabel = ""
+    },
+    {
+      help = "アップグレード後の商品を指定します。[アップグレード元] 項目への入力または関連する [アップグレード元] レコードの存在によってこの商品がアップグレードであることが示されている場合のみ適用されます。"
+      label = ""
+      name = salesforce.Product2.field.SBQQ__UpgradeTarget__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Product2.field.Subscription_License_Type__c
+      picklistValues = [
+        {
+          masterLabel = "Pay as you go"
+          translation = ""
+        },
+        {
+          masterLabel = "Pre Paid"
+          translation = ""
+        },
+        {
+          masterLabel = "Pre-Paid Overage Use"
+          translation = ""
+        },
+      ]
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Product Layout"
+      sections = [
+        {
+          label = "カスタムリンク"
+          section = "Custom Links"
+        },
+        {
+          label = "項目"
+          section = "Fields"
+        },
+        {
+          label = "価格設定"
+          section = "Pricing"
+        },
+        {
+          label = "更新"
+          section = "Renewals"
+        },
+        {
+          label = "Salesforce CPQ 設定"
+          section = "Salesforce CPQ Configuration"
+        },
+        {
+          label = "サブスクリプション"
+          section = "Subscriptions"
+        },
+        {
+          label = "アップグレード"
+          section = "Upgrades"
+        },
+      ]
+    },
+  ]
+  validationRules = [
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.Product2_SBQQ__Include_or_Exclude_Maintenance
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.Product2_SBQQ__RecurringChargeTypeMustHaveBillingType
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.Product2_SBQQ__Term_schedule_requires_subscription
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.Product2_SBQQ__Validate_billing_frequency
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.Product2_SBQQ__Validate_billing_type
+    },
+  ]
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Product2_SBQQ__CloneWithRelated
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Product2_SBQQ__CloneWithRelatedClassic
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Product2_SBQQ__Translate
+    },
+  ]
+  _parent = [
+    salesforce.Product2,
+  ]
+}

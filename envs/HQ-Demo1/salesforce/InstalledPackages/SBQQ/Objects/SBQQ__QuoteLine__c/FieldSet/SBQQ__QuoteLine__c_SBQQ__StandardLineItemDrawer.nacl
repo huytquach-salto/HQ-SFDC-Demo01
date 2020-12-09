@@ -1,0 +1,235 @@
+salesforce.FieldSet SBQQ__QuoteLine__c_SBQQ__StandardLineItemDrawer {
+  fullName = "SBQQ__QuoteLine__c.SBQQ__StandardLineItemDrawer"
+  availableFields = [
+    {
+      field = "SBQQ__AdditionalDiscount__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__AdditionalQuantity__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__BatchQuantity__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__BillingFrequency__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__BillingType__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__CostEditable__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__CustomerPrice__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__CustomerTotal__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__Description__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__DistributorDiscount__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__EffectiveEndDate__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__EffectiveStartDate__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__EndDate__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__GenerateContractedPrice__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__GrossProfit__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__HasConsumptionSchedule__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__Hidden__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__ListPrice__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__ListTotal__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__Markup__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__NetPrice__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__NetTotal__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__Optional__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__PackageCost__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__PackageListTotal__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__PackageProductCode__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__PackageTotal__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__PartnerDiscount__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__PricingMethod__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__ProductCode__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__ProductName__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__ProratedListPrice__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__Quantity__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__RegularPrice__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__RegularTotal__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__StartDate__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__SubscribedAssetIds__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__SubscriptionBase__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__SubscriptionCategory__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__SubscriptionPercent__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__SubscriptionTerm__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__TaxCode__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__Taxable__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__UnitCost__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__Uplift__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  description = "Quote Line fields to display in the drawer for standard products."
+  label = "Standard Line Item Drawer"
+  _parent = [
+    salesforce.SBQQ__QuoteLine__c,
+  ]
+}

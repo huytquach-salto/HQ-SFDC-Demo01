@@ -1,0 +1,10 @@
+salesforce.AuraDefinitionBundle SBQQ__createRecord {
+  apiVersion = 49
+  description = "Generic Create Record"
+  fullName = "SBQQ__createRecord"
+  type = "Component"
+  markup = "(hidden)"
+  controllerContent = "(hidden)"
+  helperContent = "(hidden)"
+  styleContent = "(hidden)"
+}

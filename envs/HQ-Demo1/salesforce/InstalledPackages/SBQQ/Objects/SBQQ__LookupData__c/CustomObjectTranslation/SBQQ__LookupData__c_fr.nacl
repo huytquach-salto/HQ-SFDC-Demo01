@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__LookupData__c_fr@uuuub {
+  fullName = "SBQQ__LookupData__c-fr"
+  _parent = [
+    salesforce.SBQQ__LookupData__c,
+  ]
+}

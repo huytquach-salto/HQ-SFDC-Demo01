@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__SummaryVariable__c_es_MX@uuuubu {
+  fullName = "SBQQ__SummaryVariable__c-es_MX"
+  _parent = [
+    salesforce.SBQQ__SummaryVariable__c,
+  ]
+}

@@ -1,0 +1,150 @@
+salesforce.FieldSet SBQQ__QuoteLine__c_SBQQ__NonCurrentQuoteLineLockedFields {
+  fullName = "SBQQ__QuoteLine__c.SBQQ__NonCurrentQuoteLineLockedFields"
+  description = "Quote fields that trigger recalculation of quote lines."
+  displayedFields = [
+    {
+      field = "SBQQ__Product__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__Quantity__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__ProductOption__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__PricingMethod__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__ListPrice__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__CustomerPrice__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__NetPrice__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__SpecialPrice__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__ContractedPrice__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__RegularPrice__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__DiscountSchedule__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__TermDiscountSchedule__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__Markup__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__SubscriptionPricing__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__ProratedListPrice__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__StartDate__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__EndDate__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__SubscriptionScope__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__SubscriptionBase__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__SubscriptionTargetPrice__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__AdditionalDiscount__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__AdditionalDiscountAmount__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__Discount__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__OptionDiscount__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__PartnerDiscount__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__VolumeDiscount__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__Uplift__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+    {
+      field = "SBQQ__UpliftAmount__c"
+      isFieldManaged = false
+      isRequired = false
+    },
+  ]
+  label = "Non-Current Quote Line Locked Fields"
+  _parent = [
+    salesforce.SBQQ__QuoteLine__c,
+  ]
+}

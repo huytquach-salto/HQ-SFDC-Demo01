@@ -1,0 +1,95 @@
+type salesforce.SBQQ__SubscribedQuoteLine__c {
+  salesforce.Checkbox SBQQ__Active__c {
+    apiName = "SBQQ__SubscribedQuoteLine__c.SBQQ__Active__c"
+    label = "Active"
+    defaultValue = false
+    inlineHelpText = "Indicates whether the subscribed asset record is active."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Indicates whether the subscribed asset record is active."
+  }
+  salesforce.Number SBQQ__AssetQuoteLineQuantity__c {
+    apiName = "SBQQ__SubscribedQuoteLine__c.SBQQ__AssetQuoteLineQuantity__c"
+    label = "Asset Quote Line Quantity"
+    _required = false
+    precision = 12
+    scale = 2
+    inlineHelpText = "Quantity quoted on the Asset Quote Line."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    description = "Quantity quoted on the Asset Quote Line."
+    externalId = false
+  }
+  salesforce.Lookup SBQQ__AssetQuoteLine__c {
+    apiName = "SBQQ__SubscribedQuoteLine__c.SBQQ__AssetQuoteLine__c"
+    label = "Asset Quote Line"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.SBQQ__QuoteLine__c,
+    ]
+    inlineHelpText = "Asset quote line being covered by a subscription quote line."
+    createable = true
+    updateable = true
+    relationshipName = "SubscribedQuoteLines"
+    queryable = true
+    description = "Asset quote line being covered by a subscription quote line."
+  }
+  salesforce.Lookup SBQQ__Quote__c {
+    apiName = "SBQQ__SubscribedQuoteLine__c.SBQQ__Quote__c"
+    label = "Quote"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.SBQQ__Quote__c,
+    ]
+    inlineHelpText = "Identifies the quote for the quoteLines."
+    createable = true
+    updateable = true
+    relationshipName = "Quote"
+    queryable = true
+    description = "Identifies the quote for the quoteLines."
+  }
+  salesforce.Currency SBQQ__SubscriptionBasePrice__c {
+    apiName = "SBQQ__SubscribedQuoteLine__c.SBQQ__SubscriptionBasePrice__c"
+    label = "Subscription Base Price"
+    _required = false
+    inlineHelpText = "Unit price used in Percent of Total calculation."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 14
+    queryable = true
+    description = "Unit price used in Percent of Total calculation."
+  }
+  salesforce.Currency SBQQ__SubscriptionNetTotal__c {
+    apiName = "SBQQ__SubscribedQuoteLine__c.SBQQ__SubscriptionNetTotal__c"
+    label = "Subscription Net Total"
+    _required = false
+    inlineHelpText = "Net total of the Subscription Quote Line."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 14
+    queryable = true
+    description = "Net total of the Subscription Quote Line."
+  }
+  salesforce.Lookup SBQQ__SubscriptionQuoteLine__c {
+    apiName = "SBQQ__SubscribedQuoteLine__c.SBQQ__SubscriptionQuoteLine__c"
+    label = "Subscription Quote Line"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.SBQQ__QuoteLine__c,
+    ]
+    inlineHelpText = "Subscription quote line that covers the asset quote line."
+    createable = true
+    updateable = true
+    relationshipName = "SubscriptionQuoteLines"
+    queryable = true
+    description = "Subscription quote line that covers the asset quote line."
+  }
+}

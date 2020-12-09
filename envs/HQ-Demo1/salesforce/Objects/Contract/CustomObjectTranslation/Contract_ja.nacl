@@ -1,0 +1,217 @@
+salesforce.CustomObjectTranslation Contract_ja@b {
+  fullName = "Contract-ja"
+  fieldSets = [
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Contract_SBQQ__ActiveContractLookup
+    },
+  ]
+  fields = [
+    {
+      help = "この契約が有効かどうかを決定します。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__ActiveContract__c
+    },
+    {
+      help = "他に指定されていない場合、修正商談のレコードタイプ。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentOpportunityRecordTypeId__c
+    },
+    {
+      help = "修正商談の現在のフェーズ。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentOpportunityStage__c
+    },
+    {
+      help = "元の商談の所有者。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentOwner__c
+      relationshipLabel = ""
+    },
+    {
+      help = "修正の価格表 ID。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentPricebookId__c
+    },
+    {
+      help = "更新開始日と修正終了日の計算ベース。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentRenewalBehavior__c
+      picklistValues = [
+        {
+          masterLabel = "Earliest End Date"
+          translation = "最も早い終了日"
+        },
+        {
+          masterLabel = "Latest End Date"
+          translation = "最も遅い終了日"
+        },
+      ]
+    },
+    {
+      help = "修正の開始日。空白の場合、修正は現在の日付で開始します。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentStartDate__c
+    },
+    {
+      help = "元の商談から更新商談に取引先責任者ロールを含めるには選択します。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__DefaultRenewalContactRoles__c
+    },
+    {
+      help = "元の商談パートナーを更新商談に含めるには選択します。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__DefaultRenewalPartners__c
+    },
+    {
+      help = "オフにすると、修正見積終了日は [修正および更新動作] 設定に従って設定されます。オンにすると、終了日は設定されません。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__DisableAmendmentCoTerm__c
+    },
+    {
+      help = "契約がエバーグリーンかどうかを示します。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__Evergreen__c
+    },
+    {
+      help = "時間ベースのワークフローで使用する契約終了日。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__ExpirationDate__c
+    },
+    {
+      help = "セグメント化されたサブスクリプション商品を更新見積でどのように表示するかを定義します。セグメント化を解除すると、最終セグメントのデータで標準見積品目として更新されます。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__MDQRenewalBehavior__c
+      picklistValues = [
+        {
+          masterLabel = "De-segmented"
+          translation = "セグメント化解除"
+        },
+      ]
+    },
+    {
+      help = "この契約をこの取引先の主契約として指定するには選択します。更新時、すべての契約はこの契約に集約されます。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__MasterContract__c
+    },
+    {
+      help = "元の商談から使用される価格表の ID。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__OpportunityPricebookId__c
+    },
+    {
+      help = "この契約の作成元である商談。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__Opportunity__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Contract.field.SBQQ__Order__c
+      relationshipLabel = ""
+    },
+    {
+      help = "更新見積のバンドル階層を保持するにはチェックボックスをオンにします。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__PreserveBundleStructureUponRenewals__c
+    },
+    {
+      help = "この契約の作成元である見積。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__Quote__c
+      relationshipLabel = ""
+    },
+    {
+      help = "売上予測目的で更新商談の生成をトリガする場合に選択します。更新見積を自動的に生成することはありません。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalForecast__c
+    },
+    {
+      help = "デフォルトと異なる場合、更新商談のレコードタイプ。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalOpportunityRecordTypeId__c
+    },
+    {
+      help = "この更新のデフォルトの商談フェーズを上書きします。更新商談で有効にするには、これを [更新売上予測] の選択より前に行う必要があります。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalOpportunityStage__c
+    },
+    {
+      help = "この契約の更新を追跡するために生成された更新商談。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalOpportunity__c
+      relationshipLabel = ""
+    },
+    {
+      help = "元の商談の所有者。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalOwner__c
+      relationshipLabel = ""
+    },
+    {
+      help = "元の商談の価格表 ID を使用しない場合、更新商談で使用する価格表 ID を指定します。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalPricebookId__c
+    },
+    {
+      help = "更新商談で更新見積を自動的に生成する場合はこのオプションを選択します。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalQuoted__c
+    },
+    {
+      help = "更新の期間を指定します。デフォルトでは、元の契約期間と同じになります。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalTerm__c
+    },
+    {
+      help = "更新価格の増加率。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalUpliftRate__c
+    },
+    {
+      help = "同じ商品のサブスクリプションの数量を更新見積と修正の 1 つの品目に統合する場合に選択します。"
+      label = ""
+      name = salesforce.Contract.field.SBQQ__SubscriptionQuantitiesCombined__c
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Contract Layout"
+      sections = [
+        {
+          label = "修正"
+          section = "Amendments"
+        },
+        {
+          label = "カスタムリンク"
+          section = "Custom Links"
+        },
+        {
+          label = "再計算"
+          section = "Recalculating"
+        },
+        {
+          label = "Salesforce CPQ 情報"
+          section = "Salesforce CPQ Information"
+        },
+        {
+          label = "システム情報"
+          section = "System Info"
+        },
+      ]
+    },
+  ]
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Contract_SBQQ__Amend
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Contract_SBQQ__RenewContracts
+    },
+  ]
+  _parent = [
+    salesforce.Contract,
+  ]
+}

@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__WebQuoteLine__c_de@uuuub {
+  fullName = "SBQQ__WebQuoteLine__c-de"
+  _parent = [
+    salesforce.SBQQ__WebQuoteLine__c,
+  ]
+}

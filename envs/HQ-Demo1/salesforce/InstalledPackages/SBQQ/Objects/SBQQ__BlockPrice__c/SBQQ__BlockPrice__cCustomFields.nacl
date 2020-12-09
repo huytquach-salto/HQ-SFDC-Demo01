@@ -1,0 +1,127 @@
+type salesforce.SBQQ__BlockPrice__c {
+  salesforce.Date SBQQ__EffectiveDate__c {
+    apiName = "SBQQ__BlockPrice__c.SBQQ__EffectiveDate__c"
+    label = "Effective Date"
+    _required = false
+    inlineHelpText = "The date when this block price is effective.  The value is taken when a block price snapshot is taken at order creation time."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "The date when this block price is effective.  The value is taken when a block price snapshot is taken at order creation time."
+  }
+  salesforce.Number SBQQ__LowerBound__c {
+    apiName = "SBQQ__BlockPrice__c.SBQQ__LowerBound__c"
+    label = "Lower Bound"
+    _required = false
+    precision = 12
+    scale = 0
+    inlineHelpText = "Lower bound of the quantity range for this block price."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    description = "Lower bound of the quantity range for this block price."
+    externalId = false
+  }
+  salesforce.Lookup SBQQ__OrderProduct__c {
+    apiName = "SBQQ__BlockPrice__c.SBQQ__OrderProduct__c"
+    label = "Order Product"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.OrderItem,
+    ]
+    inlineHelpText = "The order product this Block Price applies to when the order product is created."
+    createable = true
+    updateable = true
+    relationshipName = "BlockPrice"
+    queryable = true
+    description = "The order product this Block Price applies to when the order product is created."
+  }
+  salesforce.Lookup SBQQ__OriginalBlockPrice__c {
+    apiName = "SBQQ__BlockPrice__c.SBQQ__OriginalBlockPrice__c"
+    label = "Original Block Price"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.SBQQ__BlockPrice__c,
+    ]
+    inlineHelpText = "The original product block price where this block price is snapshotted from."
+    createable = true
+    updateable = true
+    relationshipName = "SnapshotBlockPrices"
+    queryable = true
+    description = "The original product block price where this block price is snapshotted from."
+  }
+  salesforce.Lookup SBQQ__PriceBook2__c {
+    apiName = "SBQQ__BlockPrice__c.SBQQ__PriceBook2__c"
+    label = "Price Book"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.Pricebook2,
+    ]
+    inlineHelpText = "Select the Price Book that should receive block pricing when applicable."
+    createable = true
+    updateable = true
+    relationshipName = "BlockPrices"
+    queryable = true
+    description = "Price Book to which block pricing applies."
+  }
+  salesforce.Currency SBQQ__Price__c {
+    apiName = "SBQQ__BlockPrice__c.SBQQ__Price__c"
+    label = "Price"
+    _required = false
+    inlineHelpText = "Price for the parent product in specified quantity range."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+    description = "Price for the parent product in specified quantity range."
+  }
+  salesforce.Lookup SBQQ__Product__c {
+    apiName = "SBQQ__BlockPrice__c.SBQQ__Product__c"
+    label = "Product"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.Product2,
+    ]
+    inlineHelpText = "Select the product that should receive block pricing when applicable."
+    createable = true
+    updateable = true
+    relationshipName = "BlockPrices"
+    queryable = true
+    description = "Product to which block pricing applies."
+  }
+  salesforce.Lookup SBQQ__QuoteLine__c {
+    apiName = "SBQQ__BlockPrice__c.SBQQ__QuoteLine__c"
+    label = "Quote Line"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.SBQQ__QuoteLine__c,
+    ]
+    inlineHelpText = "The quote line where this block price applies to when an order product is created."
+    createable = true
+    updateable = true
+    relationshipName = "BlockPrices"
+    queryable = true
+    description = "The quote line where this block price applies to when an order product is created."
+  }
+  salesforce.Number SBQQ__UpperBound__c {
+    apiName = "SBQQ__BlockPrice__c.SBQQ__UpperBound__c"
+    label = "Upper Bound"
+    _required = false
+    precision = 12
+    scale = 0
+    inlineHelpText = "Upper bound of the quantity range for this block price."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    description = "Upper bound of the quantity range for this block price."
+    externalId = false
+  }
+}

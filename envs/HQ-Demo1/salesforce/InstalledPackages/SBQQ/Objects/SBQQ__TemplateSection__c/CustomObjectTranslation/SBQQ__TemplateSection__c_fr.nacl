@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__TemplateSection__c_fr@uuuub {
+  fullName = "SBQQ__TemplateSection__c-fr"
+  _parent = [
+    salesforce.SBQQ__TemplateSection__c,
+  ]
+}

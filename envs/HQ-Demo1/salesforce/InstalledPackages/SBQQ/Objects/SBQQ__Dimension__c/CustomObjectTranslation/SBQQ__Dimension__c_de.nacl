@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__Dimension__c_de@uuuub {
+  fullName = "SBQQ__Dimension__c-de"
+  _parent = [
+    salesforce.SBQQ__Dimension__c,
+  ]
+}

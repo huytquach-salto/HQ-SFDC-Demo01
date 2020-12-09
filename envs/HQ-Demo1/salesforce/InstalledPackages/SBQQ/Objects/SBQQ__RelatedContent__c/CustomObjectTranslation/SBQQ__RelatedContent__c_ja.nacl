@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__RelatedContent__c_ja@uuuub {
+  fullName = "SBQQ__RelatedContent__c-ja"
+  _parent = [
+    salesforce.SBQQ__RelatedContent__c,
+  ]
+}

@@ -1,0 +1,42 @@
+type salesforce.Workflow {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  serviceid fullName {
+    _required = false
+  }
+  "List<salesforce.WorkflowRule>" rules {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden = true
+    localOnly = true
+  }
+  "List<salesforce.WorkflowAlert>" alerts {
+  }
+  "List<salesforce.WorkflowFieldUpdate>" fieldUpdates {
+  }
+  "List<salesforce.WorkflowFlowAction>" flowActions {
+  }
+  "List<salesforce.WorkflowKnowledgePublish>" knowledgePublishes {
+  }
+  "List<salesforce.WorkflowOutboundMessage>" outboundMessages {
+  }
+  "List<salesforce.WorkflowTask>" tasks {
+  }
+  suffix = "workflow"
+  dirName = "workflows"
+  metadataType = "Workflow"
+}

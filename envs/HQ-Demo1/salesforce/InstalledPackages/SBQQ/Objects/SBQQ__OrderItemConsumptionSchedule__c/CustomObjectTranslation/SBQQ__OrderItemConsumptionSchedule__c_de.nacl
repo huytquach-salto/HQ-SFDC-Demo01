@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__OrderItemConsumptionSchedule__c_de@uuuub {
+  fullName = "SBQQ__OrderItemConsumptionSchedule__c-de"
+  _parent = [
+    salesforce.SBQQ__OrderItemConsumptionSchedule__c,
+  ]
+}

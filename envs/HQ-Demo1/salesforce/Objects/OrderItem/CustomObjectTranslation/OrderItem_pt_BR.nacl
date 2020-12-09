@@ -1,0 +1,304 @@
+salesforce.CustomObjectTranslation OrderItem_pt_BR@bu {
+  fullName = "OrderItem-pt_BR"
+  fields = [
+    {
+      help = "Indica se o produto do pedido está ativado."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Activated__c
+    },
+    {
+      help = "Ativo criado a partir desse produto do pedido"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Asset__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Define a frequência de faturamento."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BillingFrequency__c
+    },
+    {
+      help = "O tipo de faturamento que define quando o faturamento ocorre."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BillingType__c
+    },
+    {
+      help = "O preço de bloco aplicado a esse produto do pedido no momento da criação do pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BlockPrice__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Indica se os lançamentos são incluídos."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BookingsIndicator__c
+    },
+    {
+      help = "Um campo de uso interno que aponta para a raiz de seu pacote pai."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BundleRoot__c
+      relationshipLabel = ""
+    },
+    {
+      help = "O tipo de encargo do produto."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ChargeType__c
+    },
+    {
+      help = "A ação do contrato do qual esse produto de pedido resulta."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ContractAction__c
+    },
+    {
+      help = "O contrato da assinatura que é criado a partir desse produto do pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Contract__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Indica se o produto do pedido está contratado."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Contracted__c
+    },
+    {
+      help = "Controla o comportamento de contratação de um Produto do pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ContractingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "Contract Separately"
+          translation = "Contratar separadamente"
+        },
+        {
+          masterLabel = "Do Not Contract"
+          translation = "Não contratar"
+        },
+        {
+          masterLabel = "Inherit"
+          translation = "Herdar"
+        },
+      ]
+    },
+    {
+      help = '''
+A duração da assinatura, que se aplica apenas se o produto for uma assinatura. É copiado do Termo da assinatura do produto relacionado quando o item de linha é
+gerado pela primeira vez.
+'''
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__DefaultSubscriptionTerm__c
+    },
+    {
+      help = "Para Produtos multissegmentados, esse é o tipo de dimensão de preço (por exemplo, \"ANO\", \"MÊS\", \"TRIMESTRE\") do item do pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__DimensionType__c
+    },
+    {
+      help = "Cronograma de descontos aplicado a esse produto do pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__DiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Valor do preço total do produto do pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__OrderProductBookings__c
+    },
+    {
+      help = "A quantidade real do produto colocada no pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__OrderedQuantity__c
+    },
+    {
+      help = "Referências à dimensão de preço aplicada esse produto do pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__PriceDimension__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Cronograma de preço aplicado a esse produto do pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__PriceSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Indica como o preço para esse item de linha é calculado. \"Lista\" = subtração do desconto do preço de lista. \"Custo\" = adição do aumento ao custo."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__PricingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "Block"
+          translation = "Bloco"
+        },
+        {
+          masterLabel = "Cost"
+          translation = "Custo"
+        },
+        {
+          masterLabel = "Custom"
+          translation = "Personalizado"
+        },
+        {
+          masterLabel = "List"
+          translation = "Lista"
+        },
+        {
+          masterLabel = "Percent Of Total"
+          translation = "Percentual do total"
+        },
+      ]
+    },
+    {
+      help = "Define o tipo de assinatura do produto do pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ProductSubscriptionType__c
+    },
+    {
+      help = "Proporção calculada usada para calcular o Preço proporcional."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ProrateMultiplier__c
+    },
+    {
+      help = "A linha de cotação a partir da qual o produto do pedido é criado."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__QuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Preço unitário de lista para o produto cotado por esse item de linha. O Preço de lista origina-se do catálogo de preços."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__QuotedListPrice__c
+    },
+    {
+      help = "A quantidade cotada."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__QuotedQuantity__c
+    },
+    {
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__RequiredBy__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Referências ao produto do pedido que esse produto do pedido revisa."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__RevisedOrderProduct__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Para produtos multissegmentados, o Índice que representa a posição desse produto do pedido na tabela do segmento."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SegmentIndex__c
+    },
+    {
+      help = "Para produtos multissegmentados, essa é uma chave compartilhada para agrupar Linhas de cotação multidimensionais."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SegmentKey__c
+    },
+    {
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ShippingAccount__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Indica o estado atual do produto do pedido. É padronizado para Rascunho quando um pedido é criado."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Status__c
+    },
+    {
+      help = "Indica como o preço da assinatura é calculado. Se for deixado em branco, os itens de linha não serão um produto de assinatura."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SubscriptionPricing__c
+    },
+    {
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SubscriptionTerm__c
+    },
+    {
+      help = "Indica o tipo de assinatura para determinar a precificação do contrato."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SubscriptionType__c
+    },
+    {
+      help = "Assinatura criada a partir desse produto do pedido"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Subscription__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Valor do imposto estimado"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TaxAmount__c
+    },
+    {
+      help = "Especifica o código tributário para as regras de tributação."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TaxCode__c
+    },
+    {
+      help = "Cronograma de descontos do termo aplicado a esse produto do pedido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TermDiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Data em que a assinatura relacionada desse produto do pedido foi encerrada"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TerminatedDate__c
+    },
+    {
+      help = "O preço líquido do termo total para a linha individual."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__UnproratedNetPrice__c
+    },
+    {
+      help = "Assinatura recebendo uma atualização por essa linha de cotação. Quando a cotação for contratada, essa assinatura terá o campo Data de encerramento preenchido."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__UpgradedSubscription__c
+      relationshipLabel = ""
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Order Product Layout"
+      sections = [
+        {
+          label = "Informações de faturamento"
+          section = "Billing Information"
+        },
+        {
+          label = "Informações de contratação"
+          section = "Contracting Information"
+        },
+        {
+          label = "Informações de preço"
+          section = "Price Information"
+        },
+        {
+          label = "Informações de Cotação e Assinatura"
+          section = "Quote and Subscription Information"
+        },
+      ]
+    },
+  ]
+  validationRules = [
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__CannotChangeBookingIndicatorOnActivation
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__RecurringChargeTypeMustHaveBillingType
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__Validate_billing_frequency
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__Validate_billing_type
+    },
+  ]
+  _parent = [
+    salesforce.OrderItem,
+  ]
+}

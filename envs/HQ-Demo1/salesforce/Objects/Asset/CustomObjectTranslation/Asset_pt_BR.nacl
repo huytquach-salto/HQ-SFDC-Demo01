@@ -1,0 +1,341 @@
+salesforce.CustomObjectTranslation Asset_pt_BR@bu {
+  fullName = "Asset-pt_BR"
+  fieldSets = [
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Asset_SBQQ__SearchFilters
+    },
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Asset_SBQQ__SearchResults
+    },
+  ]
+  fields = [
+    {
+      help = "Desconto adicional para esse Ativo, se expresso como um valor"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__AdditionalDiscountAmount__c
+    },
+    {
+      help = "Define a frequência de faturamento."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__BillingFrequency__c
+    },
+    {
+      help = "O tipo de faturamento que define quando o faturamento ocorre. O faturamento antecipado permite que você fature seus clientes por produtos ou serviços antes de fornecê-los, já o faturamento atrasado permite faturar os clientes depois do fornecimento de produtos ou serviços."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__BillingType__c
+    },
+    {
+      help = "Indica se esse item de linha representa um pacote, ou seja, se inclui outros itens de linha nessa cotação."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Bundle__c
+    },
+    {
+      help = "Para itens com quantidades calculadas, esse campo contém a quantidade original inserida pelo usuário."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__BundledQuantity__c
+    },
+    {
+      help = "Indica que o produto nesse item de linha é empacotado (incluído) por outro produto nessa cotação. Itens de linhas empacotados têm um preço zero e não permitem a edição de preço ou quantidade."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Bundled__c
+    },
+    {
+      help = "O tipo de encargo do produto. Esse é um campo do sistema derivado do produto associado."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__ChargeType__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__CombineKey__c
+    },
+    {
+      help = "Corrige o desconto adicional para esse componente para o desconto do pacote pai."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__ComponentDiscountedByPackage__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__CreditProductId__c
+    },
+    {
+      help = "Assinatura que cobre esse ativo no momento. Preenchida automaticamente se uma e apenas uma assinatura cobrir esse ativo. Renovações substituirão a nova assinatura."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__CurrentSubscription__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Nome da dimensão de preço que originou esse ativo"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Dimension__c
+    },
+    {
+      help = "Tipo de cronograma de descontos. Copiado do campo Tipo no cronograma de descontos associado."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__DiscountScheduleType__c
+      picklistValues = [
+        {
+          masterLabel = "Range"
+          translation = "Intervalo"
+        },
+        {
+          masterLabel = "Slab"
+          translation = "Placa"
+        },
+      ]
+    },
+    {
+      help = "Especifique os descontos em termos de % ou o Valor a ser descontado do preço do produto usando a quantidade comprada ou o termo. Defina faixas de quantidade/termo em níveis de diferentes % de desconto. O desconto é aplicado ao Preço de lista e o total resultante é armazenado no Preço regular"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__DiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Desconto adicional para esse Ativo, se expresso como um percentual"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Discount__c
+    },
+    {
+      help = "Desconto a ser aplicado sobre o Desconto de parceiro."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__DistributorDiscount__c
+    },
+    {
+      help = "Identifica o recurso e a opção dinâmica para essa linha."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__DynamicOptionId__c
+    },
+    {
+      help = "Determina se a Service Cloud foi habilitada quando esse Ativo foi criado."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__FromServiceCloud__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__LatestQuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Preço de lista para esse produto de Ativo."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__ListPrice__c
+    },
+    {
+      help = "Aumento para esse Ativo, se expresso como um valor"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__MarkupAmount__c
+    },
+    {
+      help = "Aumento para esse Ativo, se expresso como um percentual"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__MarkupRate__c
+    },
+    {
+      help = "Número que indica a posição dessa linha dentro do grupo ou cotação."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Number__c
+    },
+    {
+      help = "Desconto oferecido nesse produto por fazer parte de um pacote."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OptionDiscountAmount__c
+    },
+    {
+      help = "Se essa linha for uma SKU opcional, esse campo capturará qualquer desconto dado ao pacote e estendido à opção."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OptionDiscount__c
+    },
+    {
+      help = "Indica o nível de aninhamento dessa opção (aplica-se apenas às linhas geradas a partir de opções)."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OptionLevel__c
+    },
+    {
+      help = "Indica o Tipo de opção, que é copiado da Opção de produto relacionada. Determina como a quantidade é calculada."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OptionType__c
+      picklistValues = [
+        {
+          masterLabel = "Accessory"
+          translation = "Acessório"
+        },
+        {
+          masterLabel = "Component"
+          translation = "Componente"
+        },
+        {
+          masterLabel = "Related Product"
+          translation = "Produto relacionado"
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OrderProduct__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Custo unitário original do Ativo no momento da compra antes de os Cronogramas de custo terem sido aplicados."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__OriginalUnitCost__c
+    },
+    {
+      help = "Um código que lista cada um dos componentes deste pacote com base em seus códigos de componentes."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PackageProductCode__c
+    },
+    {
+      help = "Uma descrição de cada componente neste pacote."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PackageProductDescription__c
+    },
+    {
+      help = "Descontos de parceiro são aplicados após todos os descontos automáticos e opcionais. O desconto de parceiro é levado em conta no Preço de parceiro."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PartnerDiscount__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PriceDimension__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Indica como o preço para esse item de linha é calculado. \"Lista\" = subtração do desconto do preço de lista. \"Custo\" = adição do aumento ao custo."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__PricingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "Block"
+          translation = "Bloco"
+        },
+        {
+          masterLabel = "Cost"
+          translation = "Custo"
+        },
+        {
+          masterLabel = "Custom"
+          translation = "Personalizado"
+        },
+        {
+          masterLabel = "List"
+          translation = "Lista"
+        },
+        {
+          masterLabel = "Percent Of Total"
+          translation = "Percentual do total"
+        },
+      ]
+    },
+    {
+      help = "Opção de produto que gerou essa linha (se houver)."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__ProductOption__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__QuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Preço regular para esse ativo."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RegularPrice__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RenewalUpliftRate__c
+    },
+    {
+      help = "O Ativo pai. Se preenchido, esse Ativo é um filho em um pacote."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RequiredByAsset__c
+      relationshipLabel = ""
+    },
+    {
+      help = "O ID do registro pai que exige esse registro."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RequiredById__c
+    },
+    {
+      help = "Produto pai desse Ativo."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RequiredByProduct__c
+      relationshipLabel = ""
+    },
+    {
+      help = "A Assinatura pai. Se preenchida, esse Ativo é um filho em um pacote."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RequiredBySubscription__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RevisedAsset__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Pai definitivo do pacote desse Ativo"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RootAsset__c
+      relationshipLabel = ""
+    },
+    {
+      help = "O ID da assinatura ou ativo na raiz do pacote que contém o ativo"
+      label = ""
+      name = salesforce.Asset.field.SBQQ__RootId__c
+    },
+    {
+      help = "Para Produtos multissegmentados, o Índice está representando esta posição da Linha de cotação na tabela do segmento."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SegmentIndex__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SegmentKey__c
+    },
+    {
+      help = "Para Produtos multissegmentados, esse é o rótulo do cabeçalho de Coluna (por exemplo, \"Ano 1\") associado a essa linha."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SegmentLabel__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SubscriptionEndDate__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SubscriptionQuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__SubscriptionStartDate__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__Subscription__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Cronograma para descontos com base no termo de assinatura. Configurar isso como \"Grupo\" aplicará a taxa de desconto ao termo do grupo, enquanto configurar como \"Cotação\" aplicará a taxa de desconto a todo o termo da cotação, independentemente dos diferentes termos nos seus grupos."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__TermDiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Custo unitário para esse Ativo."
+      label = ""
+      name = salesforce.Asset.field.SBQQ__UnitCost__c
+    },
+    {
+      label = ""
+      name = salesforce.Asset.field.SBQQ__VirtualAsset__c
+      relationshipLabel = ""
+    },
+  ]
+  _parent = [
+    salesforce.Asset,
+  ]
+}

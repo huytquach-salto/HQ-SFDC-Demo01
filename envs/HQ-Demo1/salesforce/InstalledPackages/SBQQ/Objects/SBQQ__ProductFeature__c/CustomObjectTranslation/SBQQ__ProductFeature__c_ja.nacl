@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__ProductFeature__c_ja@uuuub {
+  fullName = "SBQQ__ProductFeature__c-ja"
+  _parent = [
+    salesforce.SBQQ__ProductFeature__c,
+  ]
+}

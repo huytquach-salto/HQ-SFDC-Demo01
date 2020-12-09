@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__ProductAttribute__c_es_MX@uuuubu {
+  fullName = "SBQQ__ProductAttribute__c-es_MX"
+  _parent = [
+    salesforce.SBQQ__ProductAttribute__c,
+  ]
+}

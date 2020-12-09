@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__SolutionGroup__c_fr@uuuub {
+  fullName = "SBQQ__SolutionGroup__c-fr"
+  _parent = [
+    salesforce.SBQQ__SolutionGroup__c,
+  ]
+}

@@ -1,0 +1,19 @@
+salesforce {
+  metadataTypesSkippedList = [
+    "Report",
+    "ReportType",
+    "ReportFolder",
+    "Dashboard",
+    "DashboardFolder",
+    "Profile",
+    "PermissionSet",
+  ]
+  instancesRegexSkippedList = [
+    "^ConnectedApp.CPQIntegrationUserApp$",
+    "^EmailTemplate.MarketoEmailTemplates",
+    "^StandardValueSet.AddressCountryCode",
+    "^StandardValueSet.AddressStateCode",
+  ]
+  maxItemsInRetrieveRequest = 2500
+  enableHideTypesInNacls = false
+}

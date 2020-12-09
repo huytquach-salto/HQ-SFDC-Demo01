@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__InstallProcessorLog__c_en_US@uuuubu {
+  fullName = "SBQQ__InstallProcessorLog__c-en_US"
+  _parent = [
+    salesforce.SBQQ__InstallProcessorLog__c,
+  ]
+}

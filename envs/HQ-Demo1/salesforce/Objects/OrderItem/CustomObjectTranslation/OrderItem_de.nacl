@@ -1,0 +1,301 @@
+salesforce.CustomObjectTranslation OrderItem_de@b {
+  fullName = "OrderItem-de"
+  fields = [
+    {
+      help = "Gibt an, ob das Auftragsprodukt aktiviert ist."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Activated__c
+    },
+    {
+      help = "Aus diesem Auftragsprodukt erstellter Vermögenswert"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Asset__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Legt die Abrechnungshäufigkeit fest."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BillingFrequency__c
+    },
+    {
+      help = "Die Abrechnungsart definiert, wann die Abrechnung erfolgt."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BillingType__c
+    },
+    {
+      help = "Der Zonenpreis, der für dieses Auftragsprodukt zum Zeitpunkt der Auftragserstellung gilt."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BlockPrice__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Gibt an, ob Buchungen enthalten sind."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BookingsIndicator__c
+    },
+    {
+      help = "Ein intern verwendetes Feld, das auf den Stamm seines übergeordneten Pakets verweist."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__BundleRoot__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Die Art der Produktkosten."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ChargeType__c
+    },
+    {
+      help = "Die Vertragsaktion, aus der dieses Auftragsprodukt erstellt wird."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ContractAction__c
+    },
+    {
+      help = "Der Vertrag für das Abonnement, das aus diesem Auftragsprodukt erstellt wird."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Contract__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Gibt an, ob für das Auftragsprodukt ein Vertrag erstellt wurde."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Contracted__c
+    },
+    {
+      help = "Steuert das Vertragsverhalten eines Auftragsprodukts."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ContractingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "Contract Separately"
+          translation = "Separaten Vertrag erstellen"
+        },
+        {
+          masterLabel = "Do Not Contract"
+          translation = "Keinen Vertrag erstellen"
+        },
+        {
+          masterLabel = "Inherit"
+          translation = "Übernehmen"
+        },
+      ]
+    },
+    {
+      help = "Laufzeit des Abonnements, die nur gilt, wenn das Produkt ein Abonnement ist. Der Wert wird beim ersten Erstellen des Belegpostens aus dem Feld \"Abonnementlaufzeit\" des zugehörigen Produkts kopiert."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__DefaultSubscriptionTerm__c
+    },
+    {
+      help = "Bei Produkten mit mehreren Segmenten ist dies der Preisdimensionstyp (z. B. \"JAHR\", \"MONAT\", \"QUARTAL\") des Angebotsbelegpostens."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__DimensionType__c
+    },
+    {
+      help = "Rabattregelung, die auf dieses Auftragsprodukt angewendet wird."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__DiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Gesamtpreisbetrag des Auftragsprodukts."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__OrderProductBookings__c
+    },
+    {
+      help = "Die tatsächliche Menge des im Auftrag angegebenen Produkts."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__OrderedQuantity__c
+    },
+    {
+      help = "Gibt die für das Auftragsprodukt geltende Preisdimension an."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__PriceDimension__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Preisregelung, die auf dieses Auftragsprodukt angewendet wird."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__PriceSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Gibt an, wie der Preis für diesen Belegposten berechnet wird: Bei \"Liste\" wird der Rabatt vom Listenpreis abgezogen, bei \"Kosten\" wird ein Aufschlag zu den Kosten addiert."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__PricingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "Block"
+          translation = "Zone"
+        },
+        {
+          masterLabel = "Cost"
+          translation = "Kosten"
+        },
+        {
+          masterLabel = "Custom"
+          translation = "Benutzerdefiniert"
+        },
+        {
+          masterLabel = "List"
+          translation = "Liste"
+        },
+        {
+          masterLabel = "Percent Of Total"
+          translation = "Prozent vom Gesamtwert"
+        },
+      ]
+    },
+    {
+      help = "Legen Sie den Produktabonnementtyp des Auftragspostens fest."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ProductSubscriptionType__c
+    },
+    {
+      help = "Berechnetes Verhältnis, das zum Berechnen des Zuteilungspreises verwendet wird."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ProrateMultiplier__c
+    },
+    {
+      help = "Der Angebotsbelegposten, anhand dessen dieses Auftragsprodukt erstellt wird."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__QuoteLine__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Listenstückpreis für das Produkt, das mit diesem Belegposten angeboten wird. Der Listenpreis stammt aus dem Preisbuch."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__QuotedListPrice__c
+    },
+    {
+      help = "Die Angebotsmenge."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__QuotedQuantity__c
+    },
+    {
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__RequiredBy__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Gibt das Auftragsprodukt an, das mit diesem Auftragsprodukt überarbeitet wird."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__RevisedOrderProduct__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Bei Produkten mit mehreren Segmenten ist dies der Index, der die Position dieses Auftragsprodukts in der Segmenttabelle angibt."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SegmentIndex__c
+    },
+    {
+      help = "Bei Produkten mit mehreren Segmenten ist dies ein freigegebener Schlüssel, mit dem Angebotsbelegposten mit mehreren Dimensionen zusammen gruppiert werden."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SegmentKey__c
+    },
+    {
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__ShippingAccount__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Gibt den aktuellen Status des Auftragsprodukts an. Dieser lautet standardmäßig \"Entwurf\", wenn ein Auftrag erstellt wird."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Status__c
+    },
+    {
+      help = "Gibt an, wie der Abonnementpreis berechnet wird. Ist dieses Feld leer, steht der Belegposten nicht für ein Abonnementprodukt."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SubscriptionPricing__c
+    },
+    {
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SubscriptionTerm__c
+    },
+    {
+      help = "Gibt den Abonnementtyp zum Bestimmen der Vertragspreise an."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__SubscriptionType__c
+    },
+    {
+      help = "Aus diesem Auftragsprodukt erstelltes Abonnement"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__Subscription__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Geschätzter Steuerbetrag"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TaxAmount__c
+    },
+    {
+      help = "Legt den Steuercode für Besteuerungsregeln fest."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TaxCode__c
+    },
+    {
+      help = "Laufzeitrabattregelung, die für dieses Auftragsprodukt angewendet wird."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TermDiscountSchedule__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Datum, an dem das mit diesem Auftragsprodukt verbundene Abonnement beendet wurde"
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__TerminatedDate__c
+    },
+    {
+      help = "Der Nettopreis des einzelnen Belegposten über die gesamte Laufzeit."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__UnproratedNetPrice__c
+    },
+    {
+      help = "Abonnement, für das mit diesem Belegposten ein Upgrade durchgeführt wird. Bei der Vertragserstellung für das Angebot wird das Feld für das Beendigungsdatum dieses Abonnements ausgefüllt."
+      label = ""
+      name = salesforce.OrderItem.field.SBQQ__UpgradedSubscription__c
+      relationshipLabel = ""
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Order Product Layout"
+      sections = [
+        {
+          label = "Rechnungsinformationen"
+          section = "Billing Information"
+        },
+        {
+          label = "Vertragsinformationen"
+          section = "Contracting Information"
+        },
+        {
+          label = "Preisinformationen"
+          section = "Price Information"
+        },
+        {
+          label = "Angebots- und Abonnementinformationen"
+          section = "Quote and Subscription Information"
+        },
+      ]
+    },
+  ]
+  validationRules = [
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__CannotChangeBookingIndicatorOnActivation
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__RecurringChargeTypeMustHaveBillingType
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__Validate_billing_frequency
+    },
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.OrderItem_SBQQ__Validate_billing_type
+    },
+  ]
+  _parent = [
+    salesforce.OrderItem,
+  ]
+}

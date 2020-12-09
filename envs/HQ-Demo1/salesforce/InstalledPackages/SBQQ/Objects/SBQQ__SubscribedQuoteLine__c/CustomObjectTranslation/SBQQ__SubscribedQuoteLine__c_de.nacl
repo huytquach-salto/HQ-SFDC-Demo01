@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__SubscribedQuoteLine__c_de@uuuub {
+  fullName = "SBQQ__SubscribedQuoteLine__c-de"
+  _parent = [
+    salesforce.SBQQ__SubscribedQuoteLine__c,
+  ]
+}

@@ -1,0 +1,6 @@
+salesforce.CustomObjectTranslation SBQQ__ErrorCondition__c_ja@uuuub {
+  fullName = "SBQQ__ErrorCondition__c-ja"
+  _parent = [
+    salesforce.SBQQ__ErrorCondition__c,
+  ]
+}

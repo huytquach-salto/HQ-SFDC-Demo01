@@ -1,0 +1,98 @@
+salesforce.CustomObjectTranslation Order_ja@b {
+  fullName = "Order-ja"
+  fields = [
+    {
+      help = "注文が契約済みかどうかを示します。"
+      label = ""
+      name = salesforce.Order.field.SBQQ__Contracted__c
+    },
+    {
+      help = "「サブスクリプション終了日別」を選択すると、一意の各サブスクリプション終了日別に該当するサブスクリプションのみが含まれる別個の契約が作成されます。「単一契約」を選択すると、終了日に関係なく、すべてのサブスクリプションが含まれる 1 つの契約が作成されます。"
+      label = ""
+      name = salesforce.Order.field.SBQQ__ContractingMethod__c
+    },
+    {
+      help = "すべての注文商品予約の総額"
+      label = ""
+      name = salesforce.Order.field.SBQQ__OrderBookings__c
+    },
+    {
+      help = "この注文のお支払い条件。"
+      label = ""
+      name = salesforce.Order.field.SBQQ__PaymentTerm__c
+    },
+    {
+      help = "価格計算の状況メッセージ"
+      label = ""
+      name = salesforce.Order.field.SBQQ__PriceCalcStatusMessage__c
+    },
+    {
+      help = "注文価格計算ジョブの状況を示します。システムによって設定されます。"
+      label = ""
+      name = salesforce.Order.field.SBQQ__PriceCalcStatus__c
+    },
+    {
+      help = "この注文の作成元である見積。"
+      label = ""
+      name = salesforce.Order.field.SBQQ__Quote__c
+      relationshipLabel = ""
+    },
+    {
+      help = "更新の期間を指定します。デフォルトでは、元の契約期間と同じになります。"
+      label = ""
+      name = salesforce.Order.field.SBQQ__RenewalTerm__c
+    },
+    {
+      help = "更新価格の増加率。"
+      label = ""
+      name = salesforce.Order.field.SBQQ__RenewalUpliftRate__c
+    },
+    {
+      help = "予想される税額"
+      label = ""
+      name = salesforce.Order.field.SBQQ__TaxAmount__c
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Order Layout"
+      sections = [
+        {
+          label = ""
+          section = "Contract Information"
+        },
+        {
+          label = ""
+          section = "Custom Links"
+        },
+        {
+          label = ""
+          section = "OrderContracting"
+        },
+        {
+          label = ""
+          section = "Quote and Opportunity"
+        },
+        {
+          label = ""
+          section = "Shipping and Billing Information"
+        },
+      ]
+    },
+  ]
+  validationRules = [
+    {
+      errorMessage = ""
+      name = salesforce.ValidationRule.instance.Order_SBQQ__Cannot_Contract_New_Order
+    },
+  ]
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Order_SBQQ__EditOrderProducts
+    },
+  ]
+  _parent = [
+    salesforce.Order,
+  ]
+}

@@ -1,0 +1,217 @@
+salesforce.CustomObjectTranslation Contract_de@b {
+  fullName = "Contract-de"
+  fieldSets = [
+    {
+      label = ""
+      name = salesforce.FieldSet.instance.Contract_SBQQ__ActiveContractLookup
+    },
+  ]
+  fields = [
+    {
+      help = "Gibt an, ob dieser Vertrag Gültigkeit hat."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__ActiveContract__c
+    },
+    {
+      help = "Datensatztyp der Änderungs-Opportunity, sofern nichts anderes festgelegt ist."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentOpportunityRecordTypeId__c
+    },
+    {
+      help = "Die aktuelle Phase der Änderungs-Opportunity."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentOpportunityStage__c
+    },
+    {
+      help = "Inhaber der ursprünglichen Opportunity."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentOwner__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Preisbuch-ID Ihrer Änderung."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentPricebookId__c
+    },
+    {
+      help = "Die Basis, auf deren Grundlage das Startdatum für die Verlängerung und das Enddatum für die Änderung berechnet werden."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentRenewalBehavior__c
+      picklistValues = [
+        {
+          masterLabel = "Earliest End Date"
+          translation = "Frühestes Enddatum"
+        },
+        {
+          masterLabel = "Latest End Date"
+          translation = "Spätestes Enddatum"
+        },
+      ]
+    },
+    {
+      help = "Startdatum Ihrer Änderung. Wenn Sie das Feld leer lassen, beginnt die Änderung zum aktuellen Tagedatum."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__AmendmentStartDate__c
+    },
+    {
+      help = "Aktivieren Sie diese Einstellung, um Kontaktrollen aus der ursprünglichen Opportunity in die Verlängerungs-Opportunity einzubeziehen."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__DefaultRenewalContactRoles__c
+    },
+    {
+      help = "Aktivieren Sie diese Einstellung, um Partner aus der ursprünglichen Opportunity in die Verlängerungs-Opportunity einzubeziehen."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__DefaultRenewalPartners__c
+    },
+    {
+      help = "Wenn diese Option deaktiviert ist, wird das Angebots-Enddatum der Änderung entsprechend der Einstellung für \"Änderungs- und Verlängerungsverhalten\" festgelegt. Wenn die Option aktiviert ist, wird kein Enddatum festgelegt."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__DisableAmendmentCoTerm__c
+    },
+    {
+      help = "Gibt an, ob es sich um einen Vertrag mit Dauergültigkeit handelt."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__Evergreen__c
+    },
+    {
+      help = "Datum des Vertragsendes für die Verwendung in zeitbasierten Workflows."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__ExpirationDate__c
+    },
+    {
+      help = "Definiert, wie segmentierte abonnementbezogene Produkte in Verlängerungsangeboten angezeigt werden. \"Segmentierung aufgehoben\" wird als Standardangebotsbelegposten mit den Daten des letzten Segments verlängert."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__MDQRenewalBehavior__c
+      picklistValues = [
+        {
+          masterLabel = "De-segmented"
+          translation = "Segmentierung aufgehoben"
+        },
+      ]
+    },
+    {
+      help = "Wählen Sie diese Option, um diesen Vertrag als den Mastervertrag für diesen Account festzulegen. Bei einer Verlängerung werden alle Verträge in diesem Vertrag zusammengeführt."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__MasterContract__c
+    },
+    {
+      help = "ID des Preisbuchs aus der ursprünglichen Opportunity."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__OpportunityPricebookId__c
+    },
+    {
+      help = "Die Opportunity, aus der dieser Vertrag erstellt wurde."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__Opportunity__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Contract.field.SBQQ__Order__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Aktivieren Sie dieses Kontrollkästchen, um die Pakethierarchie bei Verlängerungsangeboten beizubehalten."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__PreserveBundleStructureUponRenewals__c
+    },
+    {
+      help = "Angebot, aus dem dieser Vertrag erstellt wurde."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__Quote__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Wählen Sie dies aus, um die Erstellung einer Verlängerungs-Opportunity zu Prognosezwecken auszulösen. Es wird nicht automatisch ein Verlängerungsangebot erstellt."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalForecast__c
+    },
+    {
+      help = "Datensatztyp der Verlängerungs-Opportunity, falls abweichend vom Standard."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalOpportunityRecordTypeId__c
+    },
+    {
+      help = "Überschreiben Sie die Opportunity-Standardphase für diese Verlängerung. Dies muss vor der Auswahl von \"Verlängerungsprognose\" erfolgen, um für die Verlängerungs-Opportunity umgesetzt zu werden."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalOpportunityStage__c
+    },
+    {
+      help = "Verlängerungs-Opportunity, die erstellt wird, um die Verlängerung dieses Vertrags nachzuverfolgen."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalOpportunity__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Inhaber der ursprünglichen Opportunity."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalOwner__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Geben Sie eine Preisbuch-ID für Verlängerungs-Opportunities an, wenn Sie nicht die Preisbuch-ID der ursprünglichen Opportunity verwenden möchten."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalPricebookId__c
+    },
+    {
+      help = "Wählen Sie diese Option aus, wenn automatisch ein Verlängerungs-Angebot für Verlängerungs-Opportunities erstellt werden soll."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalQuoted__c
+    },
+    {
+      help = "Geben Sie die Laufzeit der Verlängerung an. Standardmäßig entspricht sie der ursprünglichen Vertragslaufzeit."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalTerm__c
+    },
+    {
+      help = "Rate, um die der Verlängerungspreis steigt."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__RenewalUpliftRate__c
+    },
+    {
+      help = "Wählen Sie diese Option aus, um bei Verlängerungsangeboten und Änderungen die Abonnementmengen für dasselbe Produkt in einem Belegposten zusammenzufassen."
+      label = ""
+      name = salesforce.Contract.field.SBQQ__SubscriptionQuantitiesCombined__c
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Contract Layout"
+      sections = [
+        {
+          label = "Änderungen"
+          section = "Amendments"
+        },
+        {
+          label = "Benutzerdefinierte Links"
+          section = "Custom Links"
+        },
+        {
+          label = "Neuberechnung"
+          section = "Recalculating"
+        },
+        {
+          label = "Salesforce CPQ-Informationen"
+          section = "Salesforce CPQ Information"
+        },
+        {
+          label = "Systeminformationen"
+          section = "System Info"
+        },
+      ]
+    },
+  ]
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Contract_SBQQ__Amend
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Contract_SBQQ__RenewContracts
+    },
+  ]
+  _parent = [
+    salesforce.Contract,
+  ]
+}

@@ -1,0 +1,194 @@
+salesforce.CustomObjectTranslation Account_ja@b {
+  fullName = "Account-ja"
+  fields = [
+    {
+      label = ""
+      name = salesforce.Account.field.Domain__c
+    },
+    {
+      help = "更新見積の生成時、同じ商品の複数の納入商品の数量を 1 つの品目に統合するオプション。"
+      label = ""
+      name = salesforce.Account.field.SBQQ__AssetQuantitiesCombined__c
+    },
+    {
+      help = "複数の期間調整される契約から納入商品とサブスクリプションを統合できるようにします。デフォルトでは、期間調整される契約ごとに更新見積に別個のグループが生成されます。"
+      label = ""
+      name = salesforce.Account.field.SBQQ__CoTermedContractsCombined__c
+    },
+    {
+      help = "契約がいつ期間調整されるかを決定します。"
+      label = ""
+      name = salesforce.Account.field.SBQQ__CoTerminationEvent__c
+      picklistValues = [
+        {
+          masterLabel = "Add-on"
+          translation = "アドオン"
+        },
+        {
+          masterLabel = "Renewal"
+          translation = "更新"
+        },
+      ]
+    },
+    {
+      help = "この顧客のサービスおよびサブスクリプション契約の期間調整方法を決定します。"
+      label = ""
+      name = salesforce.Account.field.SBQQ__ContractCoTermination__c
+      picklistValues = [
+        {
+          masterLabel = "Always"
+          translation = "常に"
+        },
+        {
+          masterLabel = "Never"
+          translation = "表示しない"
+        },
+        {
+          masterLabel = "Prompt"
+          translation = "ユーザが選択"
+        },
+      ]
+    },
+    {
+      help = "顧客の価格表を取得し、「ショッピングカート」見積に関連付けるために E コマースモジュールで使用されるこの取引先のデフォルトの商談。"
+      label = ""
+      name = salesforce.Account.field.SBQQ__DefaultOpportunity__c
+      relationshipLabel = ""
+    },
+    {
+      help = "契約価格を親取引先から継承しない場合に選択します。"
+      label = ""
+      name = salesforce.Account.field.SBQQ__IgnoreParentContractedPrices__c
+    },
+    {
+      help = "更新見積と修正のバンドル階層を保持するにはチェックボックスをオンにします。"
+      label = ""
+      name = salesforce.Account.field.SBQQ__PreserveBundle__c
+    },
+    {
+      help = "価格を維持する期限の日付を入力します。"
+      label = ""
+      name = salesforce.Account.field.SBQQ__PriceHoldEnd__c
+    },
+    {
+      help = "取引先の納入商品に基づいて更新を行うには [納入商品ベース] を選択し、見積から作成されたサブスクリプションに基づいて更新を行うには [サブスクリプションベース] を選択します。"
+      label = ""
+      name = salesforce.Account.field.SBQQ__RenewalModel__c
+      picklistValues = [
+        {
+          masterLabel = "Asset Based"
+          translation = "納入商品ベース"
+        },
+        {
+          masterLabel = "Contract Based"
+          translation = "契約ベース"
+        },
+      ]
+    },
+    {
+      help = "前回の支払価格と同じ価格を維持するには [同じ] を使用します。現在のリスト価格を使用するには [リスト] を使用します。前回の支払価格より引き上げた価格を使用するには [上昇] を使用します。"
+      label = ""
+      name = salesforce.Account.field.SBQQ__RenewalPricingMethod__c
+      picklistValues = [
+        {
+          masterLabel = "List"
+          translation = "リスト"
+        },
+        {
+          masterLabel = "Same"
+          translation = "同じ"
+        },
+        {
+          masterLabel = "Uplift"
+          translation = "上昇"
+        },
+      ]
+    },
+    {
+      help = "この取引先に有効な証明書がある場合に選択"
+      label = ""
+      name = salesforce.Account.field.SBQQ__TaxExempt__c
+      picklistValues = [
+        {
+          masterLabel = "No"
+          translation = "いいえ"
+        },
+        {
+          masterLabel = "Yes"
+          translation = "はい"
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Account.field.SalesScore__c
+    },
+    {
+      label = ""
+      name = salesforce.Account.field.Score__c
+    },
+    {
+      help = ""
+      label = ""
+      name = salesforce.Account.field.Yariv_ref__c
+      relationshipLabel = ""
+    },
+  ]
+  layouts = [
+    {
+      layout = "Account Layout"
+      sections = [
+        {
+          label = ""
+          section = "Account Summary"
+        },
+      ]
+    },
+    {
+      layout = "CPQ Account Layout"
+      sections = [
+        {
+          label = "追加情報"
+          section = "Additional Information"
+        },
+        {
+          label = "カスタムリンク"
+          section = "Custom Links"
+        },
+        {
+          label = "更新/期間調整情報"
+          section = "Renewal/Co-Term Information"
+        },
+      ]
+    },
+  ]
+  quickActions = {
+    label = ""
+    name = salesforce.QuickAction.instance.Account_Child_Account@vu
+  }
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Account_GoogleMaps
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Account_GoogleNews
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Account_GoogleSearch
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Account_SBQQ__Amend_Assets
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Account_SBQQ__Renew_Assets
+    },
+  ]
+  _parent = [
+    salesforce.Account,
+  ]
+}

@@ -1,0 +1,134 @@
+salesforce.CustomObjectTranslation Opportunity_de@b {
+  fullName = "Opportunity-de"
+  fields = [
+    {
+      label = ""
+      name = salesforce.Opportunity.field.Budget_Confirmed__c
+    },
+    {
+      label = ""
+      name = salesforce.Opportunity.field.Discovery_Completed__c
+    },
+    {
+      label = ""
+      name = salesforce.Opportunity.field.Loss_Reason__c
+      picklistValues = [
+        {
+          masterLabel = "Lost to Competitor"
+          translation = ""
+        },
+        {
+          masterLabel = "No Budget / Lost Funding"
+          translation = ""
+        },
+        {
+          masterLabel = "No Decision / Non-Responsive"
+          translation = ""
+        },
+        {
+          masterLabel = "Other"
+          translation = ""
+        },
+        {
+          masterLabel = "Price"
+          translation = ""
+        },
+      ]
+    },
+    {
+      label = ""
+      name = salesforce.Opportunity.field.ROI_Analysis_Completed__c
+    },
+    {
+      help = "Nachschlagefeld für Ihren geänderten Vertrag."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__AmendedContract__c
+      relationshipLabel = ""
+    },
+    {
+      help = "Salesforce CPQ nutzt dieses Feld dazu, Vermögenswerte und Abonnements automatisch zu konvertieren."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__Contracted__c
+    },
+    {
+      help = "Aktivieren Sie dieses Kontrollkästchen, um Vertragspreise zu erstellen, ohne einen Vertrag zu generieren."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__CreateContractedPrices__c
+    },
+    {
+      help = "Die eindeutige Kennung für die Transaktion \"Ändern: Erneutes Angebot\". Dabei handelt es sich um die ID des ursprünglichen Primärangebots."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__OrderGroupID__c
+    },
+    {
+      help = "Aktivieren Sie dieses Kontrollkästchen, um automatisch einen Auftrag aus dem Primärangebot zu erstellen."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__Ordered__c
+    },
+    {
+      help = "Salesforce CPQ nutzt dieses Feld, um auf das Primärangebot für diese Opportunity zu verweisen."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__PrimaryQuote__c
+      relationshipLabel = ""
+    },
+    {
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__QuotePricebookId__c
+    },
+    {
+      help = "Gibt an, dass diese Opportunity eine Verlängerungs-Opportunity ist."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__Renewal__c
+    },
+    {
+      help = "Vertrag, der von dieser Verlängerungs-Opportunity verlängert wird. Sind dieser Opportunity mehrere Verträge zugeordnet, referenziert dieses Feld den Mastervertrag."
+      label = ""
+      name = salesforce.Opportunity.field.SBQQ__RenewedContract__c
+      relationshipLabel = ""
+    },
+  ]
+  layouts = [
+    {
+      layout = "CPQ Opportunity Layout"
+      sections = [
+        {
+          label = ""
+          section = "Custom Links"
+        },
+        {
+          label = ""
+          section = "Recalculating"
+        },
+        {
+          label = ""
+          section = "Salesforce CPQ Information"
+        },
+      ]
+    },
+  ]
+  quickActions = {
+    label = ""
+    name = "SBQQ__CreateOrderLightning"
+  }
+  webLinks = [
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Opportunity_SBQQ__Amend_Assets
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Opportunity_SBQQ__Amend_Contract
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Opportunity_SBQQ__CreateOrder
+    },
+    {
+      label = ""
+      name = salesforce.WebLink.instance.Opportunity_SBQQ__Include_Document
+    },
+  ]
+  _parent = [
+    salesforce.Opportunity,
+  ]
+}

@@ -1,0 +1,272 @@
+type salesforce.SBQQ__QuoteDocument__c {
+  salesforce.MasterDetail SBQQ__Quote__c {
+    apiName = "SBQQ__QuoteDocument__c.SBQQ__Quote__c"
+    label = "Quote"
+    _required = false
+    writeRequiresMasterRead = false
+    reparentableMasterDetail = false
+    referenceTo = [
+      salesforce.SBQQ__Quote__c,
+    ]
+    inlineHelpText = "Quote to which this Quote Document belongs."
+    createable = true
+    updateable = false
+    relationshipOrder = 0
+    relationshipName = "R00N70000001lX7YEAU"
+    queryable = true
+    description = "Quote to which this Quote Document belongs."
+  }
+  salesforce.Text SBQQ__AttachmentId__c {
+    apiName = "SBQQ__QuoteDocument__c.SBQQ__AttachmentId__c"
+    label = "Attachment Id"
+    _required = false
+    inlineHelpText = "ID of attachment record generated for this document."
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 18
+    queryable = true
+    description = "ID of attachment record generated for this document."
+    externalId = false
+  }
+  salesforce.Currency SBQQ__CustomerAmount__c {
+    apiName = "SBQQ__QuoteDocument__c.SBQQ__CustomerAmount__c"
+    label = "Customer Amount"
+    _required = false
+    inlineHelpText = "Customer amount on the quote at the time this document was generated."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+    description = "Customer amount on the quote at the time this document was generated."
+  }
+  salesforce.Text SBQQ__DocumentId__c {
+    apiName = "SBQQ__QuoteDocument__c.SBQQ__DocumentId__c"
+    label = "Document Id"
+    _required = false
+    inlineHelpText = "ID of the Document record which contains its generated PDF."
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 18
+    queryable = true
+    description = "ID of the Document record which contains its generated PDF."
+    externalId = false
+  }
+  salesforce.Checkbox SBQQ__ElectronicSignature__c {
+    apiName = "SBQQ__QuoteDocument__c.SBQQ__ElectronicSignature__c"
+    label = "Electronic Signature"
+    defaultValue = false
+    inlineHelpText = "Field for the document to be signed electronically."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Indicates this document was generated for electronic signature."
+  }
+  salesforce.Text SBQQ__Key__c {
+    apiName = "SBQQ__QuoteDocument__c.SBQQ__Key__c"
+    label = "Key"
+    _required = false
+    inlineHelpText = "Key used to ensure unique combination of quote ID and version number."
+    createable = true
+    updateable = true
+    unique = true
+    caseSensitive = false
+    length = 40
+    queryable = true
+    description = "Key used to ensure unique combination of quote ID and version number."
+    externalId = false
+  }
+  salesforce.Currency SBQQ__ListAmount__c {
+    apiName = "SBQQ__QuoteDocument__c.SBQQ__ListAmount__c"
+    label = "List Amount"
+    _required = false
+    inlineHelpText = "List amount of the quote at the time this document was generated."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+    description = "List amount of the quote at the time this document was generated."
+  }
+  salesforce.Currency SBQQ__NetAmount__c {
+    apiName = "SBQQ__QuoteDocument__c.SBQQ__NetAmount__c"
+    label = "Net Amount"
+    _required = false
+    inlineHelpText = "Net amount on the quote at the time this document was generated."
+    createable = true
+    updateable = true
+    scale = 2
+    precision = 18
+    queryable = true
+    description = "Net amount on the quote at the time this document was generated."
+  }
+  salesforce.Lookup SBQQ__Opportunity__c {
+    apiName = "SBQQ__QuoteDocument__c.SBQQ__Opportunity__c"
+    label = "Opportunity"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.Opportunity,
+    ]
+    inlineHelpText = "Choose the Opportunity that parents the Quote for this document."
+    createable = true
+    updateable = true
+    relationshipName = "R00N700000029COgEAM"
+    queryable = true
+    description = "Lookup to the Opportunity that parents the Quote for this document. References the opportunity on the quote for this document, allowing the Opportunity Quote Documents Related List to reside on the Opportunity as well as the Quote."
+  }
+  salesforce.Picklist SBQQ__OutputFormat__c {
+    apiName = "SBQQ__QuoteDocument__c.SBQQ__OutputFormat__c"
+    label = "Output Format"
+    _required = false
+    valueSet = [
+      {
+        fullName = "PDF"
+        default = true
+        label = "PDF"
+      },
+      {
+        fullName = "MS Word"
+        default = false
+        label = "MS Word"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Choose the output format for this document."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Output format of this document."
+    sorted = false
+  }
+  salesforce.Picklist SBQQ__PaperSize__c {
+    apiName = "SBQQ__QuoteDocument__c.SBQQ__PaperSize__c"
+    label = "Paper Size"
+    _required = false
+    restricted = true
+    inlineHelpText = "Choose the paper size for this document."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Paper size of this document."
+    valueSetName = salesforce.GlobalValueSet.instance.SBQQ__PaperSize
+  }
+  salesforce.FormulaText SBQQ__PrimaryContactId__c {
+    apiName = "SBQQ__QuoteDocument__c.SBQQ__PrimaryContactId__c"
+    label = "Primary Contact Id"
+    _required = false
+    formula = "SBQQ__Quote__r.SBQQ__PrimaryContact__c"
+    inlineHelpText = "References the primary contact for the quote to be used on the Email button, which defaults the To field."
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1300
+    queryable = true
+    description = "ID of primary contact in the quote. Used in Email button to default the To field."
+    externalId = false
+  }
+  salesforce.Lookup SBQQ__QuoteTemplate__c {
+    apiName = "SBQQ__QuoteDocument__c.SBQQ__QuoteTemplate__c"
+    label = "Quote Template"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.SBQQ__QuoteTemplate__c,
+    ]
+    inlineHelpText = "Quote Template that generated this document."
+    createable = true
+    updateable = true
+    relationshipName = "Quote_Documents"
+    queryable = true
+    description = "Quote Template that generated this document."
+  }
+  salesforce.Picklist SBQQ__SignatureStatus__c {
+    apiName = "SBQQ__QuoteDocument__c.SBQQ__SignatureStatus__c"
+    label = "Signature Status"
+    _required = false
+    valueSet = [
+      {
+        fullName = "Pending"
+        default = false
+        label = "Pending"
+      },
+      {
+        fullName = "Sent"
+        default = false
+        label = "Sent"
+      },
+      {
+        fullName = "Signed"
+        default = false
+        label = "Signed"
+      },
+      {
+        fullName = "Expired"
+        default = false
+        label = "Expired"
+      },
+      {
+        fullName = "Revoked"
+        default = false
+        label = "Revoked"
+      },
+    ]
+    restricted = false
+    inlineHelpText = "Status of electronic signature."
+    createable = true
+    updateable = true
+    queryable = true
+    description = "Status of electronic signature."
+    sorted = false
+  }
+  salesforce.Text SBQQ__Template__c {
+    apiName = "SBQQ__QuoteDocument__c.SBQQ__Template__c"
+    label = "Template"
+    _required = false
+    inlineHelpText = "Name of the template used to generate this document."
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 80
+    queryable = true
+    description = "Name of the template used to generate this document."
+    externalId = false
+  }
+  salesforce.Number SBQQ__Version__c {
+    apiName = "SBQQ__QuoteDocument__c.SBQQ__Version__c"
+    label = "Version"
+    _required = true
+    defaultValueFormula = "1"
+    precision = 10
+    scale = 0
+    inlineHelpText = "Sequentially incremented version number."
+    createable = true
+    updateable = true
+    unique = false
+    queryable = true
+    description = "Sequentially incremented version number."
+    externalId = false
+  }
+  salesforce.FormulaText SBQQ__ViewRecordId__c {
+    apiName = "SBQQ__QuoteDocument__c.SBQQ__ViewRecordId__c"
+    label = "View Record Id"
+    _required = false
+    formula = "IF(ISBLANK(SBQQ__AttachmentId__c),SBQQ__DocumentId__c,SBQQ__AttachmentId__c)"
+    inlineHelpText = "Allows user to view the Quote Document Record Id."
+    createable = false
+    updateable = false
+    unique = false
+    caseSensitive = false
+    length = 1300
+    queryable = true
+    description = "Allows user to view the Quote Document Record Id."
+    externalId = false
+    formulaTreatBlanksAs = "BlankAsZero"
+  }
+}
