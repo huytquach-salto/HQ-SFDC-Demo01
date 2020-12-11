@@ -58,7 +58,7 @@ type salesforce.Account {
     caseSensitive = false
     length = 255
     queryable = true
-    description = "Initial Test Field in Accounts"
+    description = "Change Test Field in Accounts"
     externalId = false
   }
 }
