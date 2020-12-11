@@ -48,4 +48,17 @@ type salesforce.Account {
     description = "Denotes the max sales score of any contact in this account"
     externalId = false
   }
+  salesforce.Text HQ_AcctField01__c {
+    apiName = "Account.HQ_AcctField01__c"
+    label = "HQ AcctField01"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
+    description = "Initial Test Field in Accounts"
+    externalId = false
+  }
 }

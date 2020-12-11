@@ -6,6 +6,10 @@ salesforce.CustomObjectTranslation Account_ja@b {
       name = salesforce.Account.field.Domain__c
     },
     {
+      label = ""
+      name = salesforce.Account.field.HQ_AcctField01__c
+    },
+    {
       help = "更新見積の生成時、同じ商品の複数の納入商品の数量を 1 つの品目に統合するオプション。"
       label = ""
       name = salesforce.Account.field.SBQQ__AssetQuantitiesCombined__c

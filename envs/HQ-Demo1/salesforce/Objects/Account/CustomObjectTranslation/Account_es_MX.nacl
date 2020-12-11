@@ -6,6 +6,10 @@ salesforce.CustomObjectTranslation Account_es_MX@bu {
       name = salesforce.Account.field.Domain__c
     },
     {
+      label = ""
+      name = salesforce.Account.field.HQ_AcctField01__c
+    },
+    {
       help = "Opción para combinar las cantidades de múltiples activos para el mismo producto en una partida cuando se genera el presupuesto de renovación."
       label = ""
       name = salesforce.Account.field.SBQQ__AssetQuantitiesCombined__c

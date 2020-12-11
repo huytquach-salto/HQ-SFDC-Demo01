@@ -6,6 +6,10 @@ salesforce.CustomObjectTranslation Account_fr@b {
       name = salesforce.Account.field.Domain__c
     },
     {
+      label = ""
+      name = salesforce.Account.field.HQ_AcctField01__c
+    },
+    {
       help = "Option qui permet de combiner les quantités de plusieurs ressources d'un même produit sur une seule ligne lors de la génération du devis de renouvellement."
       label = ""
       name = salesforce.Account.field.SBQQ__AssetQuantitiesCombined__c

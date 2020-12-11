@@ -6,6 +6,10 @@ salesforce.CustomObjectTranslation Account_pt_BR@bu {
       name = salesforce.Account.field.Domain__c
     },
     {
+      label = ""
+      name = salesforce.Account.field.HQ_AcctField01__c
+    },
+    {
       help = "Opção para combinar as quantidades de vários ativos para o mesmo produto em uma linha quando a cotação de renovação é gerada."
       label = ""
       name = salesforce.Account.field.SBQQ__AssetQuantitiesCombined__c
