@@ -4,9 +4,10 @@ type salesforce.DuplicateRecordItem {
     label = "Duplicate Record Item ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "DuplicateRecordItem.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.DuplicateRecordItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.AutoNumber Name {
     apiName = "DuplicateRecordItem.Name"
@@ -25,7 +27,8 @@ type salesforce.DuplicateRecordItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "DuplicateRecordItem.CreatedDate"
@@ -34,7 +37,8 @@ type salesforce.DuplicateRecordItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "DuplicateRecordItem.CreatedById"
@@ -48,7 +52,8 @@ type salesforce.DuplicateRecordItem {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "DuplicateRecordItem.LastModifiedDate"
@@ -57,7 +62,8 @@ type salesforce.DuplicateRecordItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "DuplicateRecordItem.LastModifiedById"
@@ -71,7 +77,8 @@ type salesforce.DuplicateRecordItem {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "DuplicateRecordItem.SystemModstamp"
@@ -80,7 +87,8 @@ type salesforce.DuplicateRecordItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup DuplicateRecordSetId {
     apiName = "DuplicateRecordItem.DuplicateRecordSetId"

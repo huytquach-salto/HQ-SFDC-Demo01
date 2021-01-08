@@ -18,8 +18,9 @@ settings salesforce.LightningExperienceSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableAccessCheckCrucPref {
   }
@@ -80,4 +81,7 @@ settings salesforce.LightningExperienceSettings {
   boolean isLEXExtensionOff {
   }
   metadataType = "LightningExperienceSettings"
+  string activeThemeName {
+    _required = false
+  }
 }

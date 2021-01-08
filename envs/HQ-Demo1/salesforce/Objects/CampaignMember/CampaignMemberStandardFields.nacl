@@ -4,9 +4,10 @@ type salesforce.CampaignMember {
     label = "Campaign Member ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "CampaignMember.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.CampaignMember {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Lookup CampaignId {
     apiName = "CampaignMember.CampaignId"
@@ -82,7 +84,8 @@ type salesforce.CampaignMember {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "CampaignMember.CreatedById"
@@ -96,7 +99,8 @@ type salesforce.CampaignMember {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "CampaignMember.LastModifiedDate"
@@ -105,7 +109,8 @@ type salesforce.CampaignMember {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CampaignMember.LastModifiedById"
@@ -119,7 +124,8 @@ type salesforce.CampaignMember {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "CampaignMember.SystemModstamp"
@@ -128,7 +134,8 @@ type salesforce.CampaignMember {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Date FirstRespondedDate {
     apiName = "CampaignMember.FirstRespondedDate"
@@ -158,7 +165,8 @@ type salesforce.CampaignMember {
     caseSensitive = false
     length = 255
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Text FirstName {
     apiName = "CampaignMember.FirstName"

@@ -31,7 +31,7 @@ salesforce.Layout ProcessException_Process_Exception_Layout@bss {
             },
             {
               behavior = "Edit"
-              field = "ExternalReference"
+              field = salesforce.ProcessException.field.ExternalReference
             },
           ]
         },
@@ -39,7 +39,7 @@ salesforce.Layout ProcessException_Process_Exception_Layout@bss {
           layoutItems = [
             {
               behavior = "Readonly"
-              field = "ProcessExceptionNumber"
+              field = salesforce.ProcessException.field.ProcessExceptionNumber
             },
             {
               behavior = "Edit"
@@ -51,11 +51,11 @@ salesforce.Layout ProcessException_Process_Exception_Layout@bss {
             },
             {
               behavior = "Required"
-              field = "Message"
+              field = salesforce.ProcessException.field.Message
             },
             {
               behavior = "Edit"
-              field = "Description"
+              field = salesforce.ProcessException.field.Description
             },
           ]
         },

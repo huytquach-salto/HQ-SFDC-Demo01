@@ -4,9 +4,10 @@ type salesforce.DataUseLegalBasis {
     label = "Data Use Legal Basis ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "DataUseLegalBasis.OwnerId"
@@ -21,7 +22,8 @@ type salesforce.DataUseLegalBasis {
     updateable = false
     relationshipName = "Owner"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "DataUseLegalBasis.IsDeleted"
@@ -30,8 +32,9 @@ type salesforce.DataUseLegalBasis {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "DataUseLegalBasis.Name"
@@ -51,7 +54,8 @@ type salesforce.DataUseLegalBasis {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "DataUseLegalBasis.CreatedById"
@@ -65,7 +69,8 @@ type salesforce.DataUseLegalBasis {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "DataUseLegalBasis.LastModifiedDate"
@@ -74,7 +79,8 @@ type salesforce.DataUseLegalBasis {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "DataUseLegalBasis.LastModifiedById"
@@ -88,7 +94,8 @@ type salesforce.DataUseLegalBasis {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "DataUseLegalBasis.SystemModstamp"
@@ -97,7 +104,8 @@ type salesforce.DataUseLegalBasis {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Text Source {
     apiName = "DataUseLegalBasis.Source"

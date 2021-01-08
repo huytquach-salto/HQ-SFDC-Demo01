@@ -4,9 +4,10 @@ type salesforce.WorkBadge {
     label = "Badge Received ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WorkBadge.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.WorkBadge {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "WorkBadge.CreatedDate"
@@ -25,7 +27,8 @@ type salesforce.WorkBadge {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "WorkBadge.CreatedById"
@@ -39,7 +42,8 @@ type salesforce.WorkBadge {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "WorkBadge.LastModifiedDate"
@@ -48,7 +52,8 @@ type salesforce.WorkBadge {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "WorkBadge.LastModifiedById"
@@ -62,7 +67,8 @@ type salesforce.WorkBadge {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "WorkBadge.SystemModstamp"
@@ -71,7 +77,8 @@ type salesforce.WorkBadge {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup SourceId {
     apiName = "WorkBadge.SourceId"

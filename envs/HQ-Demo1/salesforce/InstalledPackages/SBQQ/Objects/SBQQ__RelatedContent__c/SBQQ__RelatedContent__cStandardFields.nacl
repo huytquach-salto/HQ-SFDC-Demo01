@@ -4,9 +4,10 @@ type salesforce.SBQQ__RelatedContent__c {
     label = "Record ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "SBQQ__RelatedContent__c.OwnerId"
@@ -21,7 +22,8 @@ type salesforce.SBQQ__RelatedContent__c {
     updateable = false
     relationshipName = "Owner"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "SBQQ__RelatedContent__c.IsDeleted"
@@ -30,8 +32,9 @@ type salesforce.SBQQ__RelatedContent__c {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "SBQQ__RelatedContent__c.Name"
@@ -51,7 +54,8 @@ type salesforce.SBQQ__RelatedContent__c {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "SBQQ__RelatedContent__c.CreatedById"
@@ -65,7 +69,8 @@ type salesforce.SBQQ__RelatedContent__c {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "SBQQ__RelatedContent__c.LastModifiedDate"
@@ -74,7 +79,8 @@ type salesforce.SBQQ__RelatedContent__c {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "SBQQ__RelatedContent__c.LastModifiedById"
@@ -88,7 +94,8 @@ type salesforce.SBQQ__RelatedContent__c {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "SBQQ__RelatedContent__c.SystemModstamp"
@@ -97,6 +104,7 @@ type salesforce.SBQQ__RelatedContent__c {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
 }

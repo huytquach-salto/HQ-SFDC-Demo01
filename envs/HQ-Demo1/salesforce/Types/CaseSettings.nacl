@@ -111,8 +111,9 @@ settings salesforce.CaseSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   string newEmailDefaultTemplateClass {
   }

@@ -4,9 +4,10 @@ type salesforce.Location {
     label = "Location ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "Location.OwnerId"
@@ -21,7 +22,8 @@ type salesforce.Location {
     updateable = false
     relationshipName = "Owner"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Location.IsDeleted"
@@ -30,8 +32,9 @@ type salesforce.Location {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Location.Name"
@@ -51,7 +54,8 @@ type salesforce.Location {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Location.CreatedById"
@@ -65,7 +69,8 @@ type salesforce.Location {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Location.LastModifiedDate"
@@ -74,7 +79,8 @@ type salesforce.Location {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Location.LastModifiedById"
@@ -88,7 +94,8 @@ type salesforce.Location {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Location.SystemModstamp"
@@ -97,7 +104,8 @@ type salesforce.Location {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Picklist LocationType {
     apiName = "Location.LocationType"
@@ -166,11 +174,16 @@ type salesforce.Location {
     updateable = false
     createable = false
   }
-  salesforce.Unknown ExternalReference {
+  salesforce.Text ExternalReference {
     apiName = "Location.ExternalReference"
-    queryable = false
-    updateable = false
-    createable = false
+    label = "External Reference"
+    _required = false
+    createable = true
+    updateable = true
+    unique = false
+    caseSensitive = false
+    length = 255
+    queryable = true
   }
   salesforce.Unknown Location {
     apiName = "Location.Location"
@@ -186,9 +199,16 @@ type salesforce.Location {
   }
   salesforce.Lookup LogoId {
     apiName = "Location.LogoId"
-    queryable = false
-    updateable = false
-    createable = false
+    queryable = true
+    updateable = true
+    createable = true
+    label = "Asset File ID"
+    _required = false
+    allowLookupRecordDeletion = true
+    referenceTo = [
+      salesforce.ContentAsset,
+    ]
+    relationshipName = "Logo"
   }
   salesforce.Unknown OpenDate {
     apiName = "Location.OpenDate"

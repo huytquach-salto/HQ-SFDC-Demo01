@@ -4,9 +4,10 @@ type salesforce.Solution {
     label = "Solution ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Solution.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.Solution {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.AutoNumber SolutionNumber {
     apiName = "Solution.SolutionNumber"
@@ -25,7 +27,8 @@ type salesforce.Solution {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Text SolutionName {
     apiName = "Solution.SolutionName"
@@ -93,7 +96,8 @@ type salesforce.Solution {
     updateable = false
     relationshipName = "Owner"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "Solution.CreatedDate"
@@ -102,7 +106,8 @@ type salesforce.Solution {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Solution.CreatedById"
@@ -116,7 +121,8 @@ type salesforce.Solution {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Solution.LastModifiedDate"
@@ -125,7 +131,8 @@ type salesforce.Solution {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Solution.LastModifiedById"
@@ -139,7 +146,8 @@ type salesforce.Solution {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Solution.SystemModstamp"
@@ -148,7 +156,8 @@ type salesforce.Solution {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Number TimesUsed {
     apiName = "Solution.TimesUsed"

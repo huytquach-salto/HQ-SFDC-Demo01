@@ -58,4 +58,34 @@ type salesforce.FlowStart {
     }
   }
   metadataType = "FlowStart"
+  string elementSubtype {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "SortCollectionProcessor",
+      ]
+    }
+  }
+  boolean doesRequireRecordChangedToMeetCriteria {
+    _required = false
+  }
+  string filterLogic {
+    _required = false
+  }
+  string objectContainer {
+    _required = false
+  }
+  string recordTriggerType {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "Create",
+        "CreateAndUpdate",
+        "Delete",
+        "Update",
+      ]
+    }
+  }
 }

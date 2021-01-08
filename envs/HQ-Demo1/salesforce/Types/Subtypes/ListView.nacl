@@ -42,8 +42,9 @@ type salesforce.ListView {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   string filterScope {
     _restriction = {

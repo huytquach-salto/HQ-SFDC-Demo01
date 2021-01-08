@@ -4,9 +4,10 @@ type salesforce.Case {
     label = "Case ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Case.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.Case {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Lookup MasterRecordId {
     apiName = "Case.MasterRecordId"
@@ -38,7 +40,8 @@ type salesforce.Case {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup ContactId {
     apiName = "Case.ContactId"
@@ -347,7 +350,8 @@ type salesforce.Case {
     updateable = false
     relationshipName = "Owner"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "Case.CreatedDate"
@@ -356,7 +360,8 @@ type salesforce.Case {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Case.CreatedById"
@@ -370,7 +375,8 @@ type salesforce.Case {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Case.LastModifiedDate"
@@ -379,7 +385,8 @@ type salesforce.Case {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Case.LastModifiedById"
@@ -393,7 +400,8 @@ type salesforce.Case {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Case.SystemModstamp"
@@ -402,7 +410,8 @@ type salesforce.Case {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Phone ContactPhone {
     apiName = "Case.ContactPhone"

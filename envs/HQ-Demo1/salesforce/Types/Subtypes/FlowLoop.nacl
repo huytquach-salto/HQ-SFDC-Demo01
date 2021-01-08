@@ -52,4 +52,16 @@ type salesforce.FlowLoop {
     }
   }
   metadataType = "FlowLoop"
+  string elementSubtype {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "SortCollectionProcessor",
+      ]
+    }
+    foreignKeyDomain = [
+      "FlowElementSubtypeDefinition",
+    ]
+  }
 }

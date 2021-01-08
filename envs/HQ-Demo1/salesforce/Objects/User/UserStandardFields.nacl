@@ -4,9 +4,10 @@ type salesforce.User {
     label = "User ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Text Username {
     apiName = "User.Username"
@@ -264,6 +265,12 @@ type salesforce.User {
         isActive = true
       },
       {
+        fullName = "Pacific/Fiji"
+        default = false
+        label = "(GMT+13:00) Fiji Summer Time (Pacific/Fiji)"
+        isActive = true
+      },
+      {
         fullName = "Pacific/Tongatapu"
         default = false
         label = "(GMT+13:00) Tonga Standard Time (Pacific/Tongatapu)"
@@ -273,12 +280,6 @@ type salesforce.User {
         fullName = "Asia/Kamchatka"
         default = false
         label = "(GMT+12:00) Petropavlovsk-Kamchatski Standard Time (Asia/Kamchatka)"
-        isActive = true
-      },
-      {
-        fullName = "Pacific/Fiji"
-        default = false
-        label = "(GMT+12:00) Fiji Standard Time (Pacific/Fiji)"
         isActive = true
       },
       {
@@ -2473,7 +2474,8 @@ type salesforce.User {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "User.CreatedById"
@@ -2487,7 +2489,8 @@ type salesforce.User {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "User.LastModifiedDate"
@@ -2496,7 +2499,8 @@ type salesforce.User {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "User.LastModifiedById"
@@ -2510,7 +2514,8 @@ type salesforce.User {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "User.SystemModstamp"
@@ -2519,7 +2524,8 @@ type salesforce.User {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Number NumberOfFailedLogins {
     apiName = "User.NumberOfFailedLogins"
@@ -2576,13 +2582,7 @@ type salesforce.User {
     updateable = true
     queryable = true
   }
-  salesforce.Checkbox UserPermissionsMobileUser {
-    apiName = "User.UserPermissionsMobileUser"
-    label = "Apex Mobile User"
-    createable = true
-    updateable = true
-    queryable = true
-  }
+  
   salesforce.Checkbox UserPermissionsSFContentUser {
     apiName = "User.UserPermissionsSFContentUser"
     label = "Salesforce CRM Content User"
@@ -2920,13 +2920,7 @@ type salesforce.User {
     updateable = true
     queryable = true
   }
-  salesforce.Checkbox UserPreferencesPipelineViewHideHelpPopover {
-    apiName = "User.UserPreferencesPipelineViewHideHelpPopover"
-    label = "PipelineViewHideHelpPopover"
-    createable = true
-    updateable = true
-    queryable = true
-  }
+  
   salesforce.Checkbox UserPreferencesHideS1BrowserUI {
     apiName = "User.UserPreferencesHideS1BrowserUI"
     label = "HideS1BrowserUI"

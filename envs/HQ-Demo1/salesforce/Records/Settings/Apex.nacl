@@ -13,4 +13,7 @@ salesforce.ApexSettings {
   enableGaplessTestAutoNum = true
   enableMngdCtrlActionAccessPref = false
   enableNonCertifiedApexMdCrud = false
+  enableApexTestReqViewSetup = "false"
+  enableAsyncRequiresViewSetup = "false"
+  enableSecureNoArgConstructorPref = false
 }

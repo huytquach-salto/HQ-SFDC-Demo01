@@ -4,9 +4,10 @@ type salesforce.DataUsePurpose {
     label = "Data Use Purpose ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "DataUsePurpose.OwnerId"
@@ -21,7 +22,8 @@ type salesforce.DataUsePurpose {
     updateable = false
     relationshipName = "Owner"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "DataUsePurpose.IsDeleted"
@@ -30,8 +32,9 @@ type salesforce.DataUsePurpose {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "DataUsePurpose.Name"
@@ -51,7 +54,8 @@ type salesforce.DataUsePurpose {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "DataUsePurpose.CreatedById"
@@ -65,7 +69,8 @@ type salesforce.DataUsePurpose {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "DataUsePurpose.LastModifiedDate"
@@ -74,7 +79,8 @@ type salesforce.DataUsePurpose {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "DataUsePurpose.LastModifiedById"
@@ -88,7 +94,8 @@ type salesforce.DataUsePurpose {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "DataUsePurpose.SystemModstamp"
@@ -97,7 +104,8 @@ type salesforce.DataUsePurpose {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LegalBasisId {
     apiName = "DataUsePurpose.LegalBasisId"

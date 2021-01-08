@@ -4,9 +4,10 @@ type salesforce.Task {
     label = "Activity ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup WhoId {
     apiName = "Task.WhoId"
@@ -33,11 +34,14 @@ type salesforce.Task {
       salesforce.AssetRelationship,
       salesforce.Campaign,
       salesforce.Case,
+      salesforce.CommSubscriptionConsent,
       salesforce.Contract,
       "ListEmail",
       salesforce.Location,
       salesforce.Opportunity,
       salesforce.Order,
+      salesforce.PartyConsent,
+      salesforce.ProcessException,
       salesforce.Product2,
       salesforce.Quote,
       salesforce.SBQQ__QuoteDocument__c,
@@ -125,13 +129,15 @@ type salesforce.Task {
     _required = false
     allowLookupRecordDeletion = true
     referenceTo = [
+      salesforce.Group,
       salesforce.User,
     ]
     createable = false
     updateable = false
     relationshipName = "Owner"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.LongTextArea Description {
     apiName = "Task.Description"
@@ -149,8 +155,9 @@ type salesforce.Task {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Lookup AccountId {
     apiName = "Task.AccountId"
@@ -180,7 +187,8 @@ type salesforce.Task {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Task.CreatedById"
@@ -194,7 +202,8 @@ type salesforce.Task {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Task.LastModifiedDate"
@@ -203,7 +212,8 @@ type salesforce.Task {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Task.LastModifiedById"
@@ -217,7 +227,8 @@ type salesforce.Task {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Task.SystemModstamp"
@@ -226,7 +237,8 @@ type salesforce.Task {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsArchived {
     apiName = "Task.IsArchived"
@@ -380,6 +392,12 @@ type salesforce.Task {
         isActive = true
       },
       {
+        fullName = "Pacific/Fiji"
+        default = false
+        label = "(GMT+13:00) Fiji Summer Time (Pacific/Fiji)"
+        isActive = true
+      },
+      {
         fullName = "Pacific/Tongatapu"
         default = false
         label = "(GMT+13:00) Tonga Standard Time (Pacific/Tongatapu)"
@@ -389,12 +407,6 @@ type salesforce.Task {
         fullName = "Asia/Kamchatka"
         default = false
         label = "(GMT+12:00) Petropavlovsk-Kamchatski Standard Time (Asia/Kamchatka)"
-        isActive = true
-      },
-      {
-        fullName = "Pacific/Fiji"
-        default = false
-        label = "(GMT+12:00) Fiji Standard Time (Pacific/Fiji)"
         isActive = true
       },
       {

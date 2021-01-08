@@ -4,9 +4,10 @@ type salesforce.CaseContactRole {
     label = "Contact Role ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup CasesId {
     apiName = "CaseContactRole.CasesId"
@@ -51,7 +52,8 @@ type salesforce.CaseContactRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "CaseContactRole.CreatedById"
@@ -65,7 +67,8 @@ type salesforce.CaseContactRole {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "CaseContactRole.LastModifiedDate"
@@ -74,7 +77,8 @@ type salesforce.CaseContactRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CaseContactRole.LastModifiedById"
@@ -88,7 +92,8 @@ type salesforce.CaseContactRole {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "CaseContactRole.SystemModstamp"
@@ -97,7 +102,8 @@ type salesforce.CaseContactRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "CaseContactRole.IsDeleted"
@@ -106,7 +112,8 @@ type salesforce.CaseContactRole {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
 }

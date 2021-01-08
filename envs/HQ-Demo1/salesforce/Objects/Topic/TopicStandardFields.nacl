@@ -4,9 +4,10 @@ type salesforce.Topic {
     label = "Topic ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Topic.Name"
@@ -37,7 +38,8 @@ type salesforce.Topic {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Topic.CreatedById"
@@ -51,7 +53,8 @@ type salesforce.Topic {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Number TalkingAbout {
     apiName = "Topic.TalkingAbout"
@@ -82,6 +85,7 @@ type salesforce.Topic {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
 }

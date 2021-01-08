@@ -94,4 +94,13 @@ type salesforce.FlowScreenField {
     }
   }
   metadataType = "FlowScreenField"
+  salesforce.FlowDataTypeMapping dataTypeMappings {
+    _required = false
+  }
+  salesforce.FlowScreenField fields {
+    _required = false
+  }
+  string objectFieldReference {
+    _required = false
+  }
 }

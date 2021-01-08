@@ -4,9 +4,10 @@ type salesforce.SBQQ__FieldMetadata__c {
     label = "Record ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "SBQQ__FieldMetadata__c.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.SBQQ__FieldMetadata__c {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "SBQQ__FieldMetadata__c.Name"
@@ -43,7 +45,8 @@ type salesforce.SBQQ__FieldMetadata__c {
     updateable = false
     relationshipName = "SetupOwner"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "SBQQ__FieldMetadata__c.CreatedDate"
@@ -52,7 +55,8 @@ type salesforce.SBQQ__FieldMetadata__c {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "SBQQ__FieldMetadata__c.CreatedById"
@@ -66,7 +70,8 @@ type salesforce.SBQQ__FieldMetadata__c {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "SBQQ__FieldMetadata__c.LastModifiedDate"
@@ -75,7 +80,8 @@ type salesforce.SBQQ__FieldMetadata__c {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "SBQQ__FieldMetadata__c.LastModifiedById"
@@ -89,7 +95,8 @@ type salesforce.SBQQ__FieldMetadata__c {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "SBQQ__FieldMetadata__c.SystemModstamp"
@@ -98,6 +105,7 @@ type salesforce.SBQQ__FieldMetadata__c {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
 }

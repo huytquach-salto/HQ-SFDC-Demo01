@@ -66,4 +66,7 @@ type salesforce.FlowDynamicChoiceSet {
     }
   }
   metadataType = "FlowDynamicChoiceSet"
+  string filterLogic {
+    _required = false
+  }
 }

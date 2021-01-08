@@ -18,8 +18,9 @@ settings salesforce.CampaignSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableAutoCampInfluenceDisabled {
   }
@@ -34,4 +35,7 @@ settings salesforce.CampaignSettings {
   boolean enableSuppressNoValueCI2 {
   }
   metadataType = "CampaignSettings"
+  number aiAttributionTimeframe {
+    _required = false
+  }
 }

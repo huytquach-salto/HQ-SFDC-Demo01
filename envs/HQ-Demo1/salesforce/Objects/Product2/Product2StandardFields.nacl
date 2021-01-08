@@ -4,9 +4,10 @@ type salesforce.Product2 {
     label = "Product ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Product2.Name"
@@ -54,7 +55,8 @@ type salesforce.Product2 {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Product2.CreatedById"
@@ -68,7 +70,8 @@ type salesforce.Product2 {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Product2.LastModifiedDate"
@@ -77,7 +80,8 @@ type salesforce.Product2 {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Product2.LastModifiedById"
@@ -91,7 +95,8 @@ type salesforce.Product2 {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Product2.SystemModstamp"
@@ -100,7 +105,8 @@ type salesforce.Product2 {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Picklist Family {
     apiName = "Product2.Family"
@@ -167,8 +173,9 @@ type salesforce.Product2 {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsArchived {
     apiName = "Product2.IsArchived"

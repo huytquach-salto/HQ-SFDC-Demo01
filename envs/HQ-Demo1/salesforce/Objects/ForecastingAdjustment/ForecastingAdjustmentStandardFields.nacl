@@ -4,9 +4,10 @@ type salesforce.ForecastingAdjustment {
     label = "ForecastingAdjustment ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup ForecastingItemId {
     apiName = "ForecastingAdjustment.ForecastingItemId"
@@ -183,7 +184,8 @@ type salesforce.ForecastingAdjustment {
     updateable = false
     relationshipName = "Owner"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsQuantity {
     apiName = "ForecastingAdjustment.IsQuantity"
@@ -208,7 +210,8 @@ type salesforce.ForecastingAdjustment {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "ForecastingAdjustment.CreatedById"
@@ -222,7 +225,8 @@ type salesforce.ForecastingAdjustment {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "ForecastingAdjustment.LastModifiedDate"
@@ -231,7 +235,8 @@ type salesforce.ForecastingAdjustment {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ForecastingAdjustment.LastModifiedById"
@@ -245,7 +250,8 @@ type salesforce.ForecastingAdjustment {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "ForecastingAdjustment.SystemModstamp"
@@ -254,7 +260,8 @@ type salesforce.ForecastingAdjustment {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup ForecastingTypeId {
     apiName = "ForecastingAdjustment.ForecastingTypeId"

@@ -4,9 +4,10 @@ type salesforce.Asset {
     label = "Asset ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup ContactId {
     apiName = "Asset.ContactId"
@@ -99,7 +100,8 @@ type salesforce.Asset {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Asset.CreatedById"
@@ -113,7 +115,8 @@ type salesforce.Asset {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Asset.LastModifiedDate"
@@ -122,7 +125,8 @@ type salesforce.Asset {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Asset.LastModifiedById"
@@ -136,7 +140,8 @@ type salesforce.Asset {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Asset.SystemModstamp"
@@ -145,7 +150,8 @@ type salesforce.Asset {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Asset.IsDeleted"
@@ -154,8 +160,9 @@ type salesforce.Asset {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "Asset.Name"
@@ -255,7 +262,8 @@ type salesforce.Asset {
     updateable = false
     relationshipName = "Owner"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup AssetProvidedById {
     apiName = "Asset.AssetProvidedById"

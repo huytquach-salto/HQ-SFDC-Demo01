@@ -4,9 +4,10 @@ type salesforce.OrgMetricScanResult {
     label = "Org Metric Scan Result ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "OrgMetricScanResult.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.OrgMetricScanResult {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "OrgMetricScanResult.Name"
@@ -36,7 +38,8 @@ type salesforce.OrgMetricScanResult {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "OrgMetricScanResult.CreatedById"
@@ -50,7 +53,8 @@ type salesforce.OrgMetricScanResult {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "OrgMetricScanResult.LastModifiedDate"
@@ -59,7 +63,8 @@ type salesforce.OrgMetricScanResult {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "OrgMetricScanResult.LastModifiedById"
@@ -73,7 +78,8 @@ type salesforce.OrgMetricScanResult {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "OrgMetricScanResult.SystemModstamp"
@@ -82,7 +88,8 @@ type salesforce.OrgMetricScanResult {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup OrgMetricScanSummaryId {
     apiName = "OrgMetricScanResult.OrgMetricScanSummaryId"

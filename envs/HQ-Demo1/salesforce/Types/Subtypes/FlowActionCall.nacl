@@ -203,4 +203,22 @@ type salesforce.FlowActionCall {
     _required = false
   }
   metadataType = "FlowActionCall"
+  string elementSubtype {
+    _required = false
+    _restriction = {
+      enforce_value = false
+      values = [
+        "SortCollectionProcessor",
+      ]
+    }
+    foreignKeyDomain = [
+      "FlowElementSubtypeDefinition",
+    ]
+  }
+  salesforce.FlowDataTypeMapping dataTypeMappings {
+    _required = false
+  }
+  boolean storeOutputAutomatically {
+    _required = false
+  }
 }

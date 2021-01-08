@@ -55,6 +55,7 @@ type salesforce.PlatformEventChannelMember {
         "CampaignMemberChangeEvent",
         "CampaignMemberStatusChangeEvent",
         "CaseChangeEvent",
+        "CommSubscriptionConsentChangeEvent",
         "ContactChangeEvent",
         "ContactPointAddressChangeEvent",
         "ContactPointConsentChangeEvent",
@@ -62,18 +63,28 @@ type salesforce.PlatformEventChannelMember {
         "ContactPointPhoneChangeEvent",
         "ContactPointTypeConsentChangeEvent",
         "ContractChangeEvent",
+        "EmailMessageChangeEvent",
+        "EmailTemplateChangeEvent",
         "EventChangeEvent",
         "EventRelationChangeEvent",
         "IndividualChangeEvent",
         "LeadChangeEvent",
         "ListEmailChangeEvent",
+        "LocationChangeEvent",
+        "MacroChangeEvent",
+        "MacroInstructionChangeEvent",
         "OpportunityChangeEvent",
         "OpportunityContactRoleChangeEvent",
         "OrderChangeEvent",
         "OrderItemChangeEvent",
+        "PartyConsentChangeEvent",
+        "Pricebook2ChangeEvent",
         "Product2ChangeEvent",
+        "QuickTextChangeEvent",
         "QuoteChangeEvent",
         "QuoteLineItemChangeEvent",
+        "RecommendationChangeEvent",
+        "RecommendationReactionChangeEvent",
         "SBQQ__AttributeSet__ChangeEvent",
         "SBQQ__AttributeValue__ChangeEvent",
         "SBQQ__BlockPrice__ChangeEvent",
@@ -159,6 +170,7 @@ type salesforce.PlatformEventChannelMember {
         "SBQQ__WebQuoteLine__ChangeEvent",
         "SBQQ__WebQuote__ChangeEvent",
         "SaltoData__ChangeEvent",
+        "SocialPostChangeEvent",
         "TaskChangeEvent",
         "TaskRelationChangeEvent",
         "UserChangeEvent",
@@ -171,10 +183,14 @@ type salesforce.PlatformEventChannelMember {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "platformEventChannelMember"
   dirName = "platformEventChannelMembers"
   metadataType = "PlatformEventChannelMember"
+  salesforce.EnrichedField enrichedFields {
+    _required = false
+  }
 }

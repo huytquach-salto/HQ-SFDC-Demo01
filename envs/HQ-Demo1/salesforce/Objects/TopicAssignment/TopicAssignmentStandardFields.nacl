@@ -4,9 +4,10 @@ type salesforce.TopicAssignment {
     label = "Topic Assignment ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup TopicId {
     apiName = "TopicAssignment.TopicId"
@@ -155,7 +156,8 @@ type salesforce.TopicAssignment {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "TopicAssignment.CreatedById"
@@ -169,7 +171,8 @@ type salesforce.TopicAssignment {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "TopicAssignment.IsDeleted"
@@ -178,8 +181,9 @@ type salesforce.TopicAssignment {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "TopicAssignment.SystemModstamp"
@@ -188,6 +192,7 @@ type salesforce.TopicAssignment {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
 }

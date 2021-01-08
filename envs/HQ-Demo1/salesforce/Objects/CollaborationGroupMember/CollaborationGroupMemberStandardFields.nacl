@@ -4,9 +4,10 @@ type salesforce.CollaborationGroupMember {
     label = "Group Member Id"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup CollaborationGroupId {
     apiName = "CollaborationGroupMember.CollaborationGroupId"
@@ -99,7 +100,8 @@ type salesforce.CollaborationGroupMember {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "CollaborationGroupMember.CreatedById"
@@ -113,7 +115,8 @@ type salesforce.CollaborationGroupMember {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "CollaborationGroupMember.LastModifiedDate"
@@ -122,7 +125,8 @@ type salesforce.CollaborationGroupMember {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "CollaborationGroupMember.LastModifiedById"
@@ -136,7 +140,8 @@ type salesforce.CollaborationGroupMember {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "CollaborationGroupMember.SystemModstamp"
@@ -145,7 +150,8 @@ type salesforce.CollaborationGroupMember {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastFeedAccessDate {
     apiName = "CollaborationGroupMember.LastFeedAccessDate"

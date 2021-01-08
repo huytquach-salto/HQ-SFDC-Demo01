@@ -1,0 +1,35 @@
+salesforce.ApprovalProcess Opportunity_Generate_License_Approval@vuu {
+  fullName = "Opportunity.Generate_License_Approval"
+  active = false
+  allowRecall = false
+  allowedSubmitters = {
+    type = "owner"
+  }
+  approvalPageFields = {
+    field = [
+      "Name",
+      "Owner",
+      "Amount",
+      "CloseDate",
+    ]
+  }
+  description = "Automates license creation"
+  enableMobileDeviceAccess = false
+  entryCriteria = {
+    criteriaItems = {
+      field = salesforce.Opportunity.field.IsWon
+      operation = "equals"
+      value = "True"
+    }
+  }
+  finalApprovalRecordLock = true
+  finalRejectionRecordLock = false
+  label = "Generate License Approval"
+  nextAutomatedApprover = {
+    useApproverFieldOfRecordOwner = true
+    userHierarchyField = "Manager"
+  }
+  processOrder = 0
+  recordEditability = "AdminOnly"
+  showApprovalHistory = true
+}

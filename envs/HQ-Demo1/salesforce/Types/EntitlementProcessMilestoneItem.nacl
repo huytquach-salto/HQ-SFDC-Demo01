@@ -1,0 +1,54 @@
+type salesforce.EntitlementProcessMilestoneItem {
+  annotations {
+    serviceid metadataType {
+    }
+    boolean hasMetaFile {
+    }
+    string folderType {
+    }
+    string folderContentType {
+    }
+    string suffix {
+    }
+    string dirName {
+    }
+  }
+  string businessHours {
+    _required = false
+  }
+  string criteriaBooleanFilter {
+    _required = false
+  }
+  salesforce.FilterItem milestoneCriteriaFilterItems {
+    _required = false
+  }
+  string milestoneCriteriaFormula {
+    _required = false
+  }
+  string milestoneName {
+    _required = false
+  }
+  string minutesCustomClass {
+    _required = false
+  }
+  number minutesToComplete {
+    _required = false
+  }
+  salesforce.WorkflowActionReference successActions {
+    _required = false
+  }
+  salesforce.EntitlementProcessMilestoneTimeTrigger timeTriggers {
+    _required = false
+  }
+  boolean useCriteriaStartTime {
+    _required = false
+  }
+  string internalId {
+    _required = false
+    _hidden_value = true
+    localOnly = true
+  }
+  suffix = ""
+  dirName = ""
+  metadataType = "EntitlementProcessMilestoneItem"
+}

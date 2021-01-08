@@ -65,10 +65,15 @@ salesforce.SecuritySettings {
     requireHttpOnly = false
     requireHttps = true
     sessionTimeout = "TwoHours"
+    canConfirmIdentityBySmsOnly = true
+    enableOauthCorsPolicy = false
+    enforceUserDeviceRevoked = false
   }
   singleSignOnSettings = {
     enableMultipleSamlConfigs = true
     enableSamlJitProvisioning = false
     enableSamlLogin = false
+    enableCaseInsensitiveFederationID = false
+    isLoginWithSalesforceCredentialsDisabled = false
   }
 }

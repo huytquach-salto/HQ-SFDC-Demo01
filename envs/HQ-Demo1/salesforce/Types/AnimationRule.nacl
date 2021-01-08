@@ -64,6 +64,7 @@ type salesforce.AnimationRule {
         "Lead",
         "Opportunity",
         "Order",
+        "ProcessException",
         "Quote",
         "SBQQ__AttributeSet__c",
         "SBQQ__AttributeValue__c",
@@ -384,8 +385,9 @@ type salesforce.AnimationRule {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "animationRule"
   dirName = "animationRules"

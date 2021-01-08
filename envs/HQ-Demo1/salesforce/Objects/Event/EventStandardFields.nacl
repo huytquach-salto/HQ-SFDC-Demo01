@@ -4,9 +4,10 @@ type salesforce.Event {
     label = "Activity ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup WhoId {
     apiName = "Event.WhoId"
@@ -33,11 +34,14 @@ type salesforce.Event {
       salesforce.AssetRelationship,
       salesforce.Campaign,
       salesforce.Case,
+      salesforce.CommSubscriptionConsent,
       salesforce.Contract,
       "ListEmail",
       salesforce.Location,
       salesforce.Opportunity,
       salesforce.Order,
+      salesforce.PartyConsent,
+      salesforce.ProcessException,
       salesforce.Product2,
       salesforce.Quote,
       salesforce.SBQQ__QuoteDocument__c,
@@ -188,7 +192,8 @@ type salesforce.Event {
     updateable = false
     relationshipName = "Owner"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Picklist Type {
     apiName = "Event.Type"
@@ -244,8 +249,9 @@ type salesforce.Event {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsChild {
     apiName = "Event.IsChild"
@@ -305,7 +311,8 @@ type salesforce.Event {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Event.CreatedById"
@@ -319,7 +326,8 @@ type salesforce.Event {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Event.LastModifiedDate"
@@ -328,7 +336,8 @@ type salesforce.Event {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Event.LastModifiedById"
@@ -342,7 +351,8 @@ type salesforce.Event {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Event.SystemModstamp"
@@ -351,7 +361,8 @@ type salesforce.Event {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsArchived {
     apiName = "Event.IsArchived"
@@ -427,6 +438,12 @@ type salesforce.Event {
         isActive = true
       },
       {
+        fullName = "Pacific/Fiji"
+        default = false
+        label = "(GMT+13:00) Fiji Summer Time (Pacific/Fiji)"
+        isActive = true
+      },
+      {
         fullName = "Pacific/Tongatapu"
         default = false
         label = "(GMT+13:00) Tonga Standard Time (Pacific/Tongatapu)"
@@ -436,12 +453,6 @@ type salesforce.Event {
         fullName = "Asia/Kamchatka"
         default = false
         label = "(GMT+12:00) Petropavlovsk-Kamchatski Standard Time (Asia/Kamchatka)"
-        isActive = true
-      },
-      {
-        fullName = "Pacific/Fiji"
-        default = false
-        label = "(GMT+12:00) Fiji Standard Time (Pacific/Fiji)"
         isActive = true
       },
       {

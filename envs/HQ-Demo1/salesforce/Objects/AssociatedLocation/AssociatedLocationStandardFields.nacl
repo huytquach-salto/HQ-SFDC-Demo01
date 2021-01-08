@@ -4,9 +4,10 @@ type salesforce.AssociatedLocation {
     label = "Associated Location ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "AssociatedLocation.IsDeleted"
@@ -15,8 +16,9 @@ type salesforce.AssociatedLocation {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.AutoNumber AssociatedLocationNumber {
     apiName = "AssociatedLocation.AssociatedLocationNumber"
@@ -25,7 +27,8 @@ type salesforce.AssociatedLocation {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "AssociatedLocation.CreatedDate"
@@ -34,7 +37,8 @@ type salesforce.AssociatedLocation {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "AssociatedLocation.CreatedById"
@@ -48,7 +52,8 @@ type salesforce.AssociatedLocation {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "AssociatedLocation.LastModifiedDate"
@@ -57,7 +62,8 @@ type salesforce.AssociatedLocation {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "AssociatedLocation.LastModifiedById"
@@ -71,7 +77,8 @@ type salesforce.AssociatedLocation {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "AssociatedLocation.SystemModstamp"
@@ -80,7 +87,8 @@ type salesforce.AssociatedLocation {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup ParentRecordId {
     apiName = "AssociatedLocation.ParentRecordId"

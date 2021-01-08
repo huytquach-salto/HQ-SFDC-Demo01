@@ -175,6 +175,7 @@ salesforce.Flow Save_Lead_s_domain_name_used_to_avoid_duplicate_lead_account {
         },
       ]
       object = salesforce.Lead
+      filterLogic = "and"
     },
   ]
   startElementReference = "myDecision"
@@ -197,4 +198,5 @@ salesforce.Flow Save_Lead_s_domain_name_used_to_avoid_duplicate_lead_account {
       objectType = salesforce.Lead
     },
   ]
+  apiVersion = 49
 }

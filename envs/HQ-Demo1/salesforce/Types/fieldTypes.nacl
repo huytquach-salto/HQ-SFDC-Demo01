@@ -30,6 +30,8 @@ type salesforce.FormulaTime is string {
     }
     salesforce.formulaTreatBlanksAs formulaTreatBlanksAs {
     }
+    hidden_string internalId {
+    }
   }
 }
 type salesforce.FormulaText is string {
@@ -72,6 +74,8 @@ type salesforce.FormulaText is string {
     }
     salesforce.formulaTreatBlanksAs formulaTreatBlanksAs {
     }
+    hidden_string internalId {
+    }
   }
 }
 type salesforce.FormulaPercent is number {
@@ -109,6 +113,8 @@ type salesforce.FormulaPercent is number {
     string formula {
     }
     salesforce.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+    hidden_string internalId {
     }
   }
 }
@@ -152,6 +158,8 @@ type salesforce.FormulaNumber is number {
     }
     salesforce.formulaTreatBlanksAs formulaTreatBlanksAs {
     }
+    hidden_string internalId {
+    }
   }
 }
 type salesforce.FormulaDateTime is string {
@@ -186,6 +194,8 @@ type salesforce.FormulaDateTime is string {
     }
     salesforce.formulaTreatBlanksAs formulaTreatBlanksAs {
     }
+    hidden_string internalId {
+    }
   }
 }
 type salesforce.FormulaDate is string {
@@ -219,6 +229,8 @@ type salesforce.FormulaDate is string {
     string formula {
     }
     salesforce.formulaTreatBlanksAs formulaTreatBlanksAs {
+    }
+    hidden_string internalId {
     }
   }
 }
@@ -258,6 +270,8 @@ type salesforce.FormulaCurrency is number {
     }
     salesforce.formulaTreatBlanksAs formulaTreatBlanksAs {
     }
+    hidden_string internalId {
+    }
   }
 }
 type salesforce.FormulaCheckbox is boolean {
@@ -292,6 +306,8 @@ type salesforce.FormulaCheckbox is boolean {
     }
     salesforce.formulaTreatBlanksAs formulaTreatBlanksAs {
     }
+    hidden_string internalId {
+    }
   }
 }
 type salesforce.Geolocation {
@@ -324,6 +340,8 @@ type salesforce.Geolocation {
     }
     boolean queryable {
     }
+    hidden_string internalId {
+    }
   }
   number latitude {
   }
@@ -355,6 +373,8 @@ type salesforce.Name2 {
     boolean updateable {
     }
     boolean queryable {
+    }
+    hidden_string internalId {
     }
   }
   string FirstName {
@@ -391,6 +411,8 @@ type salesforce.Name {
     boolean updateable {
     }
     boolean queryable {
+    }
+    hidden_string internalId {
     }
   }
   string FirstName {
@@ -429,6 +451,8 @@ type salesforce.Address {
     boolean updateable {
     }
     boolean queryable {
+    }
+    hidden_string internalId {
     }
   }
   string city {
@@ -474,6 +498,8 @@ type salesforce.AnyType is unknown {
     }
     boolean queryable {
     }
+    hidden_string internalId {
+    }
   }
 }
 type salesforce.Unknown is string {
@@ -501,6 +527,8 @@ type salesforce.Unknown is string {
     boolean updateable {
     }
     boolean queryable {
+    }
+    hidden_string internalId {
     }
   }
 }
@@ -537,6 +565,8 @@ type salesforce.Summary is string {
     string summaryForeignKey {
     }
     salesforce.summaryOperation summaryOperation {
+    }
+    hidden_string internalId {
     }
   }
 }
@@ -578,6 +608,8 @@ type salesforce.MasterDetail is string {
     }
     string relationshipName {
     }
+    hidden_string internalId {
+    }
   }
 }
 type salesforce.Lookup is string {
@@ -614,6 +646,8 @@ type salesforce.Lookup is string {
     }
     string relationshipName {
     }
+    hidden_string internalId {
+    }
   }
 }
 type salesforce.Url is string {
@@ -643,6 +677,8 @@ type salesforce.Url is string {
     boolean queryable {
     }
     string defaultValueFormula {
+    }
+    hidden_string internalId {
     }
   }
 }
@@ -678,6 +714,8 @@ type salesforce.EncryptedText is string {
     }
     salesforce.EncryptedTextLength length {
     }
+    hidden_string internalId {
+    }
   }
 }
 type salesforce.TextArea is string {
@@ -707,6 +745,8 @@ type salesforce.TextArea is string {
     boolean queryable {
     }
     string defaultValueFormula {
+    }
+    hidden_string internalId {
     }
   }
 }
@@ -739,6 +779,8 @@ type salesforce.Html is string {
     salesforce.RichTextAreaVisibleLines visibleLines {
     }
     salesforce.TextAreaLength length {
+    }
+    hidden_string internalId {
     }
   }
 }
@@ -774,6 +816,8 @@ type salesforce.LongTextArea is string {
     }
     string defaultValueFormula {
     }
+    hidden_string internalId {
+    }
   }
 }
 type salesforce.Phone is string {
@@ -803,6 +847,8 @@ type salesforce.Phone is string {
     boolean queryable {
     }
     string defaultValueFormula {
+    }
+    hidden_string internalId {
     }
   }
 }
@@ -838,6 +884,8 @@ type salesforce.Percent is number {
     }
     string defaultValueFormula {
     }
+    hidden_string internalId {
+    }
   }
 }
 type salesforce.Email is string {
@@ -871,6 +919,8 @@ type salesforce.Email is string {
     boolean externalId {
     }
     string defaultValueFormula {
+    }
+    hidden_string internalId {
     }
   }
 }
@@ -914,6 +964,8 @@ type salesforce.MultiselectPicklist is string {
     }
     string defaultValueFormula {
     }
+    hidden_string internalId {
+    }
   }
 }
 type salesforce.Picklist is string {
@@ -954,6 +1006,8 @@ type salesforce.Picklist is string {
     }
     string defaultValueFormula {
     }
+    hidden_string internalId {
+    }
   }
 }
 type salesforce.Currency is number {
@@ -988,6 +1042,8 @@ type salesforce.Currency is number {
     }
     string defaultValueFormula {
     }
+    hidden_string internalId {
+    }
   }
 }
 type salesforce.DateTime is string {
@@ -1017,6 +1073,8 @@ type salesforce.DateTime is string {
     boolean queryable {
     }
     string defaultValueFormula {
+    }
+    hidden_string internalId {
     }
   }
 }
@@ -1048,6 +1106,8 @@ type salesforce.Time is string {
     }
     string defaultValueFormula {
     }
+    hidden_string internalId {
+    }
   }
 }
 type salesforce.Date is string {
@@ -1078,6 +1138,8 @@ type salesforce.Date is string {
     }
     string defaultValueFormula {
     }
+    hidden_string internalId {
+    }
   }
 }
 type salesforce.Checkbox is boolean {
@@ -1107,6 +1169,8 @@ type salesforce.Checkbox is boolean {
     boolean queryable {
     }
     boolean defaultValue {
+    }
+    hidden_string internalId {
     }
   }
 }
@@ -1139,6 +1203,8 @@ type salesforce.AutoNumber is string {
     boolean externalId {
     }
     string displayFormat {
+    }
+    hidden_string internalId {
     }
   }
 }
@@ -1178,6 +1244,8 @@ type salesforce.Number is number {
     }
     string defaultValueFormula {
     }
+    hidden_string internalId {
+    }
   }
 }
 type salesforce.Text is string {
@@ -1215,6 +1283,8 @@ type salesforce.Text is string {
     salesforce.TextLength length {
     }
     string defaultValueFormula {
+    }
+    hidden_string internalId {
     }
   }
 }

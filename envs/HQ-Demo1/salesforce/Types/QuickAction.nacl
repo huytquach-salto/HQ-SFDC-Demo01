@@ -145,8 +145,9 @@ type salesforce.QuickAction {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   suffix = "quickAction"
   dirName = "quickActions"

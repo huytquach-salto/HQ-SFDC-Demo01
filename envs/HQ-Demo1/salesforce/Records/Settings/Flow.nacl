@@ -12,4 +12,11 @@ salesforce.FlowSettings {
   isAccessToInvokedApexRequired = false
   isEnhancedFlowListViewVisible = true
   isManageFlowRequiredForAutomationCharts = false
+  canDebugFlowAsAnotherUser = "false"
+  doesFormulaEnforceDataAccess = false
+  doesFormulaGenerateHtmlOutput = false
+  enableFlowCustomPropertyEditor = "false"
+  isApexPluginAccessModifierRespected = false
+  isFlowApexContextRetired = "false"
+  isTimeResumedInSameRunContext = "false"
 }

@@ -18,10 +18,11 @@ settings salesforce.BusinessHoursSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
-  "List<salesforce.BusinessHoursEntry>" businessHours {
+  "Map<salesforce.BusinessHoursEntry>" businessHours {
   }
   "List<salesforce.Holidays>" holidays {
   }

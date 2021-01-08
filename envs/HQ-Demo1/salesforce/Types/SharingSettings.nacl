@@ -22,8 +22,9 @@ settings salesforce.SharingSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean enableAccountRoleOptimization {
   }
@@ -50,4 +51,10 @@ settings salesforce.SharingSettings {
   boolean enableTerritoryForecastManager {
   }
   metadataType = "SharingSettings"
+  boolean deferGroupMembership {
+    _required = false
+  }
+  boolean deferSharingRules {
+    _required = false
+  }
 }

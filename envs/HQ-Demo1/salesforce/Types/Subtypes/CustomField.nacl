@@ -201,8 +201,9 @@ type salesforce.CustomField {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   string type {
     _restriction = {
@@ -232,4 +233,10 @@ type salesforce.CustomField {
     }
   }
   metadataType = "CustomField"
+  salesforce.MktDataLakeFieldAttributes mktDataLakeFieldAttributes {
+    _required = false
+  }
+  salesforce.MktDataModelFieldAttributes mktDataModelFieldAttributes {
+    _required = false
+  }
 }

@@ -1,4 +1,6 @@
 salesforce.IndustriesSettings {
   fullName = "Industries"
   enableIndLoyaltyEnabled = "false"
+  enableAccountScoreEnabled = "false"
+  enableCalcserviceEnabled = "false"
 }

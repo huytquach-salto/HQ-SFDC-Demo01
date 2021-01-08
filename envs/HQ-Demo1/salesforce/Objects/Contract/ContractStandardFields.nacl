@@ -4,9 +4,10 @@ type salesforce.Contract {
     label = "Contract ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup AccountId {
     apiName = "Contract.AccountId"
@@ -136,7 +137,8 @@ type salesforce.Contract {
     updateable = false
     relationshipName = "Owner"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Picklist Status {
     apiName = "Contract.Status"
@@ -288,8 +290,9 @@ type salesforce.Contract {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.AutoNumber ContractNumber {
     apiName = "Contract.ContractNumber"
@@ -298,7 +301,8 @@ type salesforce.Contract {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastApprovedDate {
     apiName = "Contract.LastApprovedDate"
@@ -315,7 +319,8 @@ type salesforce.Contract {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Contract.CreatedById"
@@ -329,7 +334,8 @@ type salesforce.Contract {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Contract.LastModifiedDate"
@@ -338,7 +344,8 @@ type salesforce.Contract {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Contract.LastModifiedById"
@@ -352,7 +359,8 @@ type salesforce.Contract {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Contract.SystemModstamp"
@@ -361,7 +369,8 @@ type salesforce.Contract {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Date LastActivityDate {
     apiName = "Contract.LastActivityDate"
@@ -370,7 +379,8 @@ type salesforce.Contract {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Unknown Name {
     apiName = "Contract.Name"

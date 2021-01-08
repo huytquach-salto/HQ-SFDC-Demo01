@@ -4,9 +4,10 @@ type salesforce.OpportunityLineItem {
     label = "Line Item ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OpportunityId {
     apiName = "OpportunityLineItem.OpportunityId"
@@ -147,7 +148,8 @@ type salesforce.OpportunityLineItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "OpportunityLineItem.CreatedById"
@@ -161,7 +163,8 @@ type salesforce.OpportunityLineItem {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "OpportunityLineItem.LastModifiedDate"
@@ -170,7 +173,8 @@ type salesforce.OpportunityLineItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "OpportunityLineItem.LastModifiedById"
@@ -184,7 +188,8 @@ type salesforce.OpportunityLineItem {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "OpportunityLineItem.SystemModstamp"
@@ -193,7 +198,8 @@ type salesforce.OpportunityLineItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "OpportunityLineItem.IsDeleted"
@@ -202,8 +208,9 @@ type salesforce.OpportunityLineItem {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Unknown Discount {
     apiName = "OpportunityLineItem.Discount"

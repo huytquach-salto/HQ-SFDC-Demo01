@@ -4,9 +4,10 @@ type salesforce.Order {
     label = "Order ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "Order.OwnerId"
@@ -21,7 +22,8 @@ type salesforce.Order {
     updateable = false
     relationshipName = "Owner"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup ContractId {
     apiName = "Order.ContractId"
@@ -231,7 +233,8 @@ type salesforce.Order {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Currency TotalAmount {
     apiName = "Order.TotalAmount"
@@ -250,7 +253,8 @@ type salesforce.Order {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "Order.CreatedById"
@@ -264,7 +268,8 @@ type salesforce.Order {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "Order.LastModifiedDate"
@@ -273,7 +278,8 @@ type salesforce.Order {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "Order.LastModifiedById"
@@ -287,7 +293,8 @@ type salesforce.Order {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "Order.IsDeleted"
@@ -296,8 +303,9 @@ type salesforce.Order {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "Order.SystemModstamp"
@@ -306,7 +314,8 @@ type salesforce.Order {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Unknown AccountNumber {
     apiName = "Order.AccountNumber"

@@ -27,8 +27,9 @@ settings salesforce.AnalyticsSettings {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   boolean alwaysGenPreviews {
   }
@@ -119,4 +120,7 @@ settings salesforce.AnalyticsSettings {
   boolean turnOnTimeZones {
   }
   metadataType = "AnalyticsSettings"
+  number maxHoursAppInProgress {
+    _required = false
+  }
 }

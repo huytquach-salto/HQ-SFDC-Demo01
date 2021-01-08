@@ -4,9 +4,10 @@ type salesforce.EmailMessage {
     label = "Email Message ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup ParentId {
     apiName = "EmailMessage.ParentId"
@@ -45,7 +46,8 @@ type salesforce.EmailMessage {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "EmailMessage.CreatedDate"
@@ -54,7 +56,8 @@ type salesforce.EmailMessage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "EmailMessage.LastModifiedDate"
@@ -63,7 +66,8 @@ type salesforce.EmailMessage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "EmailMessage.LastModifiedById"
@@ -77,7 +81,8 @@ type salesforce.EmailMessage {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "EmailMessage.SystemModstamp"
@@ -86,7 +91,8 @@ type salesforce.EmailMessage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.LongTextArea TextBody {
     apiName = "EmailMessage.TextBody"
@@ -274,8 +280,9 @@ type salesforce.EmailMessage {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Lookup ReplyToEmailMessageId {
     apiName = "EmailMessage.ReplyToEmailMessageId"
@@ -339,11 +346,14 @@ type salesforce.EmailMessage {
       salesforce.AssetRelationship,
       salesforce.Campaign,
       salesforce.Case,
+      salesforce.CommSubscriptionConsent,
       salesforce.Contract,
       "ListEmail",
       salesforce.Location,
       salesforce.Opportunity,
       salesforce.Order,
+      salesforce.PartyConsent,
+      salesforce.ProcessException,
       salesforce.Product2,
       salesforce.Quote,
       salesforce.SBQQ__QuoteDocument__c,

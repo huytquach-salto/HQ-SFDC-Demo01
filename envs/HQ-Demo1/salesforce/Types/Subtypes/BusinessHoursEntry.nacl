@@ -33,4 +33,5 @@ type salesforce.BusinessHoursEntry {
   }
   string sundayEndTime {
   }
+  metadataType = "BusinessHoursEntry"
 }

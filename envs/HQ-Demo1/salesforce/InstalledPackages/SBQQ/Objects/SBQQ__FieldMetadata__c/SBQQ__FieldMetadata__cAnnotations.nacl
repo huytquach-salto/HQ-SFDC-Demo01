@@ -44,6 +44,18 @@ type salesforce.SBQQ__FieldMetadata__c {
     }
     string visibility {
     }
+    string label {
+    }
+    boolean enablePublishStatusTracking {
+    }
+    salesforce.MktDataLakeAttributes mktDataLakeAttributes {
+    }
+    salesforce.MktDataModelAttributes mktDataModelAttributes {
+    }
+    salesforce.ProfileSearchLayouts profileSearchLayouts {
+    }
+    hidden_string internalId {
+    }
   }
   apiName = "SBQQ__FieldMetadata__c"
   metadataType = "CustomObject"

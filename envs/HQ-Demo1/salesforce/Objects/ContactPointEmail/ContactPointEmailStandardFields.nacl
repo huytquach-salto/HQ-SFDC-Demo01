@@ -4,9 +4,10 @@ type salesforce.ContactPointEmail {
     label = "Contact Point Email ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "ContactPointEmail.OwnerId"
@@ -21,7 +22,8 @@ type salesforce.ContactPointEmail {
     updateable = false
     relationshipName = "Owner"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "ContactPointEmail.IsDeleted"
@@ -30,8 +32,9 @@ type salesforce.ContactPointEmail {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.Text Name {
     apiName = "ContactPointEmail.Name"
@@ -51,7 +54,8 @@ type salesforce.ContactPointEmail {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "ContactPointEmail.CreatedById"
@@ -65,7 +69,8 @@ type salesforce.ContactPointEmail {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "ContactPointEmail.LastModifiedDate"
@@ -74,7 +79,8 @@ type salesforce.ContactPointEmail {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "ContactPointEmail.LastModifiedById"
@@ -88,7 +94,8 @@ type salesforce.ContactPointEmail {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "ContactPointEmail.SystemModstamp"
@@ -97,7 +104,8 @@ type salesforce.ContactPointEmail {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup ParentId {
     apiName = "ContactPointEmail.ParentId"
@@ -175,6 +183,12 @@ type salesforce.ContactPointEmail {
         isActive = true
       },
       {
+        fullName = "Pacific/Fiji"
+        default = false
+        label = "(GMT+13:00) Fiji Summer Time (Pacific/Fiji)"
+        isActive = true
+      },
+      {
         fullName = "Pacific/Tongatapu"
         default = false
         label = "(GMT+13:00) Tonga Standard Time (Pacific/Tongatapu)"
@@ -184,12 +198,6 @@ type salesforce.ContactPointEmail {
         fullName = "Asia/Kamchatka"
         default = false
         label = "(GMT+12:00) Petropavlovsk-Kamchatski Standard Time (Asia/Kamchatka)"
-        isActive = true
-      },
-      {
-        fullName = "Pacific/Fiji"
-        default = false
-        label = "(GMT+12:00) Fiji Standard Time (Pacific/Fiji)"
         isActive = true
       },
       {

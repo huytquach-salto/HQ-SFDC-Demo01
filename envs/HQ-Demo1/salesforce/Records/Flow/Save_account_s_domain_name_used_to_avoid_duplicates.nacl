@@ -187,6 +187,7 @@ IF(BEGINS({!myVariable_current.Website}, "https://"), MID({!myVariable_current.W
         },
       ]
       object = salesforce.Account
+      filterLogic = "and"
     },
   ]
   startElementReference = "myDecision"
@@ -209,4 +210,5 @@ IF(BEGINS({!myVariable_current.Website}, "https://"), MID({!myVariable_current.W
       objectType = salesforce.Account
     },
   ]
+  apiVersion = 49
 }

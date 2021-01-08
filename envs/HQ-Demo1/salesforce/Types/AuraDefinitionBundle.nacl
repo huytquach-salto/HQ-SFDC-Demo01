@@ -57,8 +57,9 @@ type salesforce.AuraDefinitionBundle {
   }
   string internalId {
     _required = false
-    _hidden = true
+    
     localOnly = true
+    _hidden_value = true
   }
   string type {
     _required = true
@@ -75,4 +76,7 @@ type salesforce.AuraDefinitionBundle {
   }
   dirName = "aura"
   metadataType = "AuraDefinitionBundle"
+  salesforce.AuraDefinitions auraDefinitions {
+    _required = false
+  }
 }

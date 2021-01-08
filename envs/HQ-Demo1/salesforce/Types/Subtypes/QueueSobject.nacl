@@ -88,6 +88,7 @@ type salesforce.QueueSobject {
         "SBQQ__WebQuote__c",
         "Scorecard",
         "SocialPost",
+        "Task",
         "UserProvisioningRequest",
         "WorkBadgeDefinition",
         "WorkThanks",

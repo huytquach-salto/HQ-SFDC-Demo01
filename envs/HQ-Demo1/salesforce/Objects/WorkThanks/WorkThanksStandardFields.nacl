@@ -4,9 +4,10 @@ type salesforce.WorkThanks {
     label = "Thanks ID"
     _required = false
     queryable = true
-    _hidden = true
+    
     updateable = false
     createable = false
+    _hidden_value = true
   }
   salesforce.Lookup OwnerId {
     apiName = "WorkThanks.OwnerId"
@@ -21,7 +22,8 @@ type salesforce.WorkThanks {
     updateable = false
     relationshipName = "Owner"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Checkbox IsDeleted {
     apiName = "WorkThanks.IsDeleted"
@@ -30,8 +32,9 @@ type salesforce.WorkThanks {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
     _required = false
+    _hidden_value = true
   }
   salesforce.DateTime CreatedDate {
     apiName = "WorkThanks.CreatedDate"
@@ -40,7 +43,8 @@ type salesforce.WorkThanks {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup CreatedById {
     apiName = "WorkThanks.CreatedById"
@@ -54,7 +58,8 @@ type salesforce.WorkThanks {
     updateable = false
     relationshipName = "CreatedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime LastModifiedDate {
     apiName = "WorkThanks.LastModifiedDate"
@@ -63,7 +68,8 @@ type salesforce.WorkThanks {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup LastModifiedById {
     apiName = "WorkThanks.LastModifiedById"
@@ -77,7 +83,8 @@ type salesforce.WorkThanks {
     updateable = false
     relationshipName = "LastModifiedBy"
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.DateTime SystemModstamp {
     apiName = "WorkThanks.SystemModstamp"
@@ -86,7 +93,8 @@ type salesforce.WorkThanks {
     createable = false
     updateable = false
     queryable = true
-    _hidden = true
+    
+    _hidden_value = true
   }
   salesforce.Lookup GiverId {
     apiName = "WorkThanks.GiverId"
