@@ -29,4 +29,6 @@ settings salesforce.CaseClassificationSettings {
   boolean runAssignmentRules {
   }
   metadataType = "CaseClassificationSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -39,4 +39,6 @@ settings salesforce.EACSettings {
   boolean provisionProductivityFeatures {
   }
   metadataType = "EACSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

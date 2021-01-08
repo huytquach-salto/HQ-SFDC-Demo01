@@ -39,4 +39,6 @@ settings salesforce.LeadConfigSettings {
   boolean shouldLeadConvertRequireValidation {
   }
   metadataType = "LeadConfigSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

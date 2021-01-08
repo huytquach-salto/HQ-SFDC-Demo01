@@ -23,4 +23,6 @@ settings salesforce.FormulaSettings {
     _hidden_value = true
   }
   metadataType = "FormulaSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -39,4 +39,6 @@ settings salesforce.VoiceSettings {
   boolean enableVoiceMailDrop {
   }
   metadataType = "VoiceSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

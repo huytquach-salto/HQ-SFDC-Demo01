@@ -27,4 +27,6 @@ settings salesforce.BusinessHoursSettings {
   "List<salesforce.Holidays>" holidays {
   }
   metadataType = "BusinessHoursSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

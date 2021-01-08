@@ -27,4 +27,6 @@ settings salesforce.PardotEinsteinSettings {
   boolean enableEngagementScore {
   }
   metadataType = "PardotEinsteinSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -52,4 +52,6 @@ settings salesforce.OpportunitySettings {
   boolean enableOpportunityInsightsInMobile {
   }
   metadataType = "OpportunitySettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -33,4 +33,6 @@ settings salesforce.SocialProfileSettings {
   boolean enableSocialProfiles {
   }
   metadataType = "SocialProfileSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

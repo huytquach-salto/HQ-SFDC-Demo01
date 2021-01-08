@@ -30,4 +30,6 @@ settings salesforce.PathAssistantSettings {
   boolean pathAssistantForOpportunityEnabled {
   }
   metadataType = "PathAssistantSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

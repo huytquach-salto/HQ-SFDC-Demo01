@@ -27,4 +27,6 @@ settings salesforce.DevHubSettings {
   boolean enableScratchOrgManagementPref {
   }
   metadataType = "DevHubSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -37,4 +37,6 @@ settings salesforce.ProductSettings {
   boolean enableSecureGuestUserRecordAccess {
     _required = false
   }
+  suffix = "settings"
+  dirName = "settings"
 }

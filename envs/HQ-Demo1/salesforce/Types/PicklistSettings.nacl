@@ -25,4 +25,6 @@ settings salesforce.PicklistSettings {
   boolean isPicklistApiNameEditDisabled {
   }
   metadataType = "PicklistSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

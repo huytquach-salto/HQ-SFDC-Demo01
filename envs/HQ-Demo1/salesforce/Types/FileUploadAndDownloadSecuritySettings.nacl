@@ -29,4 +29,6 @@ settings salesforce.FileUploadAndDownloadSecuritySettings {
     _hidden_value = true
   }
   metadataType = "FileUploadAndDownloadSecuritySettings"
+  suffix = "settings"
+  dirName = "settings"
 }

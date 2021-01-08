@@ -46,4 +46,6 @@ settings salesforce.SocialCustomerServiceSettings {
   boolean enableSocialReceiveParentPost {
   }
   metadataType = "SocialCustomerServiceSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

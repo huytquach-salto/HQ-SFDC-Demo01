@@ -50,4 +50,6 @@ settings salesforce.IdeasSettings {
     _hidden_value = true
   }
   metadataType = "IdeasSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

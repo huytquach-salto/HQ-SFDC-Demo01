@@ -26,4 +26,6 @@ settings salesforce.GoogleAppsSettings {
     _hidden_value = true
   }
   metadataType = "GoogleAppsSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

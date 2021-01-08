@@ -68,4 +68,6 @@ settings salesforce.SearchSettings {
   boolean enableUseDefaultSearchEntity {
   }
   metadataType = "SearchSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

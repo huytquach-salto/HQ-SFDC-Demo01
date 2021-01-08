@@ -26,4 +26,6 @@ settings salesforce.AddressSettings {
     _hidden_value = true
   }
   metadataType = "AddressSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

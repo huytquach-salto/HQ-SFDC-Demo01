@@ -25,4 +25,6 @@ settings salesforce.DeploymentSettings {
   boolean doesSkipAsyncApexValidation {
   }
   metadataType = "DeploymentSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -25,4 +25,6 @@ settings salesforce.AppExperienceSettings {
   boolean doesHideAllAppsInAppLauncher {
   }
   metadataType = "AppExperienceSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

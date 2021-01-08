@@ -27,4 +27,6 @@ settings salesforce.EnhancedNotesSettings {
   boolean enableTasksOnEnhancedNotes {
   }
   metadataType = "EnhancedNotesSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

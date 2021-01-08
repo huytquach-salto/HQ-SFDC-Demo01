@@ -33,4 +33,6 @@ settings salesforce.OmniChannelSettings {
   boolean enableOmniSecondaryRoutingPriority {
   }
   metadataType = "OmniChannelSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

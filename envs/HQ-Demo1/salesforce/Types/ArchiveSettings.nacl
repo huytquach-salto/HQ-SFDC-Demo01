@@ -23,4 +23,6 @@ settings salesforce.ArchiveSettings {
     _hidden_value = true
   }
   metadataType = "ArchiveSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

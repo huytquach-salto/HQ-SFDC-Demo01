@@ -38,4 +38,6 @@ settings salesforce.CampaignSettings {
   number aiAttributionTimeframe {
     _required = false
   }
+  suffix = "settings"
+  dirName = "settings"
 }

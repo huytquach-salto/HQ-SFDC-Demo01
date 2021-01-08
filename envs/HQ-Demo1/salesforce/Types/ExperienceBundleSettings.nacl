@@ -25,4 +25,6 @@ settings salesforce.ExperienceBundleSettings {
   boolean enableExperienceBundleMetadata {
   }
   metadataType = "ExperienceBundleSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

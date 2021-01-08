@@ -27,4 +27,6 @@ settings salesforce.RecordPageSettings {
   boolean enableFullRecordView {
   }
   metadataType = "RecordPageSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

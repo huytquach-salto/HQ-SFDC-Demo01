@@ -75,4 +75,6 @@ settings salesforce.UserEngagementSettings {
   boolean optimizerAppEnabled {
   }
   metadataType = "UserEngagementSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

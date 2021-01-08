@@ -23,4 +23,6 @@ settings salesforce.FilesConnectSettings {
     _hidden_value = true
   }
   metadataType = "FilesConnectSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

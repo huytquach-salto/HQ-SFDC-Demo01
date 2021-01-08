@@ -25,4 +25,6 @@ settings salesforce.TrialOrgSettings {
   boolean enableSampleDataDeleted {
   }
   metadataType = "TrialOrgSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

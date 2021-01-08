@@ -28,4 +28,6 @@ settings salesforce.QuoteSettings {
   boolean enableQuotesWithoutOppEnabled {
   }
   metadataType = "QuoteSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -23,4 +23,6 @@ settings salesforce.SystemNotificationSettings {
     _hidden_value = true
   }
   metadataType = "SystemNotificationSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

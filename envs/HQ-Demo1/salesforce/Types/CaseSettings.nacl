@@ -146,4 +146,6 @@ settings salesforce.CaseSettings {
   boolean visibleInCssCheckbox {
   }
   metadataType = "CaseSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

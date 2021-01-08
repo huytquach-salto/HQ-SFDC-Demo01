@@ -25,4 +25,6 @@ settings salesforce.EmailTemplateSettings {
   boolean enableTemplateEnhancedFolderPref {
   }
   metadataType = "EmailTemplateSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

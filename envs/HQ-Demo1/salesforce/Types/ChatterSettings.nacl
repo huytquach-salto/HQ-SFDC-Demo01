@@ -55,4 +55,6 @@ settings salesforce.ChatterSettings {
   boolean unlistedGroupsEnabled {
   }
   metadataType = "ChatterSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

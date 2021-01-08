@@ -123,4 +123,6 @@ settings salesforce.AnalyticsSettings {
   number maxHoursAppInProgress {
     _required = false
   }
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -23,4 +23,6 @@ settings salesforce.BlockchainSettings {
     _hidden_value = true
   }
   metadataType = "BlockchainSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

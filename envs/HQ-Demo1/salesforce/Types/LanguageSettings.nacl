@@ -39,4 +39,6 @@ settings salesforce.LanguageSettings {
   boolean useLanguageFallback {
   }
   metadataType = "LanguageSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

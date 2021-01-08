@@ -25,4 +25,6 @@ settings salesforce.InvocableActionSettings {
   boolean isPartialSaveAllowed {
   }
   metadataType = "InvocableActionSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

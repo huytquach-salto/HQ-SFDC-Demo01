@@ -43,4 +43,6 @@ settings salesforce.IndustriesSettings {
   boolean enableReferralScoring {
   }
   metadataType = "IndustriesSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

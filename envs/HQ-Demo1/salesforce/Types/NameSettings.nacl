@@ -34,4 +34,6 @@ settings salesforce.NameSettings {
   boolean enableInformalName {
     _required = false
   }
+  suffix = "settings"
+  dirName = "settings"
 }

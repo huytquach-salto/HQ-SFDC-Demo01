@@ -23,4 +23,6 @@ settings salesforce.ExternalServicesSettings {
     _hidden_value = true
   }
   metadataType = "ExternalServicesSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

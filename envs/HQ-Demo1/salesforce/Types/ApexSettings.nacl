@@ -51,4 +51,6 @@ settings salesforce.ApexSettings {
   boolean enableSecureNoArgConstructorPref {
   }
   metadataType = "ApexSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

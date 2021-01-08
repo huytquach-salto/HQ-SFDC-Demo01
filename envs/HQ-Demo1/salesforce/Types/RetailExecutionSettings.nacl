@@ -23,4 +23,6 @@ settings salesforce.RetailExecutionSettings {
     _hidden_value = true
   }
   metadataType = "RetailExecutionSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

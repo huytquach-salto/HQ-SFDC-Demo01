@@ -63,4 +63,6 @@ settings salesforce.ContentSettings {
   boolean skipContentAssetTriggersOnDeploy {
   }
   metadataType = "ContentSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

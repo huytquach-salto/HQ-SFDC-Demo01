@@ -23,4 +23,6 @@ settings salesforce.EssentialsSettings {
     _hidden_value = true
   }
   metadataType = "EssentialsSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

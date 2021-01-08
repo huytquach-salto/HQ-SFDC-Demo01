@@ -29,4 +29,6 @@ settings salesforce.PrivacySettings {
   boolean enableDefaultMetadataValues {
   }
   metadataType = "PrivacySettings"
+  suffix = "settings"
+  dirName = "settings"
 }

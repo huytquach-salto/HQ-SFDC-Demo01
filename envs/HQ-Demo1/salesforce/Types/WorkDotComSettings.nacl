@@ -23,4 +23,6 @@ settings salesforce.WorkDotComSettings {
     _hidden_value = true
   }
   metadataType = "WorkDotComSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

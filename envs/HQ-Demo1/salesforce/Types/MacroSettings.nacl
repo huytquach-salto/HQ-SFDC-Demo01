@@ -29,4 +29,6 @@ settings salesforce.MacroSettings {
     _hidden_value = true
   }
   metadataType = "MacroSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -31,4 +31,6 @@ settings salesforce.SchemaSettings {
   boolean enableSOSLOnCustomSettings {
   }
   metadataType = "SchemaSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

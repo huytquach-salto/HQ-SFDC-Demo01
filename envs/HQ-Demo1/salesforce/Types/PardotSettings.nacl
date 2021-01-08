@@ -33,4 +33,6 @@ settings salesforce.PardotSettings {
   boolean enableProspectActivityDataset {
   }
   metadataType = "PardotSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

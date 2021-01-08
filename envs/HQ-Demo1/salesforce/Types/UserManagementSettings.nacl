@@ -35,4 +35,6 @@ settings salesforce.UserManagementSettings {
   boolean enableScrambleUserData {
   }
   metadataType = "UserManagementSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

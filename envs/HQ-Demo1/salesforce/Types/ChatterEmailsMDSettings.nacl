@@ -23,4 +23,6 @@ settings salesforce.ChatterEmailsMDSettings {
     _hidden_value = true
   }
   metadataType = "ChatterEmailsMDSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -47,4 +47,6 @@ settings salesforce.UserInterfaceSettings {
   boolean enableQuickCreate {
   }
   metadataType = "UserInterfaceSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

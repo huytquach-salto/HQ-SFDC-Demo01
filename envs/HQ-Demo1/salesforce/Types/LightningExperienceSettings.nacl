@@ -84,4 +84,6 @@ settings salesforce.LightningExperienceSettings {
   string activeThemeName {
     _required = false
   }
+  suffix = "settings"
+  dirName = "settings"
 }

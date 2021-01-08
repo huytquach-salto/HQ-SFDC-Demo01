@@ -49,4 +49,6 @@ settings salesforce.SecuritySettings {
   boolean isTLSv12RequiredCommunities {
   }
   metadataType = "SecuritySettings"
+  suffix = "settings"
+  dirName = "settings"
 }

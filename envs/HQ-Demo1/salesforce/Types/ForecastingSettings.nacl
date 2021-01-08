@@ -38,4 +38,6 @@ settings salesforce.ForecastingSettings {
     _hidden_value = true
   }
   metadataType = "ForecastingSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

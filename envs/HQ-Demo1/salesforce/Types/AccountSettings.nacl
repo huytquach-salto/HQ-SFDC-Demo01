@@ -40,4 +40,6 @@ settings salesforce.AccountSettings {
   boolean enableRelateContactToMultipleAccounts {
   }
   metadataType = "AccountSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

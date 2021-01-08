@@ -31,4 +31,6 @@ settings salesforce.OrgSettings {
   boolean saveMailMergeDocsAsSalesforceDocs {
   }
   metadataType = "OrgSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

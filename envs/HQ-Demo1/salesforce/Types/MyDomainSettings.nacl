@@ -35,4 +35,6 @@ settings salesforce.MyDomainSettings {
   boolean useStabilizedSandboxMyDomainHostnames {
   }
   metadataType = "MyDomainSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

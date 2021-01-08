@@ -29,4 +29,6 @@ settings salesforce.EncryptionKeySettings {
   boolean enableReplayDetection {
   }
   metadataType = "EncryptionKeySettings"
+  suffix = "settings"
+  dirName = "settings"
 }

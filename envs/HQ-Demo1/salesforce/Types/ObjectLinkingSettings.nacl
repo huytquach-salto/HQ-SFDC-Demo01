@@ -25,4 +25,6 @@ settings salesforce.ObjectLinkingSettings {
   boolean enableObjectLinking {
   }
   metadataType = "ObjectLinkingSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

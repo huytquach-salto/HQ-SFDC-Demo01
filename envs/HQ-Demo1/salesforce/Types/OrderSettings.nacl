@@ -37,4 +37,6 @@ settings salesforce.OrderSettings {
   boolean enableEnhancedCommerceOrders {
   }
   metadataType = "OrderSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

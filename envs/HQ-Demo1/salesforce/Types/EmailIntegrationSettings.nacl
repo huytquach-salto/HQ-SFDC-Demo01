@@ -45,4 +45,6 @@ settings salesforce.EmailIntegrationSettings {
   boolean shouldUseTrustedDomainsList {
   }
   metadataType = "EmailIntegrationSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

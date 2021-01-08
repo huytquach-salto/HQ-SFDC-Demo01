@@ -35,4 +35,6 @@ settings salesforce.PlatformEncryptionSettings {
   boolean enableEventBusEncryption {
   }
   metadataType = "PlatformEncryptionSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

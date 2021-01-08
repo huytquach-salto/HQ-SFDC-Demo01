@@ -95,4 +95,6 @@ settings salesforce.ActivitiesSettings {
   boolean enableMLSingleClientProfile {
     _required = false
   }
+  suffix = "settings"
+  dirName = "settings"
 }

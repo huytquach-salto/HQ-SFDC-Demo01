@@ -27,4 +27,6 @@ settings salesforce.NotificationsSettings {
   boolean enableNotifications {
   }
   metadataType = "NotificationsSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

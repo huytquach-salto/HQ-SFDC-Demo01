@@ -25,4 +25,6 @@ settings salesforce.TrailheadSettings {
   boolean enableMyTrailheadPref {
   }
   metadataType = "TrailheadSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

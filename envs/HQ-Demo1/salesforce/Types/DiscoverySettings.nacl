@@ -23,4 +23,6 @@ settings salesforce.DiscoverySettings {
     _hidden_value = true
   }
   metadataType = "DiscoverySettings"
+  suffix = "settings"
+  dirName = "settings"
 }

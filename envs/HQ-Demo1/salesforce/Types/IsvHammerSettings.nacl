@@ -23,4 +23,6 @@ settings salesforce.IsvHammerSettings {
     _hidden_value = true
   }
   metadataType = "IsvHammerSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -34,4 +34,6 @@ settings salesforce.CurrencySettings {
   boolean isParenCurrencyConvDisabled {
   }
   metadataType = "CurrencySettings"
+  suffix = "settings"
+  dirName = "settings"
 }

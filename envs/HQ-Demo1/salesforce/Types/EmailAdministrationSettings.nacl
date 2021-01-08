@@ -63,4 +63,6 @@ settings salesforce.EmailAdministrationSettings {
   boolean sendTextOnlySystemEmails {
   }
   metadataType = "EmailAdministrationSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

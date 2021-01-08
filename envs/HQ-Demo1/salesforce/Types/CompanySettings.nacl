@@ -29,4 +29,6 @@ settings salesforce.CompanySettings {
     _hidden_value = true
   }
   metadataType = "CompanySettings"
+  suffix = "settings"
+  dirName = "settings"
 }

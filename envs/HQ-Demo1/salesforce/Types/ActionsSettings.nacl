@@ -29,4 +29,6 @@ settings salesforce.ActionsSettings {
   boolean enableThirdPartyActions {
   }
   metadataType = "ActionsSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

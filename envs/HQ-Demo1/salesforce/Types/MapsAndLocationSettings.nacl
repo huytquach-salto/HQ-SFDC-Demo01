@@ -23,4 +23,6 @@ settings salesforce.MapsAndLocationSettings {
     _hidden_value = true
   }
   metadataType = "MapsAndLocationSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

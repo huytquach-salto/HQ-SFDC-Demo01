@@ -55,4 +55,6 @@ settings salesforce.FlowSettings {
   boolean isManageFlowRequiredForAutomationCharts {
   }
   metadataType = "FlowSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

@@ -29,4 +29,6 @@ settings salesforce.ConnectedAppSettings {
   boolean enableSkipUserProvisioningWizardWelcomePage {
   }
   metadataType = "ConnectedAppSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

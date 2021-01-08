@@ -62,4 +62,6 @@ settings salesforce.EntitlementSettings {
     _hidden_value = true
   }
   metadataType = "EntitlementSettings"
+  suffix = "settings"
+  dirName = "settings"
 }

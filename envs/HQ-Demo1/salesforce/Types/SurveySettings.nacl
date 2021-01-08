@@ -27,4 +27,6 @@ settings salesforce.SurveySettings {
   boolean enableSurveyOwnerCanManageResponse {
   }
   metadataType = "SurveySettings"
+  suffix = "settings"
+  dirName = "settings"
 }

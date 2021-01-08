@@ -40,4 +40,6 @@ settings salesforce.MobileSettings {
   boolean enableS1OfflinePref {
   }
   metadataType = "MobileSettings"
+  suffix = "settings"
+  dirName = "settings"
 }
